@@ -373,19 +373,7 @@ $(window).load(function(){
 						</div>
 					</div>
 				
-					<div class="accordion_toggle"><a href="#"><span><i class="icon-info-sign"></i></span>Returning customer? Click here to login</a></div>
-					<div class="accordion_content">
-						<div class="cupon">
-							<div class="row">
-								<div class="col-md-6 co-form half-field">
-									<label>Cupon Code<span>*</span></label>
-									<input type="text" class="form-control input-field" />
-									<input type="submit" class="cart-btn pull-right" value="Apply Coupon" />
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+
 				<section class="block">
 					<div class="billing">
 						<h3 class="sub-head">BILLING ADDRESS</h3>			
@@ -473,7 +461,53 @@ $(window).load(function(){
 						</div>
 					</div>
 				</section>
+					<section class="block">
+						<div class="cart-total cart-table order">
+							<div class="cart-head">
+								<h2 class="product">Product</h2>
+								<h2 class="total">Total</h2>
+							</div>
+							<ul>
+								<li><p>Cart Subtotal</p><span>$335</span></li>
+								<li><p>Shipping </p><span>Free Shipping</span></li>
+								<li><p>Order Total</p><span>$335</span></li>
+							</ul>
+						</div>
+					</section>
 
+					<section class="block">
+						<div class="payment">
+							<ul>
+								<li>
+									<div class="payment-method">
+										<input type="radio" value="bacs" name="payment_method" class="input-radio" id="payment_method_bacs">
+										<label for="payment_method_bacs">Direct Bank Transfer </label>
+									</div>
+									<div class="payment-desc" style="display: block;">
+										<span>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order wont be shipped until the funds have cleared in our account.</span>
+									</div>
+								</li>
+
+								<li>
+									<div class="payment-method">
+										<input type="radio" value="cheque" name="payment_method" class="input-radio" id="payment_method_cheque">
+										<label for="payment_method_cheque">Cheque Payment </label>
+									</div>
+									<div class="payment-desc" style="display: block;">
+										<span>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order wont be shipped until the funds have cleared in our account.</span>
+									</div>
+								</li>
+
+								<li>
+									<div class="payment-method">
+										<input type="radio" value="paypal" name="payment_method" class="input-radio" id="payment_method_paypal">
+										<label for="payment_method_paypal">PayPal</label>
+									</div>
+									<div class="payment-desc" style="display: block;">
+										<span>Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account</span>
+									</div>
+								</li>
+							</ul>
 				<section class="block">
 					<div class="shipping">
 						<h3 class="sub-head">SHIPPING ADDRESS</h3>
@@ -554,53 +588,7 @@ $(window).load(function(){
 				</section>
 						
 						
-				<section class="block">
-					<div class="cart-total cart-table order">
-						<div class="cart-head">
-							<h2 class="product">Product</h2>
-							<h2 class="total">Total</h2>
-						</div>
-						<ul>
-							<li><p>Cart Subtotal</p><span>$335</span></li>
-							<li><p>Shipping </p><span>Free Shipping</span></li>
-							<li><p>Order Total</p><span>$335</span></li>
-						</ul>
-					</div>
-				</section>
-				
-				<section class="block">
-					<div class="payment">
-						<ul>
-							<li>
-								<div class="payment-method">
-									<input type="radio" value="bacs" name="payment_method" class="input-radio" id="payment_method_bacs">
-									<label for="payment_method_bacs">Direct Bank Transfer </label>
-								</div>
-								<div class="payment-desc" style="display: block;">							
-									<span>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order wont be shipped until the funds have cleared in our account.</span>
-								</div>
-							</li>
 
-							<li>
-								<div class="payment-method">
-									<input type="radio" value="cheque" name="payment_method" class="input-radio" id="payment_method_cheque">
-									<label for="payment_method_cheque">Cheque Payment </label>
-								</div>
-								<div class="payment-desc" style="display: block;">							
-									<span>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order wont be shipped until the funds have cleared in our account.</span>
-								</div>
-							</li>
-							
-							<li>
-								<div class="payment-method">
-									<input type="radio" value="paypal" name="payment_method" class="input-radio" id="payment_method_paypal">
-									<label for="payment_method_paypal">PayPal</label>
-								</div>
-								<div class="payment-desc" style="display: block;">							
-									<span>Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account</span>						
-								</div>
-							</li>						
-						</ul>
 						<a href="order-recieved.html" title="" class="cart-btn">Place Order</a>
 					</div>
 				</section>
@@ -822,39 +810,7 @@ $(window).load(function(){
 	
 	</div>
 </div>
-<div class="side-panel">
-	<div class="panel-icon"><p>Template Settings Panel</p></div>
 
-
-	<h6>Theme Colors</h6>
-	<div class="colors">
-		<a href="#" class="color1" onclick="setActiveStyleSheet('brown'); return false;"></a>
-		<a href="#" class="color2" onclick="setActiveStyleSheet('bright-red'); return false;"></a>
-		<a href="#" class="color3" onclick="setActiveStyleSheet('yellow'); return false;"></a>
-		<a href="#" class="color4" onclick="setActiveStyleSheet('green'); return false;"></a>
-		<a href="#" class="color5" onclick="setActiveStyleSheet('hunter-green'); return false;"></a>
-		<a href="#" class="color6" onclick="setActiveStyleSheet('light-pink'); return false;"></a>
-		<a href="#" class="color7" onclick="setActiveStyleSheet('orange'); return false;"></a>
-		<a href="#" class="color8" onclick="setActiveStyleSheet('pink'); return false;"></a>
-		<a href="#" class="color9" onclick="setActiveStyleSheet('red'); return false;"></a>
-		<a href="#" class="color10" onclick="setActiveStyleSheet('sea-green'); return false;"></a>
-	</div>
-
-	<h6>Layout Styles</h6>
-	<div class="layout-buttons">
-		<a class="boxed-style" title="">BOXED</a>
-		<a class="full-style" title="">WIDESCREEN</a>
-	</div>
-
-	<h6>Bakground Pictures</h6>
-	<div class="colors">
-		<a href="#" title="" class="pictures pat1"></a>
-		<a href="#" title="" class="pictures pat2"></a>
-		<a href="#" title="" class="pictures pat3"></a>
-		<a href="#" title="" class="pictures pat4"></a>
-	</div>
-	
-</div><!-- Side Panel -->
 
 </body>
 </html>
