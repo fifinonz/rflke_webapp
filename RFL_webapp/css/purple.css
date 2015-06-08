@@ -84,12 +84,12 @@ header.header3 #menu-navigation li ul li:hover,
 .urgent-cause > a:before,
 .transparent-btn:before,
 .charity-event-img > a{
-	background-color:#e53b51;
+	background-color:#6a4d9b;
 }
 .message-box-title > span,
 .countSeconds,
 .welcome-box span{
-	background-color:#b61e32;
+	background-color:#702680;
 }
 .menu ul li ul,
 .message-form,
@@ -103,7 +103,7 @@ header.header3 #menu-navigation li ul li:hover,
 .theme-tabs .nav li.active a:focus,
 .menu ul li ul li ul,
 .box {
-	border-color:#e53b51;
+	border-color:#6a4d9b;
 }
 .sec-title h2 span,
 .meta span i,
@@ -186,7 +186,7 @@ h5.slide3 span,
 .charity-event-detail > h3 a:hover,
 .charity-cause-detail > h3 a:hover,
 .wide-project-detail > h2 a:hover{
-	color:#e53b51;
+	color:#6a4d9b;
 }
 
 .causes-pagi:hover,
