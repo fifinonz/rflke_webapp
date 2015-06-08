@@ -1051,7 +1051,6 @@ pre code {
   }
   .col-md-1,
   .col-md-2,
-  .col-md-3,
   .col-md-4,
   .col-md-5,
   .col-md-6,
@@ -1062,6 +1061,9 @@ pre code {
   .col-md-11 {
     float: left;
   }
+  .col-md-3{
+    float: right;
+  }
   .col-md-1 {
     width: 8.333333333333332%;
   }
@@ -1069,7 +1071,7 @@ pre code {
     width: 16.666666666666664%;
   }
   .col-md-3 {
-    width: 25%;
+    width: 30%;
   }
   .col-md-4 {
     width: 33.33333333333333%;
