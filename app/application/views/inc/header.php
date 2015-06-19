@@ -140,12 +140,12 @@ $(window).load(function(){
 		<a class="header-btn" href="" title="">DONATE</a>
 		<nav class="menu">
 			<ul id="menu-navigation">
-				<li class="active"><a href="<?php echo base_url();?>home/home.php">Home</a>
+				<li class="active"><a href="<?php echo base_url();?>relay/home">Home</a>
 
 				<li><a>About Us</a>
 					<ul>
-						<li><a href="<?php echo base_url();?>about-us/what-is-relay.html" title="">What is Relay For Life?</a></li>
-						<li><a href="<?php echo base_url();?>about-us/about.html" title="">Meet The Team</a></li>
+						<li><a href="<?php echo base_url();?>relay/about_relay" title="">What is Relay For Life?</a></li>
+						<li><a href="<?php echo base_url();?>relayabout" title="">Meet The Team</a></li>
 						
 					</ul><!-- Drop Down -->				
 				</li>
@@ -159,12 +159,12 @@ $(window).load(function(){
                     </ul><!-- Drop Down -->
 				<li><a>Products</a>
 					<ul>
-						<li><a href="<?php echo base_url();?>products/products.html">Shop for Products</a>
+						<li><a href="<?php echo base_url();?>relay/buy_product">Shop for Products</a>
 							</li>
-						<li><a href="<?php echo base_url();?>products/cart.html">View My Cart</a>
+						<li><a href="<?php echo base_url();?>relay/view_cart">View My Cart</a>
 							</li>
 						
-						<li><a href="<?php echo base_url();?>products/checkout.html">Checkout</a>
+						<li><a href="<?php echo base_url();?>relay/checkout">Checkout</a>
 						</li>
 						
 					</ul>
@@ -172,18 +172,18 @@ $(window).load(function(){
 				
 				<li><a>Gallery</a>
 					<ul>
-						<li><a href="<?php echo base_url();?>gallery/image-gallery.html">Image Gallery</a>
+						<li><a href="<?php echo base_url();?>relay/gallery_image">Image Gallery</a>
 						
 						<li><a href="#">Video Gallery</a>
 							
 						</li>
 						</ul><!-- Drop Down -->
 				</li>
-				<li><a href="<?php echo base_url();?>resource-center/resource-center.html">Resource Center</a>
+				<li><a href="<?php echo base_url();?>relay/resource-center">Resource Center</a>
 					
 				</li>
-				<li><a href="<?php echo base_url();?>faqs/faq.html">FAQs</a></li>
-				<li><a href="<?php echo base_url();?>contact-us/contact.html">Contact Us</a></li>
+				<li><a href="<?php echo base_url();?>relay/faqs">FAQs</a></li>
+				<li><a href="<?php echo base_url();?>relay/contact_us">Contact Us</a></li>
 					
 				
 			</ul> 
@@ -198,12 +198,12 @@ $(window).load(function(){
         </div>
         <span><i class="icon-align-justify"></i></span>
         <ul>
-            <li class="active"><a href="<?php echo base_url();?>home/home.php">Home</a>
+            <li class="active"><a href="<?php echo base_url();?>relay/home">Home</a>
 
             <li><a>About Us</a>
                 <ul>
-                    <li><a href="<?php echo base_url();?>about-us/what-is-relay.html" title="">What is Relay For Life?</a></li>
-                    <li><a href="<?php echo base_url();?>about-us/about.html" title="">Meet The Team</a></li>
+                    <li><a href="<?php echo base_url();?>relay/about_relay" title="">What is Relay For Life?</a></li>
+                    <li><a href="<?php echo base_url();?>relayabout" title="">Meet The Team</a></li>
 
                 </ul><!-- Drop Down -->
             </li>
@@ -217,12 +217,12 @@ $(window).load(function(){
                 </ul><!-- Drop Down -->
             <li><a>Products</a>
                 <ul>
-                    <li><a href="<?php echo base_url();?>/products/products.html">Shop for Products</a>
+                    <li><a href="<?php echo base_url();?>relay/buy_product">Shop for Products</a>
                     </li>
-                    <li><a href="<?php echo base_url();?>products/cart.html">View My Cart</a>
+                    <li><a href="<?php echo base_url();?>relay/view_cart">View My Cart</a>
                     </li>
 
-                    <li><a href="<?php echo base_url();?>products/checkout.html">Checkout</a>
+                    <li><a href="<?php echo base_url();?>relay/checkout">Checkout</a>
                     </li>
 
                 </ul>
@@ -230,18 +230,19 @@ $(window).load(function(){
 
             <li><a>Gallery</a>
                 <ul>
-                    <li><a href="<?php echo base_url();?>gallery/image-gallery.html">Image Gallery</a>
+                    <li><a href="<?php echo base_url();?>relay/gallery_image">Image Gallery</a>
 
                     <li><a href="#">Video Gallery</a>
 
                     </li>
                 </ul><!-- Drop Down -->
             </li>
-            <li><a href="<?php echo base_url();?>resource-center/resource-center.html">Resource Center</a>
+            <li><a href="<?php echo base_url();?>relay/resource-center">Resource Center</a>
 
             </li>
-            <li><a href="<?php echo base_url();?>faqs/faq.html">FAQs</a></li>
-            <li><a href="<?php echo base_url();?>contact-us/contact.html">Contact Us</a></li>
+            <li><a href="<?php echo base_url();?>relay/faqs">FAQs</a></li>
+            <li><a href="<?php echo base_url();?>relay/contact_us">Contact Us</a></li>
 
 
+</ul>
     </div><!--Responsive header-->

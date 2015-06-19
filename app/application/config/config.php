@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost/rfl_ke/app/';
+$config['base_url']	= 'http://localhost/relayforlifekenya.org/app/';
 
 /*
 |--------------------------------------------------------------------------
