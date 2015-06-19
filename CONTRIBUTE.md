@@ -6,6 +6,11 @@
              git clone https://github.com/YOURUSERNAME/rflke_webapp.git
     
              git remote add upstream https://github.com/RFL-KE/rflke_webapp.git
+             
+      ## To Sync your fork:
+              git fetch --all
+              git pull upstream master
+              git push origin master
     
 3. Start a new branch for the new feature your working on
 
