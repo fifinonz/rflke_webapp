@@ -7,7 +7,7 @@
     
              git remote add upstream https://github.com/RFL-KE/rflke_webapp.git
              
-      ## To Sync your fork:
+##To Sync your fork:
               git fetch --all
               git pull upstream master
               git push origin master
