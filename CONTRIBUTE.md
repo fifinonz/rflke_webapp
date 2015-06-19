@@ -13,9 +13,9 @@
     
 4. Merge your branch to the master branch of your fork.
 
-            git checkout master
+              git checkout master
     
-            git merge mynewfeature
+              git merge mynewfeature
     
 5. Submit a new pull request.
 6. Our developers will review your changes and either accept them or ask you to edit your work.
