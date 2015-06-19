@@ -69,7 +69,7 @@
                     <div class="col-md-2">
                         <div class="box">
                             <i class="icon-user"></i>
-                            <h4><a href="about.html">Meet The Team</a></h4>
+                            <h4><a href="about.php">Meet The Team</a></h4>
                         </div>
                     </div>
                     <div class="col-md-2">
