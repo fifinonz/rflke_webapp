@@ -1,4 +1,4 @@
-# website
+# WEB APPLICATION
 
 Home of Relay For Life Kenya
 
