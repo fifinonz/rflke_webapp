@@ -3,7 +3,7 @@
     <div id="layerslider" style="width: 100%; height: 530px; margin: 0px auto; ">
 
         <div class="ls-slide" data-ls="transition3d:53; timeshift:-1000;">
-            <img src="" class="ls-bg" alt="Slide background">
+            <img src="<?php echo base_url();?>assets/images/slider1.jpg" class="ls-bg" alt="Slide background">
             <p class="ls-l slide1"	style="top: 330px; left:248px; font-family:roboto; font-size:13px; color:#fefefe;" data-ls="delayin:1000; scalein:4; durationin : 1000;"><br/></p>
         </div><!-- Slide1 -->
 
@@ -69,31 +69,31 @@
                     <div class="col-md-2">
                         <div class="box">
                             <i class="icon-user"></i>
-                            <h4><a href="about.php">Meet The Team</a></h4>
+                            <h4><a href="about">Meet The Team</a></h4>
                         </div>
                     </div>
                     <div class="col-md-2">
                         <div class="box">
                             <i class="icon-question-sign"></i>
-                            <h4><a href="what-is-relay.html">What is Relay for Life?</a></h4>
+                            <h4><a href="about_relay">What is Relay for Life?</a></h4>
                         </div>
                     </div>
                     <div class="col-md-2">
                         <div class="box">
                             <i class="icon-microphone"></i>
-                            <h4><a href="shujaa.html">Meet The Team</a></h4>
+                            <h4><a href="shujaa">Meet The Team</a></h4>
                         </div>
                     </div>
                     <div class="col-md-2">
                         <div class="box">
                             <i class="icon-shopping-cart"></i>
-                            <h4><a href="products.html">Buy our Merchandise</a></h4>
+                            <h4><a href="buy_product">Buy our Merchandise</a></h4>
                         </div>
                     </div>
                     <div class="col-md-2">
                         <div class="box">
                             <i class="icon-group"></i>
-                            <h4><a href="register.html">Get Involved</a></h4>
+                            <h4><a href="#">Get Involved</a></h4>
                         </div>
                     </div>
                     <div class="col-md-2">
@@ -128,7 +128,7 @@
                                         </div>
                                         <h4>Katheke</h4>
                                         <p>Cancer Survivor. Cancer Warrior</p>
-                                        <a href="shujaa.html" title="">Read More</a>
+                                        <a href="shujaa" title="">Read More</a>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
@@ -150,7 +150,7 @@
                                         </div>
                                         <h4>Sally</h4>
                                         <p>Cancer Survivor. Cancer Warrior</p>
-                                        <a href="shujaa.html" title="">Read More</a>
+                                        <a href="shujaa" title="">Read More</a>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
@@ -161,7 +161,7 @@
                                         </div>
                                         <h4>George</h4>
                                         <p>Cancer Survivor. Cancer Warrior</p>
-                                        <a href="shujaa.html" title="">Read More</a>
+                                        <a href="shujaa" title="">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -176,7 +176,7 @@
                                         </div>
                                         <h4>Faith</h4>
                                         <p>Cancer Survivor. Cancer Warrior</p>
-                                        <a href="shujaa.html" title="">Read More</a>
+                                        <a href="shujaal" title="">Read More</a>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
@@ -187,7 +187,7 @@
                                         </div>
                                         <h4>Dan</h4>
                                         <p>Cancer Survivor. Cancer Warrior</p>
-                                        <a href="shujaa.html" title="">Read More</a>
+                                        <a href="shujaal" title="">Read More</a>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
@@ -198,7 +198,7 @@
                                         </div>
                                         <h4>Jane</h4>
                                         <p>Cancer Survivor. Cancer Warrior</p>
-                                        <a href="shujaa.html" title="">Read More</a>
+                                        <a href="shujaa" title="">Read More</a>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
@@ -209,7 +209,7 @@
                                         </div>
                                         <h4>Kimani</h4>
                                         <p>Cancer Survivor. Cancer Warrior.</p>
-                                        <a href="shujaa.html" title="">Read More</a>
+                                        <a href="shujaa" title="">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -236,7 +236,7 @@
                                 <div class="item-detail">
                                     <h3>Relay For Life T-shirt</h3>
                                     <span><span>Khs.</span>1000</span>
-                                    <a href="checkout.html" title="">ADD TO CART</a>
+                                    <a href="view_cart" title="">ADD TO CART</a>
                                 </div>
                             </div>
                         </li>
@@ -246,7 +246,7 @@
                                 <div class="item-detail">
                                     <h3>Luminaria Bag & Candle</h3>
                                     <span><span>Ksh.</span>250</span>
-                                    <a href="checkout.html" title="">ADD TO CART</a>
+                                    <a href="view_cart" title="">ADD TO CART</a>
                                 </div>
                             </div>
                         </li>
@@ -256,7 +256,7 @@
                                 <div class="item-detail">
                                     <h3>Relay For Life Wristband</h3>
                                     <span><span>Ksh.</span>100</span>
-                                    <a href="checkout.html" title="">ADD TO CART</a>
+                                    <a href="view_cart" title="">ADD TO CART</a>
                                 </div>
                             </div>
                         </li>
@@ -272,7 +272,7 @@
                     <!--<img src="../images/"" alt="" />-->
                     <h5>Suport Relay for Life Kenya</h5>
                     <p><span>As little as Ksh. 100</span> a month will help us win the fight against cancer.</p>
-                    <a href="cart.html" title="">Donate Now</a>
+                    <a href="#" title="">Donate Now</a>
                 </div>
             </div>
             <div class="col-md-3">

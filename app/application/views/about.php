@@ -17,7 +17,7 @@
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="staff-member">
-                                    <img src="images/"staff1.jpg" alt="" />
+                                    <img src="<?php echo base_url();?>assets/images/"staff1.jpg" alt="" />
                                     <div class="member-intro">
                                         <h3>Jarim Odour</h3>
                                         <span>RFL_KE 2015 Chair</span>
