@@ -89,4 +89,11 @@ class Relay extends CI_Controller {
 
         $this->_load_view();
     }
+
+    public function shujaa(){
+        $this->data['title'] 	= "Mashujaa | Cancer Warriors";
+        $this->data['content'] 	= "shujaa.html";
+
+        $this->_load_view();
+    }
 }
