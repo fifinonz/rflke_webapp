@@ -135,28 +135,36 @@ $(window).load(function(){
 <header class="header2 sticky">
 	<div class="container">
 		<div class="logo">
-			<a href="#" title=""><img src="images/logo.png"alt="Logo"><h1><i>Relay For Life</i> Kenya</h1></a>
+			<a href="#" title=""><img src="<?php echo base_url();?>assets/images/logo.png"alt="Logo"><h1><i>Relay For Life</i> Kenya</h1></a>
 		</div><!-- Logo -->
-		<a class="header-btn" href="" title="">GET IN TOUCH</a>
+		<a class="header-btn" href="" title="">DONATE</a>
 		<nav class="menu">
 			<ul id="menu-navigation">
-				<li class="active"><a href="index.html">Home</a>
+				<li class="active"><a href="<?php echo base_url();?>relay/home">Home</a>
 
 				<li><a>About Us</a>
 					<ul>
-						<li><a href="what-is-relay.html" title="">What is Relay For Life?</a></li>
-						<li><a href="about.html" title="">Meet The Team</a></li>
+						<li><a href="<?php echo base_url();?>relay/about_relay" title="">What is Relay For Life?</a></li>
+						<li><a href="<?php echo base_url();?>relay/about" title="">Meet The Team</a></li>
 						
 					</ul><!-- Drop Down -->				
 				</li>
+                <li><a>Get Involved</a>
+                    <ul>
+                        <li><a href="#">Participate in Relay 2015</a>
+                        <li><a href="#">Sign Up As a Volunteer</a>
+                        <li><a href="#">Support Relay with A Donation</a>
+
+                        </li>
+                    </ul><!-- Drop Down -->
 				<li><a>Products</a>
 					<ul>
-						<li><a href="products.html">Shop for Products</a>
+						<li><a href="<?php echo base_url();?>relay/buy_product">Shop for Products</a>
 							</li>
-						<li><a href="cart.html">View My Cart</a>
+						<li><a href="<?php echo base_url();?>relay/view_cart">View My Cart</a>
 							</li>
 						
-						<li><a href="checkout.html">Checkout</a>
+						<li><a href="<?php echo base_url();?>relay/checkout">Checkout</a>
 						</li>
 						
 					</ul>
@@ -164,18 +172,37 @@ $(window).load(function(){
 				
 				<li><a>Gallery</a>
 					<ul>
-						<li><a href="image-gallery.html">Image Gallery</a>
+						<li><a href="<?php echo base_url();?>relay/gallery_image">Image Gallery</a>
+
 						
-						<li><a href="video-gallery.html">Video Gallery</a>
+						<li><a href="#">Video Gallery</a>
 							
 						</li>
 						</ul><!-- Drop Down -->
 				</li>
-				<li><a href="resource-center.html">Resource Center</a>
+				<li><a href="#">Resource Center</a>
+                    <ul class="mega-menu2">
+                        <li><a href="#" title=""><strong>Cancer Types</strong></a></li>
+                        <li><a href="#" title=""><strong>Cancers in General</strong></a></li>
+                        <li><a href="#" title=""><strong>Causes of Cancer</strong></a></li>
+                        <li><a href="#" title="">Breast Cancer</a></li>
+                        <li><a href="#" title="">Symptoms</a></li>
+                        <li><a href="#" title="">Smoking</a></li>
+                        <li><a href="#" title="">Cervical Cancer</a></li>
+                        <li><a href="#" title="">Screening</a></li>
+                        <li><a href="#" title="">Alcohol</a></li>
+                        <li><a href="#" title="">Lung Cancer</a></li>
+                        <li><a href="#" title="">Tests</a></li>
+                        <li><a href="#" title="">Diet</a></li>
+                        <li><a href="#" title="">Prostate Cancer</a></li>
+                        <li><a href="#" title="">Treatment</a></li>
+                        <li><a href="#" title="">Sun/UV</a></li>
+                    </ul><!-- Drop Down -->
+                </li>
 					
 				</li>
-				<li><a href="faq.html">FAQs</a></li>
-				<li><a href="contact.html">Contact Us</a></li>
+				<li><a href="<?php echo base_url();?>relay/faqs">FAQs</a></li>
+				<li><a href="<?php echo base_url();?>relay/contact_us">Contact Us</a></li>
 					
 				
 			</ul> 
@@ -184,3 +211,57 @@ $(window).load(function(){
 
 	</div>		
 </header>
+    <div class="responsive-header">
+        <div class="responsive-logo">
+            <a href="#" title=""><img style="width: 40px;" src="images/logo.png" alt="Logo" /><h1>Relay For Life</h1></a>
+        </div>
+        <span><i class="icon-align-justify"></i></span>
+        <ul>
+            <li class="active"><a href="<?php echo base_url();?>relay/home">Home</a>
+
+            <li><a>About Us</a>
+                <ul>
+                    <li><a href="<?php echo base_url();?>relay/about_relay" title="">What is Relay For Life?</a></li>
+                    <li><a href="<?php echo base_url();?>relay/about" title="">Meet The Team</a></li>
+
+                </ul><!-- Drop Down -->
+            </li>
+            <li><a>Get Involved</a>
+                <ul>
+                    <li><a href="#">Participate in Relay 2015</a>
+                    <li><a href="#">Sign Up As a Volunteer</a>
+                    <li><a href="#">Support Relay with A Donation</a>
+
+                    </li>
+                </ul><!-- Drop Down -->
+            <li><a>Products</a>
+                <ul>
+                    <li><a href="<?php echo base_url();?>relay/buy_product">Shop for Products</a>
+                    </li>
+                    <li><a href="<?php echo base_url();?>relay/view_cart">View My Cart</a>
+                    </li>
+
+                    <li><a href="<?php echo base_url();?>relay/checkout">Checkout</a>
+                    </li>
+
+                </ul>
+            </li>
+
+            <li><a>Gallery</a>
+                <ul>
+                    <li><a href="<?php echo base_url();?>relay/gallery_image">Image Gallery</a>
+
+                    <li><a href="#">Video Gallery</a>
+
+                    </li>
+                </ul><!-- Drop Down -->
+            </li>
+            <li><a href="<?php echo base_url();?>relay/resource-center">Resource Center</a>
+
+            </li>
+            <li><a href="<?php echo base_url();?>relay/faqs">FAQs</a></li>
+            <li><a href="<?php echo base_url();?>relay/contact_us">Contact Us</a></li>
+
+
+</ul>
+    </div><!--Responsive header-->

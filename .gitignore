@@ -59,9 +59,10 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 
-### HTML ###
+### DEV ###
 images/
 underconstruction/
+user_guide/
 
 ### CodeIgniter ###
 */config/development
