@@ -18,7 +18,19 @@ class Relay extends CI_Controller {
 		$this->home();
 	}
 
+    public function log_in (){
+        $this->data['title'] 	= "Log In";
+        $this->data['content'] 	= "login";
 
+        $this->_load_view();
+    }
+
+    public function sign_up(){
+        $this->data['title'] 	= "Sign Up";
+        $this->data['content'] 	= "sign_up";
+
+        $this->_load_view();
+    }
 	public function home(){
 		$this->data['title'] 	= "Home Relay";
 		$this->data['content'] 	= "home";

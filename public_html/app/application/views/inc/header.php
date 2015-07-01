@@ -124,10 +124,10 @@ $(window).load(function(){
 				<i class="icon-envelope"></i>
 				info@relayforlifekenya.org
 			</li>
-		</ul> 
+		</ul>
 		<div class="search-box">
-			<input type="submit" value="" class="submit-button">
-			<input type="text" value="Search" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" class="search-input">
+            <a class="btn" href="<?php echo base_url();?>relay/log_in" title="">Log In</a>
+            <a class="btn" href="<?php echo base_url();?>relay/sign_up" title="">Sign Up</a>
 		</div>
 	</div>
 </div>
