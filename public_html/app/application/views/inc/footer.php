@@ -70,8 +70,8 @@
 
 		<ul>
 			<li><a href="<?php echo base_url();?>relay/home" title="">HOME</a></li>
-			<li><a href="<?php echo base_url();?>relay/" title="">ABOUT</a></li>
-			<li><a href="<?php echo base_url();?>relay/" title="">SHOP</a></li>
+			<li><a href="<?php echo base_url();?>relay/about" title="">ABOUT</a></li>
+			<li><a href="<?php echo base_url();?>relay/buy_product" title="">SHOP</a></li>
 			<li><a href="#" title="">RESOURCE CENTER</a></li>
 			<li><a href="<?php echo base_url();?>relay/gallery_image" title="">GALLERY</a></li>
 			<li><a href="<?php echo base_url();?>relay/contact-us" title="">CONTACT</a></li>
