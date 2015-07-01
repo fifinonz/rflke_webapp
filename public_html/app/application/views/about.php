@@ -138,8 +138,7 @@
                             </div>
                             <div class="col-md-5">
                                 <div class="about-charity-video">
-                                    <img src="images/"about-video.jpg" alt="" />
-                                    <a class="html5lightbox" href="http://player.vimeo.com/video/31943945?color=ffffff" title="This Is a Demo Video"><span><i class="icon-play"></i></span></a>
+                                    <iframe width="360" height="200" src="//www.youtube.com/embed/mL-z5h_mJBE" frameborder="0" allowfullscreen=""></iframe>
                                 </div>
                             </div> <!-- Video -->
                         </div>
