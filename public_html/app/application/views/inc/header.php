@@ -151,7 +151,7 @@ $(window).load(function(){
 				</li>
                 <li><a>Get Involved</a>
                     <ul>
-                        <li><a href="#">Participate in Relay 2015</a>
+                        <li><a href="<?php echo base_url();?>relay/teams_2015">Participate in Relay 2015</a>
                         <li><a href="#">Sign Up As a Volunteer</a>
                         <li><a href="#">Make A Donation</a>
 
@@ -228,7 +228,7 @@ $(window).load(function(){
             </li>
             <li><a>Get Involved</a>
                 <ul>
-                    <li><a href="#">Participate in Relay 2015</a>
+                    <li><a href="<?php echo base_url();?>relay/teams_2015">Participate in Relay 2015</a>
                     <li><a href="#">Sign Up As a Volunteer</a>
                     <li><a href="#">Support Relay with A Donation</a>
 
