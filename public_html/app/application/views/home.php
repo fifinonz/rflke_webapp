@@ -272,8 +272,8 @@
                 <div class="donate-message">
                     <!--<img src="../images/"" alt="" />-->
                     <h5>Suport Relay for Life Kenya</h5>
-                    <p><span>As little as Ksh. 100</span> a month will help us win the fight against cancer.</p>
-                    <a href="<?php echo base_url();?>relay/donate" title="">Donate Now</a>
+                    <p style="font-size: 16px;"><span>As little as Ksh. 100</span> a month will help us win the fight against cancer.</p>
+                    <br/><a href="<?php echo base_url();?>relay/donate" title="">Donate Now</a>
                 </div>
             </div>
             <div class="col-md-3">
