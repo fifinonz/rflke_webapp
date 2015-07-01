@@ -68,6 +68,13 @@ class Relay extends CI_Controller {
         $this->_load_view();
     }
 
+    public function donate(){
+        $this->data['title'] 	= "Make a Donation";
+        $this->data['content'] 	= "donate.html";
+
+        $this->_load_view();
+    }
+
     public function buy_product(){
         $this->data['title'] 	= "Buy Products";
         $this->data['content'] 	= "products.html";

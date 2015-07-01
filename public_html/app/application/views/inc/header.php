@@ -137,7 +137,7 @@ $(window).load(function(){
 		<div class="logo">
 			<a href="#" title=""><img src="<?php echo base_url();?>assets/images/logo.png"alt="Logo"><h1><i>Relay For Life</i> Kenya</h1></a>
 		</div><!-- Logo -->
-		<a class="header-btn" href="" title="">DONATE</a>
+		<a class="header-btn" href="<?php echo base_url();?>relay/donate" title="">DONATE</a>
 		<nav class="menu">
 			<ul id="menu-navigation">
 				<li class="active"><a href="<?php echo base_url();?>relay/home">Home</a>
@@ -153,7 +153,7 @@ $(window).load(function(){
                     <ul>
                         <li><a href="<?php echo base_url();?>relay/teams_2015">Participate in Relay 2015</a>
                         <li><a href="#">Sign Up As a Volunteer</a>
-                        <li><a href="#">Make A Donation</a>
+                        <li><a href="<?php echo base_url();?>relay/donate">Make A Donation</a>
 
                         </li>
                     </ul><!-- Drop Down -->
@@ -230,7 +230,7 @@ $(window).load(function(){
                 <ul>
                     <li><a href="<?php echo base_url();?>relay/teams_2015">Participate in Relay 2015</a>
                     <li><a href="#">Sign Up As a Volunteer</a>
-                    <li><a href="#">Support Relay with A Donation</a>
+                    <li><a href="<?php echo base_url();?>relay/donate">Support Relay with A Donation</a>
 
                     </li>
                 </ul><!-- Drop Down -->

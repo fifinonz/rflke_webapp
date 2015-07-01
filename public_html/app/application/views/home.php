@@ -78,11 +78,6 @@
                             <h4><a href="about_relay">What is Relay for Life?</a></h4>
                         </div>
                     </div>
-                    <div class="col-md-2">
-                        <div class="box">
-                            <i class="icon-microphone"></i>
-                            <h4><a href="shujaa">Meet The Team</a></h4>
-                        </div>
                     </div>
                     <div class="col-md-2">
                         <div class="box">
@@ -93,8 +88,14 @@
                     <div class="col-md-2">
                         <div class="box">
                             <i class="icon-group"></i>
-                            <h4><a href="#">Get Involved</a></h4>
+                            <h4><a href="<?php echo base_url();?>relay/teams_2015">Join a Team</a></h4>
                         </div>
+                    </div>
+                <div class="col-md-2">
+                    <div class="box">
+                        <i class="icon-hand-up"></i>
+                        <h4>Volunteer</h4>
+                    </div>
                     </div>
                     <div class="col-md-2">
                         <div class="box">
@@ -272,7 +273,7 @@
                     <!--<img src="../images/"" alt="" />-->
                     <h5>Suport Relay for Life Kenya</h5>
                     <p><span>As little as Ksh. 100</span> a month will help us win the fight against cancer.</p>
-                    <a href="#" title="">Donate Now</a>
+                    <a href="<?php echo base_url();?>relay/donate" title="">Donate Now</a>
                 </div>
             </div>
             <div class="col-md-3">
