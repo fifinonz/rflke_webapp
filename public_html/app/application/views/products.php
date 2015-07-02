@@ -23,7 +23,7 @@
                                 <i class="icon-star"></i>
                                 <i class="icon-star"></i>
                                 <i class="icon-star"></i>
-                                <i class="icon-star-empty"></i>
+                                <i class="icon-star"></i>
                             </div>
                             <div class="product-price">
 
@@ -38,8 +38,8 @@
                                 <i class="icon-star"></i>
                                 <i class="icon-star"></i>
                                 <i class="icon-star"></i>
-                                <i class="icon-star-empty"></i>
-                                <i class="icon-star-empty"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
                             </div>
                             <div class="product-price">
                                 <p>Ksh.50</p>
@@ -54,7 +54,7 @@
                                 <i class="icon-star"></i>
                                 <i class="icon-star"></i>
                                 <i class="icon-star"></i>
-                                <i class="icon-star-empty"></i>
+                                <i class="icon-star"></i>
                             </div>
                             <div class="product-price">
                                 <p>Ksh.1000</p>
@@ -82,9 +82,9 @@
                             <div class="ratings">
                                 <i class="icon-star"></i>
                                 <i class="icon-star"></i>
-                                <i class="icon-star-empty"></i>
-                                <i class="icon-star-empty"></i>
-                                <i class="icon-star-empty"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
                             </div>
                             <div class="product-price">
                                 <p>Ksh.1000</p>
@@ -96,10 +96,10 @@
                             <h4>Participant T-shirt - Orange</h4>
                             <div class="ratings">
                                 <i class="icon-star"></i>
-                                <i class="icon-star-empty"></i>
-                                <i class="icon-star-empty"></i>
-                                <i class="icon-star-empty"></i>
-                                <i class="icon-star-empty"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
+                                <i class="icon-star"></i>
                             </div>
                             <div class="product-price">
                                 <p>Ksh.1000</p>
@@ -113,7 +113,7 @@
                                 <i class="icon-star"></i>
                                 <i class="icon-star"></i>
                                 <i class="icon-star"></i>
-                                <i class="icon-star-empty"></i>
+                                <i class="icon-star"></i>
                             </div>
                             <h4>Participant T-shirt - Yellow</h4>
                             <div class="product-price">
@@ -144,7 +144,7 @@
                                 <i class="icon-star"></i>
                                 <i class="icon-star"></i>
                                 <i class="icon-star"></i>
-                                <i class="icon-star-empty"></i>
+                                <i class="icon-star"></i>
                             </div>
                             <div class="product-price">
                                 <p>Ksh.1000</p>
@@ -159,7 +159,7 @@
                                 <i class="icon-star"></i>
                                 <i class="icon-star"></i>
                                 <i class="icon-star"></i>
-                                <i class="icon-star-empty"></i>
+                                <i class="icon-star"></i>
                             </div>
                             <div class="product-price">
                                 <p>Ksh.1000</p>
@@ -174,7 +174,7 @@
                                 <i class="icon-star"></i>
                                 <i class="icon-star"></i>
                                 <i class="icon-star"></i>
-                                <i class="icon-star-empty"></i>
+                                <i class="icon-star"></i>
                             </div>
                             <div class="product-price">
                                 <p>Ksh.100</p>
@@ -189,7 +189,7 @@
                                 <i class="icon-star"></i>
                                 <i class="icon-star"></i>
                                 <i class="icon-star"></i>
-                                <i class="icon-star-empty"></i>
+                                <i class="icon-star"></i>
                             </div>
                             <div class="product-price">
                                 <p>Ksh.100</p>
