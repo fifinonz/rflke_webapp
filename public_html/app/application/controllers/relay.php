@@ -3,16 +3,24 @@
 class Relay extends CI_Controller {
 	private $data;
 
+/*    Required Libraries    */
+
 	function __construct(){
 		parent::__construct();
 		$this->load->library('Cphpmailer');
-
+        $this->load->database();
+        $this->load->library('cart');
+        $this->load->library('session');
+        $this->load->library('encrypt');
+        $this->load->helper('form');
 		$this->load->model('app_model');
 	}
 
 	public function _load_view(){
 		$this->load->view('inc/tmp',$this->data);
 	}
+
+    /*  Page Controllers    */
 
 	public function index(){
 		$this->home();
@@ -77,7 +85,7 @@ class Relay extends CI_Controller {
 
     public function buy_product(){
         $this->data['title'] 	= "Buy Products";
-        $this->data['content'] 	= "products.html";
+        $this->data['content'] 	= "products.php";
 
         $this->_load_view();
     }
