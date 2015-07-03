@@ -25,7 +25,7 @@
 <script src="http://images.webinane.com/jquery.1.9.1.js" type="text/javascript"></script>
 <script src='<?php echo base_url();?>assets/js/testimonials.js'></script>
 <script src='<?php echo base_url();?>assets/js/styleswitcher.js'></script>
-
+<script src="<?php echo base_url(); ?>assets/js/cart.js" type="text/javascript" ></script>
 <script src='<?php echo base_url();?>assets/js/script.js'></script>
 <script src='http://images.webinane.com/bootstrap.js'></script>
 <script src="<?php echo base_url();?>assets/js/html5lightbox.js"></script>
