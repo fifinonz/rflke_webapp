@@ -224,46 +224,46 @@
 
 <section class="block">
     <div class="container">
-        <div class="row">
+        <div id="redirect" class="row">
             <div class="col-md-6">
                 <div class="sec-heading">
                     <h2><strong>Buy Relay For Life Kenya Merchandise</strong> Online</h2>
                 </div>
                 <div class="shop">
+
                     <ul class="slides">
+                        <?php foreach($products as $p): ?>
                         <li>
                             <div class="item">
-                                <img src="../images/featured-product_participant_tshirt6.jpg" alt="" />
+                                <img src="<?php echo base_url();?>assets/images/coats.jpg" alt="rfl_products" />
                                 <div class="item-detail">
-                                    <h3>Relay For Life T-shirt</h3>
-                                    <span><span>Khs.</span>1000</span>
-                                    <a href="view_cart" title="">ADD TO CART</a>
+                                    <h3><?php echo $p['product_name']; ?></h3>
+                                    <span><span>Ksh. </span><?php echo $p['unit_price']; ?></span>
+                                    <?php echo form_open('relay/add_cart_item_home'); ?>
+                                    <br>
+                                    <br/>
+                                    <fieldset>
+                                        <label style="color: #FFFFFF">Quantity</label>
+                                        <?php echo form_input ('quantity', '', 'maxlength="3"'); ?>
+                                        <br/>
+                                        <?php echo form_hidden('productID', $p['productID']); ?>
+                                    </fieldset>
+                                    <?php echo form_close(); ?>
+                                    <?php echo form_submit('add', 'Add to Cart'); ?>
+
+                                    <a href="view_cart" title="">View Cart</a>
+
                                 </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item">
-                                <img src="../images/featured-product_luminaria_bag.jpg" alt="" />
-                                <div class="item-detail">
-                                    <h3>Luminaria Bag & Candle</h3>
-                                    <span><span>Ksh.</span>250</span>
-                                    <a href="view_cart" title="">ADD TO CART</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item">
-                                <img src="../images/featured-product_wristbands1.jpg" alt="" />
-                                <div class="item-detail">
-                                    <h3>Relay For Life Wristband</h3>
-                                    <span><span>Ksh.</span>100</span>
-                                    <a href="view_cart" title="">ADD TO CART</a>
-                                </div>
-                            </div>
-                        </li>
+                        </li><!--Product-->
+                        <?php endforeach;?>
                     </ul>
                 </div>
             </div>
+
+
+
+
+
             <div class="col-md-3">
                 <div class="sec-heading">
                     <h2><strong>Make a</strong> Donation</h2>

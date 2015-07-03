@@ -58,8 +58,8 @@
                         <td></td>
                     </tr>
 
-
-                <p><?php echo form_submit('', 'Update your Cart','class="cart-btn pull-right"'); echo anchor('relay/empty_cart', 'Empty Cart', 'class="cart-btn pull-right"');?></p>
+                <br/>
+                <p><?php echo anchor('relay/empty_cart', 'Empty Cart', 'class="cart-btn pull-right"'); echo form_submit('', 'Update your Cart','class="cart-btn pull-right"');echo anchor('relay/buy_product', 'Back to Products', 'class="cart-btn pull-right"');?></p>
 
                <section>
                    <br/>
@@ -76,7 +76,6 @@
                         </ul>
                     </div>
                     <section>
-                    <a class="cart-btn pull-right" href="buy_product" title="">Back to Products</a>
                     <a class="cart-btn pull-right" href="checkout" title="">Proceed To Checkout</a>
                         </section>
                     <?php

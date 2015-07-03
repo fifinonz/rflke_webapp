@@ -20,7 +20,7 @@
                             <?php foreach($products as $p): ?>
                         <li class="col-md-4">
                             <img src="<?php echo base_url();?>assets/images/<?php echo $p['image']; ?>" alt="rfl_products" />
-                            <h4><?php echo $p['product_name']; ?></h4>
+                            <h4 style="color:#6a4d9b " ><?php echo $p['product_name']; ?></h4>
                             <p><?php echo $p['product_desc']; ?></p>
                             <div class="ratings">
                                 <i class="icon-star"></i>
@@ -41,6 +41,7 @@
                                     <br/>
                                     <?php echo form_hidden('productID', $p['productID']); ?>
                                     <?php echo form_submit('add', 'Add to Cart'); ?>
+                                    <a style="color:#6a4d9b " href="view_cart" title="">View Cart</a>
                                 </fieldset>
                                 <?php echo form_close(); ?>
                             </div>

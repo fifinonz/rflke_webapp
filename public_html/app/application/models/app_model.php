@@ -10,6 +10,9 @@ class App_model extends CI_Model {
     // Add an item to the cart
     function validate_add_cart_item(){
 
+//        TO DO:
+//        1. CHECK IF ITEM IN CART & UPDATE, ELSE INSERT
+
         $id = $this->input->post('productID'); // Assign posted product_id to $id
         $cty = $this->input->post('quantity'); // Assign posted quantity to $cty
 
@@ -22,6 +25,7 @@ class App_model extends CI_Model {
             // We have a match!
             foreach ($query->result() as $row)
             {
+
                 // Create an array with product information
                 $data = array(
                     'id'      => $id,

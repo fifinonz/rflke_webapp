@@ -40,7 +40,8 @@ class Relay extends CI_Controller {
         $this->_load_view();
     }
 	public function home(){
-		$this->data['title'] 	= "Home Relay";
+        $this->data['products'] = $this->app_model->retrieve_products(); // retrieve an array with all products
+        $this->data['title'] 	= "Home Relay";
 		$this->data['content'] 	= "home";
 
 		$this->_load_view();
@@ -106,9 +107,23 @@ class Relay extends CI_Controller {
 
     }
 
+    function add_cart_item_home(){
+
+        if($this->app_model->validate_add_cart_item() == TRUE){
+
+            // Check if user has javascript enabled
+            if($this->input->post('ajax') != '1'){
+                redirect('relay/view_cart','refresh'); // If javascript is not enabled, reload the page with new data
+            }else{
+                echo 'true'; // If javascript is enabled, return true, so the cart gets updated
+            }
+        }
+
+    }
+
     function update_cart(){
         $this->app_model->validate_update_cart();
-        redirect('relay/view_cart');
+        redirect('relay/view_cart/#');
     }
 
     public function view_cart(){
