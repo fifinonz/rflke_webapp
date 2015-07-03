@@ -1,5 +1,5 @@
 <div class="top-image">
-    <img src="images/"single-page-top2.jpg" alt="" />
+    <img src="<?php echo base_url();?>assets/images/single-page-top2.jpg" alt="" />
 </div><!-- Page Top Image -->
 
 <section class="inner-page">
@@ -127,19 +127,17 @@
                     <div class="container">
                         <div class="row">
                             <div class="about-charity-desc col-md-7">
-                                <h2>What We Think About Relay For Life Kenya</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet massa at dui aliquet scelerie. Fiusce ai neque arcu, tempor congue dolor. Phasellus diam enim, vulputate sed ornare eu, fringilla vel sapen. Fusce metus ligula, adipis cing vitae egestas volutpat, laoreet eget augue.</p>
+                                <h2><strong>Why WE Relay</strong></h2>
+                                <p style="font-size: 16px;">Relay for Life seeks to give us insight in to the life of a cancer patient and their primary support system, their caregivers. Cancer does not sleep. The pain and other side effects of chemotherapy treatment is a recipe for sleepless nights. We show our support and stand in solidarity with  all the survivors and their dedicated caregivers by staying on the track for 24hrs.</p>
 
                                 <ul>
-                                    <li><h6>02</h6><span>Years Running</span></li>
-                                    <li><h6>2M</h6><span>Funds Raised</span></li>
+                                    <li><h6>02</h6><span>Years<br/> Running</span></li>
+                                    <li><h6>2M</h6><span>Funds<br/>Raised</span></li>
                                     <li><h6>50</h6><span>Active<br/> Volunteers</span></li>
                                 </ul>
                             </div>
                             <div class="col-md-5">
                                 <div class="about-charity-video">
-                                    <img src="images/"about-video.jpg" alt="" />
-                                    <a class="html5lightbox" href="http://player.vimeo.com/video/31943945?color=ffffff" title="This Is a Demo Video"><span><i class="icon-play"></i></span></a>
                                 </div>
                             </div> <!-- Video -->
                         </div>

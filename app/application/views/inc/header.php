@@ -25,7 +25,7 @@
 <script src="http://images.webinane.com/jquery.1.9.1.js" type="text/javascript"></script>
 <script src='<?php echo base_url();?>assets/js/testimonials.js'></script>
 <script src='<?php echo base_url();?>assets/js/styleswitcher.js'></script>
-
+<script src="<?php echo base_url(); ?>assets/js/cart.js" type="text/javascript" ></script>
 <script src='<?php echo base_url();?>assets/js/script.js'></script>
 <script src='http://images.webinane.com/bootstrap.js'></script>
 <script src="<?php echo base_url();?>assets/js/html5lightbox.js"></script>
@@ -124,10 +124,10 @@ $(window).load(function(){
 				<i class="icon-envelope"></i>
 				info@relayforlifekenya.org
 			</li>
-		</ul> 
+		</ul>
 		<div class="search-box">
-			<input type="submit" value="" class="submit-button">
-			<input type="text" value="Search" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" class="search-input">
+            <a class="btn" href="<?php echo base_url();?>relay/log_in" title="">Log In</a>
+            <a class="btn" href="<?php echo base_url();?>relay/sign_up" title="">Sign Up</a>
 		</div>
 	</div>
 </div>
@@ -137,7 +137,7 @@ $(window).load(function(){
 		<div class="logo">
 			<a href="#" title=""><img src="<?php echo base_url();?>assets/images/logo.png"alt="Logo"><h1><i>Relay For Life</i> Kenya</h1></a>
 		</div><!-- Logo -->
-		<a class="header-btn" href="" title="">DONATE</a>
+		<a class="header-btn" href="<?php echo base_url();?>relay/donate" title="">DONATE</a>
 		<nav class="menu">
 			<ul id="menu-navigation">
 				<li class="active"><a href="<?php echo base_url();?>relay/home">Home</a>
@@ -151,9 +151,9 @@ $(window).load(function(){
 				</li>
                 <li><a>Get Involved</a>
                     <ul>
-                        <li><a href="#">Participate in Relay 2015</a>
+                        <li><a href="<?php echo base_url();?>relay/teams_2015">Participate in Relay 2015</a>
                         <li><a href="#">Sign Up As a Volunteer</a>
-                        <li><a href="#">Support Relay with A Donation</a>
+                        <li><a href="<?php echo base_url();?>relay/donate">Make A Donation</a>
 
                         </li>
                     </ul><!-- Drop Down -->
@@ -228,9 +228,9 @@ $(window).load(function(){
             </li>
             <li><a>Get Involved</a>
                 <ul>
-                    <li><a href="#">Participate in Relay 2015</a>
+                    <li><a href="<?php echo base_url();?>relay/teams_2015">Participate in Relay 2015</a>
                     <li><a href="#">Sign Up As a Volunteer</a>
-                    <li><a href="#">Support Relay with A Donation</a>
+                    <li><a href="<?php echo base_url();?>relay/donate">Support Relay with A Donation</a>
 
                     </li>
                 </ul><!-- Drop Down -->
