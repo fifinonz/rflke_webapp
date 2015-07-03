@@ -6,7 +6,7 @@
 
 $(document).ready(function() {
     /*place jQuery actions here*/
-    var link = "http://localhost/relayforlifekenya.org/public_html/app/"; // Url to application
+    var link = "http://localhost/relayforlifekenya.org/app/"; // Url to application
 
     $("ul.products form").submit(function() {
         // Get the product ID and the quantity
