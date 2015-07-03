@@ -17,46 +17,67 @@
                 ?>
 
                 <?php echo form_open('relay/update_cart'); ?>
-                <table width="100%" cellpadding="0" cellspacing="0">
+                <table style="background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(232,234,235)), color-stop(0.5, rgb(237,237,238)) )" width="100%" cellpadding="5" cellspacing="0">
+                    <div class="cart-table">
                     <thead>
-                    <tr>
-                        <td>Quantity</td>
-                        <td>Item Description</td>
-                        <td>Item Price</td>
-                        <td>Sub-Total</td>
+                    <tr style="background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(232,234,235)), color-stop(0.5, rgb(237,237,238)) )">
+                        <div class="cart-head">
+
+                        <td><h4 class="product">Product</h4></td>
+                        <td><h4 class="price">Price</h4></td>
+                        <td><h4 class="quanity">Quantity</h4></td>
+                        <td><h4 class="total">Sub-Total</h4></td>
+                            </div>
                     </tr>
                     </thead>
+                    </div>
                     <tbody>
                     <?php $i = 1; // Keep track of the amount of loops ?>
                     <?php foreach($this->cart->contents() as $items):  // break the cart contents into parts ?>
 
                         <?php echo form_hidden('rowid[]', $items['rowid']); // hidden field with unique id, needed in order to update?>
-                        <tr <?php if($i&1){ echo 'class="alt"'; }?>>
-                            <td>
-                                <?php echo form_input(array('name' => 'qty[]', 'value' => $items['qty'], 'maxlength' => '3', 'size' => '5')); ?>
+                        <tr style="background: none repeat scroll 0 0 #FCFCFC" >
+
+                            <td class="product"><?php echo $items['name']; ?>
+                                <img src="<?php echo base_url();?>assets/images/cart-thumb.jpg" alt="" />
                             </td>
 
-                            <td><?php echo $items['name']; ?></td>
-
-                            <td>Ksh.<?php echo $this->cart->format_number($items['price']); ?></td>
-                            <td>Ksh.<?php echo $this->cart->format_number($items['subtotal']); ?></td>
+                            <td class="price">Ksh.<?php echo $this->cart->format_number($items['price']); ?></td>
+                            <td class="quantity">
+                                <?php echo form_input(array('name' => 'qty[]', 'value' => $items['qty'], 'maxlength' => '3', 'size' => '5')); ?>
+                            </td>
+                            <td class="total">Ksh.<?php echo $this->cart->format_number($items['subtotal']); ?></td>
                         </tr>
 
                         <?php $i++; ?>
                     <?php endforeach; ?>
-
+                    </tbody>
+                </table>
                     <tr>
                         <td</td>
                         <td></td>
-                        <td><strong>Total</strong></td>
-                        <td>Ksh.<?php echo $this->cart->format_number($this->cart->total()); ?></td>
                     </tr>
-                    </tbody>
-                </table>
 
-                <p><?php echo form_submit('', 'Update your Cart'); echo anchor('relay/empty_cart', 'Empty Cart', 'class="empty"');?></p>
+
+                <p><?php echo form_submit('', 'Update your Cart','class="cart-btn pull-right"'); echo anchor('relay/empty_cart', 'Empty Cart', 'class="cart-btn pull-right"');?></p>
+
                 <p><small>If the quantity is set to zero, the item will be removed from the cart.</small></p>
-<?php
+                    <div class="cart-total cart-table">
+                        <div class="cart-head">
+                            <h2 style="color:#6a4d9b ">Cart Total</h2>
+                        </div>
+                        <ul>
+                            <li><p>Cart Subtotal:</p><span>Ksh.<?php echo $this->cart->format_number($this->cart->total()); ?></span></li>
+                            <li><p>Delivery </p><span>Free Delivery</span></li>
+                            <li><p>Order Total:</p><span>Ksh.<?php echo $this->cart->format_number($this->cart->total()); ?></span></li>
+                        </ul>
+                    </div>
+                    <section>
+                    <a class="cart-btn pull-right" href="buy_product" title="">Back to Products</a>
+                    <a class="cart-btn pull-right" href="checkout" title="">Proceed To Checkout</a>
+                        </section>
+                    <?php
+
                     echo form_close();
                 endif;
                 ?>
