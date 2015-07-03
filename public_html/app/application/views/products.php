@@ -1,5 +1,5 @@
 <div class="top-image">
-<!--    <img src="../images/single-page-top2.jpg" alt="" />-->
+    <img src="<?php echo base_url();?>assets/images/single-page-top2.jpg" alt="" />
 
 </div><!-- Page Top Image -->
 
@@ -13,7 +13,7 @@
 
                 <div class="featured-products">
                     <h3 class="sub-head">Buy these products to help us raise Fundraise.</h3>
-                    <p>T-shirts come in small, medium, large and extra large sizes. Beautiful wristbands in a variety of colours to keep it stylish while showing your support in the fight against cancer. </p>
+                    <p style="font-size: 16px;">T-shirts come in small, medium, large and extra large sizes. Beautiful wristbands in a variety of colours to keep it stylish while showing your support in the fight against cancer. </p>
 
                     <div class="row">
                         <ul class="products">

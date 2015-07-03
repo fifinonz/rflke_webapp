@@ -1,5 +1,5 @@
 <div class="top-image">
-    <img src="images/"single-page-top2.jpg" alt="" />
+    <img src="<?php echo base_url();?>assets/images/single-page-top2.jpg" alt="" />
 </div><!-- Page Top Image -->
 
 <section class="inner-page">
@@ -128,7 +128,7 @@
                         <div class="row">
                             <div class="about-charity-desc col-md-7">
                                 <h2><strong>Why WE Relay</strong></h2>
-                                <p>Relay for Life seeks to give us insight in to the life of a cancer patient and their primary support system, their caregivers. Cancer does not sleep. The pain and other side effects of chemotherapy treatment is a recipe for sleepless nights. We show our support and stand in solidarity with  all the survivors and their dedicated caregivers by staying on the track for 24hrs.</p>
+                                <p style="font-size: 16px;">Relay for Life seeks to give us insight in to the life of a cancer patient and their primary support system, their caregivers. Cancer does not sleep. The pain and other side effects of chemotherapy treatment is a recipe for sleepless nights. We show our support and stand in solidarity with  all the survivors and their dedicated caregivers by staying on the track for 24hrs.</p>
 
                                 <ul>
                                     <li><h6>02</h6><span>Years<br/> Running</span></li>

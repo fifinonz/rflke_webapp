@@ -52,8 +52,8 @@ class App_model extends CI_Model {
         $item = $this->input->post('rowid');
         $qty = $this->input->post('qty');
 
-        // Cycle true all items and update them
-        for($i=0;$i < $total;$i++)
+        // Cycle through all items and update them
+        for ($i=0;$i < count($item); $i++)
         {
             // Create an array with the products rowid's and quantities.
             $data = array(

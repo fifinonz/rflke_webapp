@@ -1,6 +1,6 @@
 
 <div class="top-image">
-    <img src="../images/single-page-top2.jpg" alt="" />
+    <img src="<?php echo base_url();?>assets/images/single-page-top2.jpg" alt="" />
 </div><!-- Page Top Image -->
 
 <section class="inner-page">
@@ -10,6 +10,7 @@
         </div><!-- Page Title -->
         <div class="row">
             <div class="left-content col-md-9">
+                <div id="cart_content">
                 <?php if(!$this->cart->contents()):
                     echo 'You don\'t have any items yet.';
                 else:
@@ -63,6 +64,6 @@
 
         </div>
     </div>
-
+</div>
 
 </section>
