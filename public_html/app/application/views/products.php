@@ -37,7 +37,7 @@
                                 <br/>
                                 <fieldset>
                                     <label>Quantity</label>
-                                    <?php echo form_input('quantity', '1', 'maxlength="3"'); ?>
+                                    <?php echo form_input('quantity', '0', 'maxlength="3"'); ?>
                                     <?php echo form_hidden('productID', $p['productID']); ?>
                                     <?php echo form_submit('add', 'Add to Cart'); ?>
                                 </fieldset>
