@@ -82,8 +82,10 @@ class Relay extends CI_Controller {
 
         $this->_load_view();
     }
+        /*      SHOPPING CART    */
 
     public function buy_product(){
+        $this->data['products'] = $this->app_model->retrieve_products(); // retrieve an array with all products
         $this->data['title'] 	= "Buy Products";
         $this->data['content'] 	= "products.php";
 
