@@ -8,7 +8,7 @@
         </div><!-- Slide1 -->
 
         <div class="ls-slide" data-ls="transition3d:12;timeshift:-1000;">
-            <img src="" class="ls-bg" alt="Slide background">
+            <img src="<?php echo base_url();?>assets/images/slider1.jpg" class="ls-bg" alt="Slide background">
             <h3 class="ls-l slide3" style="top:196px; left:100px; font-family: roboto; color: #FFFFFF; line-height:22px; font-size:32px; background:rgba(0,0,0,0.85); padding:18px 30px; border-radius:3px;" data-ls="offsetxin:0; scalexin:0; scaleyin:0; offsetxout:0; offsetyout:top; durationin:1500; durationout:800; showuntil:2000; fadeout:false;">
                 <i>CELEBRATE.</i></h3>
 
@@ -20,7 +20,7 @@
         </div><!-- Slide2 -->
 
         <div class="ls-slide" data-ls="transition3d:35;timeshift:-1000;">
-            <img src="" class="ls-bg" alt="Slide background">
+            <img src="<?php echo base_url();?>assets/images/slider1.jpg" class="ls-bg" alt="Slide background">
             <h3 class="ls-l" style="top: 160px; left:160px; font-family:roboto; font-size:72px; font-weight:bold; color:#fff; line-height:60px; text-align:center;" data-ls="offsetxin:0;offsetyin:top;durationin:1500;delayin:1000;easingin:easeInOutQuart;fadein:false;scalexin:0;scaleyin:0;offsetxout:0;offsetyout:top;durationout:1000;fadeout:false;" >WHO WILL YOU <span>RELAY FOR?</span></h3>
 
             <span class="ls-l slide3-subtitle" style="top: 248px; left:160px; padding:13px; border-radius:3px; color:#fff; font-family:open sans; font-weight:900; font-size:26px; text-transform:uppercase; line-height:20px;" data-ls="offsetxin:0;offsetyin:bottom;durationin:1500;delayin:1200;easingin:easeInOutQuart;fadein:false;scalexin:0;scaleyin:0;offsetxout:0;offsetyout:top;durationout:1000;fadeout:false;">CELEBRATE <i style="font-style:normal; color:#373737;">LIFE.</i></span>
@@ -30,7 +30,7 @@
 
 
         <div class="ls-slide" data-ls="transition3d:75;timeshift:-1000;">
-            <img src="" class="ls-bg" alt="Slide background">
+            <img src="<?php echo base_url();?>assets/images/slider1.jpg" class="ls-bg" alt="Slide background">
 
             <h3 class="ls-l slide4" style="top:180px; left:150px; background:rgba(0,0,0,0.9); font-family:roboto; font-size:36px; font-weight:bold; color:#fefefe; padding:20px 60px 20px; border-radius:4px;" data-ls="offsetxin:bottom;durationin:2000;delayin:1000;easingin:easeInOutQuart;fadein:false;scalexin:100;scaleyin:0;offsetxout:right;durationout:1400;fadeout:false;">
                 RELAY FOR <i>LIFE</i></h3>
@@ -44,7 +44,7 @@
         </div><!-- Slide4 -->
 
         <div class="ls-slide" data-ls="transition3d:63;timeshift:-1000;">
-            <img src="" class="ls-bg" alt="Slide background">
+            <img src="<?php echo base_url();?>assets/images/slider1.jpg" class="ls-bg" alt="Slide background">
             <h3 class="ls-l slide5" style="top:80px; left:670px; font-family:open sans; font-size:36px; font-weight:700; color:#FFF;"  data-ls="offsetxin:0;offsetyin:top;durationin:750;delayin:1000;easingin:easeOutQuart;fadein:false;offsetxout:right;durationout:1000;easingout:easeInQuart;fadeout:false;">UNITED <span>AGAINST</span> CANCER</h3>
             <i class="ls-l slide5" style="top:130px; left:760px; font-family:open sans; font-size:20px; color:#FFF;"  data-ls="offsetxin:0;offsetyin:top;durationin:750;delayin:500;easingin:easeOutQuart;fadein:false;offsetxout:right;durationout:1000;easingout:easeInQuart;fadeout:false;"></i>
             <h4 class="ls-l slide5-title" style="top:160px; left:560px; font-family:open sans; font-size:70px; font-weight:700; color:#FFF; line-height:55px; padding:50px 80px 80px; background:url(images/slider5-bg.png) no-repeat scroll 0 0 / 100% 100% transparent;" data-ls="offsetxin:0;offsetyin:0;durationin:1000;delayin:1400;easingin:easeOutQuart;fadein:false;easingout:easeInQuart;rotatexin:-90deg;">RELAY <span>FOR</span> LIFE</h4>
@@ -52,7 +52,7 @@
         </div><!-- Slide5 -->
 
         <div class="ls-slide" data-ls="transition3d:63;timeshift:-1000;">
-            <img src="" class="ls-bg" alt="Slide background">
+            <img src="<?php echo base_url();?>assets/images/slider1.jpg" class="ls-bg" alt="Slide background">
             <h3 class="ls-l" style="top:190px; left:50%; color:#FFF; font-family:open sans; font-size:60px; font-weight:300;" data-ls="durationin:1500; delayin:1000; easingin:easeOutQuart; fadein:false; easingout:easeInQuart; rotatexin:-90deg;">LET'S KICK CANCER<span style="font-weight:700;"> OUT OF KENYA.</span></h3>
             <p class="ls-l" style="top:290px; left:50%; line-height:30px; color:#FFF; font-family:noto sans; font-size:14px; text-align:center;" data-ls="durationin:1500; delayin:1500; easingin:easeOutQuart; fadein:false; easingout:easeInQuart; rotatexin:-90deg;">If one person can beat cancer, a whole NATION will DEFEAT IT</p>
         </div>
@@ -224,46 +224,46 @@
 
 <section class="block">
     <div class="container">
-        <div class="row">
+        <div id="redirect" class="row">
             <div class="col-md-6">
                 <div class="sec-heading">
                     <h2><strong>Buy Relay For Life Kenya Merchandise</strong> Online</h2>
                 </div>
                 <div class="shop">
+
                     <ul class="slides">
+                        <?php foreach($products as $p): ?>
                         <li>
                             <div class="item">
-                                <img src="../images/featured-product_participant_tshirt6.jpg" alt="" />
+                                <img src="<?php echo base_url();?>assets/images/coats.jpg" alt="rfl_products" />
                                 <div class="item-detail">
-                                    <h3>Relay For Life T-shirt</h3>
-                                    <span><span>Khs.</span>1000</span>
-                                    <a href="view_cart" title="">ADD TO CART</a>
+                                    <h3><?php echo $p['product_name']; ?></h3>
+                                    <span><span>Ksh. </span><?php echo $p['unit_price']; ?></span>
+                                    <?php echo form_open('relay/add_cart_item_home'); ?>
+                                    <br>
+                                    <br/>
+                                    <fieldset>
+                                        <label style="color: #FFFFFF">Quantity</label>
+                                        <?php echo form_input ('quantity', '', 'maxlength="3"'); ?>
+                                        <br/>
+                                        <?php echo form_hidden('productID', $p['productID']); ?>
+                                    </fieldset>
+                                    <?php echo form_close(); ?>
+                                    <?php echo form_submit('add', 'Add to Cart'); ?>
+
+                                    <a href="view_cart" title="">View Cart</a>
+
                                 </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item">
-                                <img src="../images/featured-product_luminaria_bag.jpg" alt="" />
-                                <div class="item-detail">
-                                    <h3>Luminaria Bag & Candle</h3>
-                                    <span><span>Ksh.</span>250</span>
-                                    <a href="view_cart" title="">ADD TO CART</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="item">
-                                <img src="../images/featured-product_wristbands1.jpg" alt="" />
-                                <div class="item-detail">
-                                    <h3>Relay For Life Wristband</h3>
-                                    <span><span>Ksh.</span>100</span>
-                                    <a href="view_cart" title="">ADD TO CART</a>
-                                </div>
-                            </div>
-                        </li>
+                        </li><!--Product-->
+                        <?php endforeach;?>
                     </ul>
                 </div>
             </div>
+
+
+
+
+
             <div class="col-md-3">
                 <div class="sec-heading">
                     <h2><strong>Make a</strong> Donation</h2>

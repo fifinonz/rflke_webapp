@@ -22,7 +22,7 @@
  * @subpackage	Libraries
  * @category	Shopping Cart
  * @author		ExpressionEngine Dev Team
- * @link		http://codeigniter.com/user_guide/libraries/cart.html
+ * @link		http://codeigniter.com/user_guide/libraries/cart.php
  */
 class CI_Cart {
 
