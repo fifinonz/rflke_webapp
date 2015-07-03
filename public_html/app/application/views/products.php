@@ -19,7 +19,7 @@
                         <ul class="products">
                             <?php foreach($products as $p): ?>
                         <li class="col-md-4">
-                            <!--<img src="../images/featured-product_luminaria_bag.jpg" alt="Luminaria Bag" />-->
+                            <img src="<?php echo base_url();?>assets/images/<?php echo $p['image']; ?>" alt="rfl_products" />
                             <h4><?php echo $p['product_name']; ?></h4>
                             <p><?php echo $p['product_desc']; ?></p>
                             <div class="ratings">
