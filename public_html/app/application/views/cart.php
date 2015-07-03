@@ -61,7 +61,10 @@
 
                 <p><?php echo form_submit('', 'Update your Cart','class="cart-btn pull-right"'); echo anchor('relay/empty_cart', 'Empty Cart', 'class="cart-btn pull-right"');?></p>
 
-                <p><small>If the quantity is set to zero, the item will be removed from the cart.</small></p>
+               <section>
+                   <br/>
+                <p style="background: none repeat scroll 0 0 rgb(232,234,235)">**Set quantity to zero, to remove item from the cart.</p>
+               </section>
                     <div class="cart-total cart-table">
                         <div class="cart-head">
                             <h2 style="color:#6a4d9b ">Cart Total</h2>
