@@ -6066,6 +6066,19 @@ select{
 }
 .product-price > a:hover {background: #f4f4f4;color: #626262;}
 
+ul.products form fieldset{
+    border: 0px;
+}
+
+ul.products form label{
+    font-size: 12px;
+}
+
+ul.products form input[type=text] {
+    width: 20px;
+    background: #FFF;
+    border: 1px solid #d3d3d3;
+}
 /*** CHECK OUT PAGE /////////
 ///////////////////////////////// ***/
 .check-out-top li {

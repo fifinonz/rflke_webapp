@@ -1,5 +1,6 @@
 <div class="top-image">
-    <img src="../images/single-page-top2.jpg" alt="" />
+<!--    <img src="../images/single-page-top2.jpg" alt="" />-->
+
 </div><!-- Page Top Image -->
 
 <section class="inner-page">
@@ -15,9 +16,12 @@
                     <p>T-shirts come in small, medium, large and extra large sizes. Beautiful wristbands in a variety of colours to keep it stylish while showing your support in the fight against cancer. </p>
 
                     <div class="row">
-                        <div class="col-md-4">
+                        <ul class="products">
+                            <?php foreach($products as $p): ?>
+                        <li class="col-md-4">
                             <!--<img src="../images/featured-product_luminaria_bag.jpg" alt="Luminaria Bag" />-->
-                            <h4>Luminaria Bag</h4>
+                            <h4><?php echo $p['product_name']; ?></h4>
+                            <p><?php echo $p['product_desc']; ?></p>
                             <div class="ratings">
                                 <i class="icon-star"></i>
                                 <i class="icon-star"></i>
@@ -27,175 +31,21 @@
                             </div>
                             <div class="product-price">
 
-                                <p>Ksh.200</p>
-                                <a href="view_cart" title="">Add To Cart</a>
+                                <p>Ksh. <?php echo $p['unit_price']; ?></p>
+                                <?php echo form_open('relay/add_cart_item'); ?>
+                                <br>
+                                <br/>
+                                <fieldset>
+                                    <label>Quantity</label>
+                                    <?php echo form_input('quantity', '1', 'maxlength="2"'); ?>
+                                    <?php echo form_hidden('productID', $p['productID']); ?>
+                                    <?php echo form_submit('add', 'Add to Cart'); ?>
+                                </fieldset>
+                                <?php echo form_close(); ?>
                             </div>
-                        </div><!--Product-->
-                        <div class="col-md-4">
-                            <!--<img src="../images/"featured-product_luminaria_candle.jpg" alt="Luminaria Candle" />-->
-                            <h4>Luminaria Candle</h4>
-                            <div class="ratings">
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                            </div>
-                            <div class="product-price">
-                                <p>Ksh.50</p>
-                                <a href="checkout.html" title="">Add To Cart</a>
-                            </div>
-                        </div><!--Product-->
-                        <div class="col-md-4">
-                            <!--<img src="../images/featured-product_shujaa_tshirt.jpg" alt="" />-->
-                            <h4>Shujaa T-shirt</h4>
-                            <div class="ratings">
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                            </div>
-                            <div class="product-price">
-                                <p>Ksh.1000</p>
-                                <a href="checkout.html" title="">Add To Cart</a>
-                            </div>
-                        </div><!--Product-->
-                        <div class="col-md-4">
-                            <!--<img src="../images/featured-product_caregiver_tshirt.jpg" alt="" />-->
-                            <h4>Care Giver T-shirt</h4>
-                            <div class="ratings">
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                            </div>
-                            <div class="product-price">
-                                <p>Ksh.1000</p>
-                                <a href="checkout.html" title="">Add To Cart</a>
-                            </div>
-                        </div><!--Product-->
-                        <div class="col-md-4">
-                            <!--<img src="../images/featured-product_participant_tshirt1.jpg" alt="" />-->
-                            <h4>Participant T-shirt - Black</h4>
-                            <div class="ratings">
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                            </div>
-                            <div class="product-price">
-                                <p>Ksh.1000</p>
-                                <a href="checkout.html" title="">Add To Cart</a>
-                            </div>
-                        </div><!--Product-->
-                        <div class="col-md-4">
-                            <!--<img src="../images/featured-participant_tshirt2.jpg" alt="" />-->
-                            <h4>Participant T-shirt - Orange</h4>
-                            <div class="ratings">
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                            </div>
-                            <div class="product-price">
-                                <p>Ksh.1000</p>
-                                <a href="checkout.html" title="">Add To Cart</a>
-                            </div>
-                        </div><!--Product-->
-                        <div class="col-md-4">
-                            <!--<img src="../images/featured-participant_tshirt3.jpg" alt="" />-->
-                            <div class="ratings">
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                            </div>
-                            <h4>Participant T-shirt - Yellow</h4>
-                            <div class="product-price">
-                                <p>Ksh.1000</p>
-                                <a href="checkout.html" title="">Add To Cart</a>
-                            </div>
-                        </div><!--Product-->
-                        <div class="col-md-4">
-                            <!--<img src="../images/featured-participant_tshirt4.jpg" alt="" />-->
-                            <div class="ratings">
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                            </div>
-                            <h4>Participant T-shirt - Blue</h4>
-                            <div class="product-price">
-                                <p>Ksh.1000</p>
-                                <a href="checkout.html" title="">Add To Cart</a>
-                            </div>
-                        </div><!--Product-->
-                        <div class="col-md-4">
-                            <!--<img src="../images/featured-participant_tshirt5.jpg" alt="" />-->
-                            <h4>Participant T-shirt - Pink</h4>
-                            <div class="ratings">
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                            </div>
-                            <div class="product-price">
-                                <p>Ksh.1000</p>
-                                <a href="checkout.html" title="">Add To Cart</a>
-                            </div>
-                        </div><!--Product-->
-                        <div class="col-md-4">
-                            <!--<img src="../images/featured-participant_tshirt6.jpg" alt="" />-->
-                            <h4>Participant T-shirt - Grey</h4>
-                            <div class="ratings">
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                            </div>
-                            <div class="product-price">
-                                <p>Ksh.1000</p>
-                                <a href="checkout.html" title="">Add To Cart</a>
-                            </div>
-                        </div><!--Product-->
-                        <div class="col-md-4">
-                            <!--<img src="../images/featured-wristbands1.jpg" alt="" />-->
-                            <h4>Wrist-bands</h4>
-                            <div class="ratings">
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                            </div>
-                            <div class="product-price">
-                                <p>Ksh.100</p>
-                                <a href="checkout.html" title="">Add To Cart</a>
-                            </div>
-                        </div><!--Product-->
-                        <div class="col-md-4">
-                            <!--<img src="../images/featured-wristbands2.jpg" alt="" />-->
-                            <h4>Wrist-bands</h4>
-                            <div class="ratings">
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                            </div>
-                            <div class="product-price">
-                                <p>Ksh.100</p>
-                                <a href="checkout.html" title="">Add To Cart</a>
-                            </div>
-                        </div><!--Product-->
+                        </li><!--Product-->
+                            <?php endforeach;?>
+                        </ul>
 
                     </div>
 
