@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Relay For Life - Kenya Cancer Association</title>
+<title> Relay For Life - Kenya Cancer Association</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Google Fonts -->
@@ -9,6 +9,7 @@
 
 
 <!-- Styles -->
+    <link rel="icon" type="image" href="<?php echo base_url();?>assets/images/logo.png" />
 <link href="<?php echo base_url();?>assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
 <link href="<?php echo base_url();?>assets/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
 <link href="<?php echo base_url();?>assets/css/style.css" rel="stylesheet" type="text/css" />
@@ -135,7 +136,10 @@ $(window).load(function(){
 <header class="header2 sticky">
 	<div class="container">
 		<div class="logo">
-			<a href="#" title=""><img src="<?php echo base_url();?>assets/images/logo.png"alt="Logo"><h1><i>Relay For Life</i> Kenya</h1></a>
+            <br/>
+			<img src="<?php echo base_url();?>assets/images/logo.png"alt="Logo">
+
+            <h1>Relay For Life Kenya</h1>
 		</div><!-- Logo -->
 		<a class="header-btn" href="<?php echo base_url();?>relay/donate" title="">DONATE</a>
 		<nav class="menu">

@@ -91,34 +91,33 @@
                 <div class="testimonial overlap">
                     <div class="slideshow">
                         <ul class="slides">
-                            <li>
+                            <li class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; -webkit-transition: opacity 0.6s ease; transition: opacity 0.6s ease; z-index: 1;">
                                 <div class="carusal-image-thumb">
-                                    <img src="images/"testimonials1.jpg" alt="thumb1" />
-                                    <strong>Ann Korir,</strong><span class="carusal-image-thumb-name"> KENCASA Chair </span>
+                                    <img src="images/testimonials1.jpg" alt="thumb1" draggable="false">
+                                    <strong>Ann Korir,</strong><span class="carusal-image-thumb-name"> KENCASA </span>
                                 </div>
                                 <p>Fusce nec arcu eget nunc scelerisque pharetra eget vel metus. Curabitur a orci et nulla gravida laoreet. Pellentesque dictum ipsum nec placerat dignissim. Vivamus porta pellentesque libero, sit amet placerat mauris iaculis non. Nullam eleifend, eros eget facilisis adipiscing, nibh mi vehicula tellus, non</p>
-                            </li><!-- Messgae1 -->
-                            <li>
+                            </li><!-- Message1 -->
+                            <li class="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; -webkit-transition: opacity 0.6s ease; transition: opacity 0.6s ease; z-index: 1;">
                                 <div class="carusal-image-thumb">
-                                    <img src="images/"testimonials2.jpg" alt="thumb1" />
-                                    <strong>Jarim Odour,</strong><span class="carusal-image-thumb-name"> RFL_KE Chair </span>
+                                    <img src="images/testimonials2.jpg" alt="thumb1" draggable="false">
+                                    <strong>Susan Ngure,</strong><span class="carusal-image-thumb-name"> Board Member </span>
                                 </div>
                                 <p>Fusce nec arcu eget nunc scelerisque pharetra eget vel metus. Curabitur a orci et nulla gravida laoreet. Pellentesque dictum ipsum nec placerat dignissim. Vivamus porta pellentesque libero, sit amet placerat mauris iaculis non. Nullam eleifend, eros eget facilisis adipiscing, nibh mi vehicula tellus, non</p>
-                            </li><!-- Messgae2 -->
-                            <li>
+                            </li><!-- Message2 -->
+                            <li class="flex-active-slide" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; -webkit-transition: opacity 0.6s ease; transition: opacity 0.6s ease; z-index: 2;">
                                 <div class="carusal-image-thumb">
-                                    <img src="images/"testimonials3.jpg" alt="thumb1" />
-                                    <strong>Antony Mukundi,</strong><span class="carusal-image-thumb-name"> Volunteer </span>
+                                    <img src="images/testimonials3.jpg" alt="thumb1" draggable="false">
+                                    <strong>Tony Mukundi,</strong><span class="carusal-image-thumb-name"> Volunteer </span>
                                 </div>
                                 <p>Fusce nec arcu eget nunc scelerisque pharetra eget vel metus. Curabitur a orci et nulla gravida laoreet. Pellentesque dictum ipsum nec placerat dignissim. Vivamus porta pellentesque libero, sit amet placerat mauris iaculis non. Nullam eleifend, eros eget facilisis adipiscing, nibh mi vehicula tellus, non</p>
-                            </li><!-- Messgae3 -->
+                            </li><!-- Message3 -->
                         </ul>
-                    </div>
+                        <ol class="flex-control-nav flex-control-paging"><li><a class="">1</a></li><li><a class="">2</a></li><li><a class="flex-active">3</a></li></ol><ul class="flex-direction-nav"><li><a class="flex-prev" href="#">Previous</a></li><li><a class="flex-next flex-disabled" href="#" tabindex="-1">Next</a></li></ul></div>
                 </div>
             </div>
         </div>
-    </section>	<!-- Testimonials -->
-
+    </section>
 
     <section class="block remove-bottom">
         <div class="container">
