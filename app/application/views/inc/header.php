@@ -217,7 +217,8 @@ $(window).load(function(){
 </header>
     <div class="responsive-header">
         <div class="responsive-logo">
-            <a href="#" title=""><img style="width: 40px;" src="images/logo.png" alt="Logo" /><h1>Relay For Life</h1></a>
+            <img style="width: 65px;" src="<?php echo base_url();?>assets/images/logo.png" alt="Logo">
+                <h1 style="color: rgb(106, 77, 155);">Relay For Life</h1>
         </div>
         <span><i class="icon-align-justify"></i></span>
         <ul>

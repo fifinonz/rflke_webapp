@@ -11,10 +11,13 @@
         <div class="row">
             <div class="left-content col-md-9">
                 <div id="cart_content">
-                <?php if(!$this->cart->contents()):
-                    echo 'You don\'t have any items yet.';
+               <p style="font-size:36px"> <?php if(!$this->cart->contents()):
+                   echo 'You don\'t have any items yet.';
+                    echo "<br/><br/>";
+                    echo anchor('relay/buy_product', 'Browse Products', 'class="cart-btn pull-left"');
                 else:
                 ?>
+</p>
 
                 <?php echo form_open('relay/update_cart'); ?>
                 <table style="background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(232,234,235)), color-stop(0.5, rgb(237,237,238)) )" width="100%" cellpadding="5" cellspacing="0">
