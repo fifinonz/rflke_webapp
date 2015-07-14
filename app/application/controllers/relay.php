@@ -1,5 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+session_start(); //we need to start session in order to access it through CI
+
 class Relay extends CI_Controller {
 	private $data;
 
@@ -13,7 +15,10 @@ class Relay extends CI_Controller {
         $this->load->library('session');
         $this->load->library('encrypt');
         $this->load->helper('form');
+        $this->load->library('form_validation');
+        $this->load->library('session');
 		$this->load->model('app_model');
+        $this->load->model('login_database');
 	}
 
 	public function _load_view(){
@@ -28,16 +33,116 @@ class Relay extends CI_Controller {
 
     public function log_in (){
         $this->data['title'] 	= "Log In";
-        $this->data['content'] 	= "login";
+        $this->data['content'] 	= "login_form";
 
         $this->_load_view();
     }
 
-    public function sign_up(){
+    public function user_registration_show(){
         $this->data['title'] 	= "Sign Up";
-        $this->data['content'] 	= "sign_up";
+        $this->data['content'] 	= "registration_form";
 
         $this->_load_view();
+    }
+    public function admin_page(){
+        $this->data['title'] 	= "Admin Panel";
+        $this->data['content'] 	= "admin_page";
+
+        $this->_load_view();
+    }
+
+    // Validate and store registration data in database
+    public function new_user_registration() {
+
+// Check validation for user input in SignUp form
+        $this->form_validation->set_rules('username', 'Username', 'trim|required|xss_clean');
+        $this->form_validation->set_rules('email_value', 'Email', 'trim|required|xss_clean');
+        $this->form_validation->set_rules('password', 'Password', 'trim|required|xss_clean');
+        if ($this->form_validation->run() == FALSE) {
+            $this->load->view('inc/header');
+            $this->load->view('registration_form');
+            $this->load->view('inc/footer');
+        } else {
+            $data = array(
+                'user_name' => $this->input->post('username'),
+                'user_email' => $this->input->post('email_value'),
+                'user_password' => $this->input->post('password')
+            );
+            $result = $this->login_database->registration_insert($data);
+            if ($result == TRUE) {
+                $data['message_display'] = 'Registration Successfully !';
+                $this->load->view('inc/header');
+                $this->load->view('login_form', $data);
+                $this->load->view('inc/footer');
+            } else {
+                $data['message_display'] = 'Username already exist!';
+                $this->load->view('inc/header');
+                $this->load->view('login_form', $data);
+                $this->load->view('inc/footer');
+            }
+        }
+    }
+
+// Check for user login process
+    public function user_login_process() {
+
+        $this->form_validation->set_rules('username', 'Username', 'trim|required|xss_clean');
+        $this->form_validation->set_rules('password', 'Password', 'trim|required|xss_clean');
+
+        if ($this->form_validation->run() == FALSE) {
+            if(isset($this->session->userdata['logged_in'])){
+                $this->load->view('inc/header');
+                $this->load->view('home');
+                $this->load->view('inc/footer');
+            }else{
+                $this->load->view('inc/header');
+                $this->load->view('login_form');
+                $this->load->view('inc/footer');
+            }
+        } else {
+            $data = array(
+                'username' => $this->input->post('username'),
+                'password' => $this->input->post('password')
+            );
+            $result = $this->login_database->login($data);
+            if ($result == TRUE) {
+
+                $username = $this->input->post('username');
+                $result = $this->login_database->read_user_information($username);
+                if ($result != false) {
+                    $session_data = array(
+                        'username' => $result[0]->user_name,
+                        'email' => $result[0]->user_email,
+                    );
+// Add user data in session
+                    $this->session->set_userdata('logged_in', $session_data);
+                    $this->load->view('inc/header');
+                    $this->load->view('home');
+                    $this->load->view('inc/footer');
+                }
+            } else {
+                $data = array(
+                    'error_message' => 'Invalid Username or Password'
+                );
+                $this->load->view('inc/header');
+                $this->load->view('login_form', $data);
+                $this->load->view('inc/footer');
+            }
+        }
+    }
+
+// Logout from admin page
+    public function logout() {
+
+// Removing session data
+        $sess_array = array(
+            'username' => ''
+        );
+        $this->session->unset_userdata('logged_in', $sess_array);
+        $data['message_display'] = 'Successfully Logout';
+        $this->load->view('inc/header');
+        $this->load->view('login_form', $data);
+        $this->load->view('inc/footer');
     }
 	public function home(){
         $this->data['products'] = $this->app_model->retrieve_products(); // retrieve an array with all products

@@ -33,6 +33,7 @@
 <script src="http://images.webinane.com/jquery.carouFredSel-6.2.1-packed.js" type="text/javascript"></script>
 <script defer src="http://images.webinane.com/jquery.flexslider.js"></script>
 <script defer src="<?php echo base_url();?>assets/js/jquery.mousewheel.js"></script>
+
 			
 <!-- Scripts For Layer Slider  -->
 <script src="<?php echo base_url();?>assets/layerslider/js/greensock.js" type="text/javascript"></script>
@@ -103,7 +104,7 @@ $(window).load(function(){
 	  $('body').removeClass('loading');
 	}
 	});
-	
+
 });
 </script>
 </head>
@@ -126,9 +127,17 @@ $(window).load(function(){
 				info@relayforlifekenya.org
 			</li>
 		</ul>
-		<div class="search-box">
-            <a class="btn" href="<?php echo base_url();?>relay/log_in" title="">Log In</a>
-            <a class="btn" href="<?php echo base_url();?>relay/sign_up" title="">Sign Up</a>
+		<div class="registration-box">
+            <?php  if(isset($this->session->userdata['logged_in'])){
+                $logout='<a class="btn" href="http://localhost/relayforlifekenya.org/app/relay/logout" title="">Log Out</a>';
+                echo $logout;
+            }else{
+                $login='<a class="btn" href="http://localhost/relayforlifekenya.org/app/relay/log_in" title="">Log In</a>';
+                $signup='<a class="btn" href="http://localhost/relayforlifekenya.org/app/relay/user_registration_show" title="">Sign Up</a>';
+                echo $login;
+                echo $signup;
+            }
+            ?>
 		</div>
 	</div>
 </div>
