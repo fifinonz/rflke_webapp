@@ -112,7 +112,10 @@ $(window).load(function(){
 <div class="theme-layout">
 
 <div id="top-bar">
-	<div class="container">
+    <div class="row">
+        <div class="col-md-offset-2">
+
+
 		<ul>
 			<li>
 				<i class="icon-home"></i>
@@ -127,25 +130,32 @@ $(window).load(function(){
 				info@relayforlifekenya.org
 			</li>
 		</ul>
-		<div class="registration-box">
+        </div>
+        <div class="col-md-offset-2">
+            <div class="registration-box">
             <?php  if(isset($this->session->userdata['logged_in'])){
-                $logout='<a class="btn" href="http://localhost/relayforlifekenya.org/app/relay/logout" title="">Log Out</a>';
-                echo $logout;
+//                $logout='<a class="btn" href="http://localhost/relayforlifekenya.org/app/relay/logout" title="">Log Out</a>';
+//                echo $logout;
+                echo 'Log Out';
             }else{
-                $login='<a class="btn" href="http://localhost/relayforlifekenya.org/app/relay/log_in" title="">Log In</a>';
-                $signup='<a class="btn" href="http://localhost/relayforlifekenya.org/app/relay/user_registration_show" title="">Sign Up</a>';
-                echo $login;
-                echo $signup;
+//                $login='<a class="btn" href="http://localhost/relayforlifekenya.org/app/relay/log_in" title="">Log In</a>';
+//                $signup='<a class="btn" href="http://localhost/relayforlifekenya.org/app/relay/user_registration_show" title="">Sign Up</a>';
+//                echo $login;
+//                echo $signup;
+                echo '<li><a>Log In</a></li>';
+                echo '<li><a>Sign Up</a></li>';
             }
             ?>
 		</div>
 	</div>
-</div>
+        </div>
+    </div>
+
 
 <header class="header2 sticky">
 	<div class="container">
 		<div class="logo">
-            <br/>
+            <br/><br/>
 			<img src="<?php echo base_url();?>assets/images/logo.png"alt="Logo">
 
             <h1>Relay For Life Kenya</h1>
@@ -166,23 +176,22 @@ $(window).load(function(){
                     <ul>
                         <li><a href="<?php echo base_url();?>relay/teams_2015">Participate in Relay 2015</a>
                         <li><a href="#">Sign Up As a Volunteer</a>
-                        <li><a href="<?php echo base_url();?>relay/donate">Make A Donation</a>
-
-                        </li>
+                        <li><a href="<?php echo base_url();?>relay/donate">Make A Donation</a></li>
                     </ul><!-- Drop Down -->
-				<li><a>Products</a>
-					<ul>
-						<li><a href="<?php echo base_url();?>relay/buy_product">Shop for Products</a>
-							</li>
-						<li><a href="<?php echo base_url();?>relay/view_cart">View My Cart</a>
-							</li>
-						
-						<li><a href="<?php echo base_url();?>relay/checkout">Checkout</a>
-						</li>
-						
-					</ul>
-				</li>
-				
+                </li>
+<!--				<li><a>Products</a>-->
+<!--					<ul>-->
+<!--						<li><a href="--><?php //echo base_url();?><!--relay/buy_product">Shop for Products</a>-->
+<!--							</li>-->
+<!--						<li><a href="--><?php //echo base_url();?><!--relay/view_cart">View My Cart</a>-->
+<!--							</li>-->
+<!---->
+<!--						<li><a href="--><?php //echo base_url();?><!--relay/checkout">Checkout</a>-->
+<!--						</li>-->
+<!---->
+<!--					</ul>-->
+<!--				</li>-->
+
 				<li><a>Gallery</a>
 					<ul>
 						<li><a href="<?php echo base_url();?>relay/gallery_image">Image Gallery</a>
@@ -244,22 +253,21 @@ $(window).load(function(){
                 <ul>
                     <li><a href="<?php echo base_url();?>relay/teams_2015">Participate in Relay 2015</a>
                     <li><a href="#">Sign Up As a Volunteer</a>
-                    <li><a href="<?php echo base_url();?>relay/donate">Support Relay with A Donation</a>
-
-                    </li>
+                    <li><a href="<?php echo base_url();?>relay/donate">Support Relay with A Donation</a></li>
                 </ul><!-- Drop Down -->
-            <li><a>Products</a>
-                <ul>
-                    <li><a href="<?php echo base_url();?>relay/buy_product">Shop for Products</a>
-                    </li>
-                    <li><a href="<?php echo base_url();?>relay/view_cart">View My Cart</a>
-                    </li>
-
-                    <li><a href="<?php echo base_url();?>relay/checkout">Checkout</a>
-                    </li>
-
-                </ul>
             </li>
+<!--            <li><a>Products</a>-->
+<!--                <ul>-->
+<!--                    <li><a href="--><?php //echo base_url();?><!--relay/buy_product">Shop for Products</a>-->
+<!--                    </li>-->
+<!--                    <li><a href="--><?php //echo base_url();?><!--relay/view_cart">View My Cart</a>-->
+<!--                    </li>-->
+<!---->
+<!--                    <li><a href="--><?php //echo base_url();?><!--relay/checkout">Checkout</a>-->
+<!--                    </li>-->
+<!---->
+<!--                </ul>-->
+<!--            </li>-->
 
             <li><a>Gallery</a>
                 <ul>
