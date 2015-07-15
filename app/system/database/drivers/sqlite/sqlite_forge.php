@@ -213,7 +213,7 @@ class CI_DB_sqlite_forge extends CI_DB_forge {
 		{
 			// SQLite does not support dropping columns
 			// http://www.sqlite.org/omitted.html
-			// http://www.sqlite.org/faq.html#q11
+			// http://www.sqlite.org/faq.php#q11
 			return FALSE;
 		}
 

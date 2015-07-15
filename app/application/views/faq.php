@@ -14,7 +14,7 @@
                 <div class="recent-news">
                     <div class="row">
                         <div class="col-md-5">
-                            <a title=""   class="news-img"><img alt="" src="images/"news1.jpg"></a>
+                            <a title=""   class="news-img"><img alt="" src="<?php echo base_url();?>assets/images/news3.jpg"></a>
                         </div>
                         <div class="col-md-7">
                             <h3>Get involved</h3>
@@ -29,7 +29,7 @@
                 <div class="recent-news">
                     <div class="row">
                         <div class="col-md-5">
-                            <a title=""   class="news-img"><img alt="" src="images/"news2.jpg"></a>
+                            <a title=""   class="news-img"><img alt="" src="<?php echo base_url();?>assets/images/news2.jpg"></a>
                         </div>
                         <div class="col-md-7">
                             <h3>Cancer survivors</h3>
@@ -45,7 +45,7 @@
                 <div class="recent-news">
                     <div class="row">
                         <div class="col-md-5">
-                            <a title=""   class="news-img"><img alt="" src="images/"news3.jpg"></a>
+                            <a title=""   class="news-img"><img alt="" src="<?php echo base_url();?>assets/images/news1.jpg"></a>
                         </div>
                         <div class="col-md-7">
                             <h3>Teams</h3>
@@ -64,7 +64,7 @@
                 <div class="recent-news">
                     <div class="row">
                         <div class="col-md-5">
-                            <a title=""   class="news-img"><img alt="" src="images/"news4.jpg"></a>
+                            <a title=""   class="news-img"><img alt="" src="<?php echo base_url();?>assets/images/news4.jpg"></a>
                         </div>
                         <div class="col-md-7">
                             <h3>Volunteering</h3>
@@ -80,12 +80,12 @@
                 <div class="col-md-6">
                     <h3 style="background:#6a4d9b">Get Involved</h3>
                     <p><strong><a id="q1"></a>1. When is Relay?</strong></p>
-                    <p>Relay is currently an annual event. This year the Relay event will take place on 17th October 2015 at Nyayo stadium. </p>
+                    <p>Relay is currently an annual event. This year the Relay event will take place on 10th - 11th October 2015 at Nyayo stadium. </p>
                     <p><strong><a id="q2"></a>2. What if it rains?</strong></p>
                     <p>Relays continue whatever the weather so don't forget the brolly, warm clothes and sensible shoes. </p>
                     <p><strong><a id="q3"></a>3. Do I have to stay for the whole event?</strong></p>
                     <p>Team members will usually stay for the whole event. Teams camp overnight, in between walking laps, but members of the local community can simply attend on the day and can take part in all the Relay's activities. </p>
-                    <p><a title=""   class="news-img"><img alt="" src="images/"news3.jpg"></a></p>
+                    <p><a title=""   class="news-img"><img alt="" src="<?php echo base_url();?>assets/images/event_night.jpg"></a></p>
                 </div>
                 <div class="col-md-6">
                     <h3 style="background:#6a4d9b ">Teams</h3>
@@ -122,6 +122,8 @@
                     <p><strong><a id="q13"></a>4. What types of things will I do if I volunteer? </strong></p>
                     <p>Every Relay For Life event is organised by a volunteer committee who need lots of help before and after the event and on the day. Jobs vary from event to event, you could help organise the Candle of Hope ceremony, contact businesses for support, help teams with their tents, run cancer awareness activities or provide some music or entertainment to help enthuse and motivate the teams.&nbsp;</p>
                     <p><a href="register.html">Sign up Now </a> and take part as a volunteer.</p>
+                    <p><a title=""   class="news-img"><img alt="" src="<?php echo base_url();?>assets/images/event_night2.jpg"></a></p>
+
                 </div>
             </div>
             </container>

@@ -271,7 +271,7 @@ class Relay extends CI_Controller {
 
     public function faqs(){
         $this->data['title'] 	= "Frequently Asked Questions";
-        $this->data['content'] 	= "faq.html";
+        $this->data['content'] 	= "faq.php";
 
         $this->_load_view();
     }

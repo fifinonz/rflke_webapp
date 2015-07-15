@@ -193,16 +193,16 @@ $(window).load(function(){
 <!--					</ul>-->
 <!--				</li>-->
 
-				<li><a>Gallery</a>
-					<ul>
-						<li><a href="<?php echo base_url();?>relay/gallery_image">Image Gallery</a>
-
-						
-<!--						<li><a href="#">Video Gallery</a>-->
-							
-						</li>
-						</ul><!-- Drop Down -->
-				</li>
+<!--				<li><a>Gallery</a>-->
+<!--					<ul>-->
+<!--						<li><a href="--><?php //echo base_url();?><!--relay/gallery_image">Image Gallery</a>-->
+<!---->
+<!--						-->
+<!--<!--						<li><a href="#">Video Gallery</a>-->
+<!--							-->
+<!--						</li>-->
+<!--						</ul><!-- Drop Down -->
+<!--				</li>-->
 				<li><a href="#">Resource Center</a>
                     <ul class="mega-menu2">
                         <li><a href="#" title=""><strong>Cancer Types</strong></a></li>
@@ -272,9 +272,9 @@ $(window).load(function(){
                 <!--					</ul>-->
                 <!--				</li>-->
 
-                <li><a>Gallery</a>
-                    <ul>
-                        <li><a href="<?php echo base_url();?>relay/gallery_image">Image Gallery</a>
+<!--                <li><a>Gallery</a>-->
+<!--                    <ul>-->
+<!--                        <li><a href="--><?php //echo base_url();?><!--relay/gallery_image">Image Gallery</a>-->
 
 
                             <!--						<li><a href="#">Video Gallery</a>-->
