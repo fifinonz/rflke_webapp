@@ -116,7 +116,7 @@ section .container,
     padding:12px 0 12px;
 	color:#9d9b9b;
     font-family:'Roboto',sans-serif;
-    font-size:10px;
+    font-size:15px;
     list-style:none outside none;
 }
 #top-bar li:last-child{

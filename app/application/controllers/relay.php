@@ -30,6 +30,15 @@ class Relay extends CI_Controller {
 	public function index(){
 		$this->home();
 	}
+    public function home(){
+        $this->data['products'] = $this->app_model->retrieve_products(); // retrieve an array with all products
+        $this->data['title'] 	= "Home Relay";
+        $this->data['content'] 	= "home";
+
+        $this->_load_view();
+    }
+
+    /* USER REGISTRATION*/
 
     public function log_in (){
         $this->data['title'] 	= "Log In";
@@ -144,14 +153,8 @@ class Relay extends CI_Controller {
         $this->load->view('login_form', $data);
         $this->load->view('inc/footer');
     }
-	public function home(){
-        $this->data['products'] = $this->app_model->retrieve_products(); // retrieve an array with all products
-        $this->data['title'] 	= "Home Relay";
-		$this->data['content'] 	= "home";
 
-		$this->_load_view();
-	}
-
+/* VIEW CONTROLLERS*/
     public function about()
     {
         $this->data['title'] 	= "About Us";
@@ -248,6 +251,9 @@ class Relay extends CI_Controller {
 
         $this->_load_view();
     }
+///////////////////             END SHOPPING CART               ////////////////////////////////////////////////////////////////////////////////
+
+ /*    IMAGE GALLERY*/
 
     public function gallery_image(){
         $this->data['title'] 	= "Gallery";
