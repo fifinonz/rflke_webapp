@@ -157,7 +157,7 @@
                                 </div>
                                 <div class="event-intro">
                                     <h5><a href="" title="">Upcoming Outreach Event</a></h5>
-                                    <a href="#" title=""><i class="icon-calendar-empty"></i><span>August</span> 14,2015</a>
+                                    <a href="#" title=""><i class="icon-calendar-empty"></i><span>July</span> 14,2015</a>
                                     <a href="#" title=""><i class="icon-map-marker"></i>In Nairobi, Kenya</a>
                                 </div>
                             </div><!-- Event -->
