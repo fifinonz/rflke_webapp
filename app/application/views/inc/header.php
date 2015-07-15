@@ -287,17 +287,17 @@ $(window).load(function(){
                     <li><a><strong>Common Cancers</strong></a></li>
                     <li><a><strong>Cancers in General</strong></a></li>
                     <li><a><strong>Cancers in General</strong></a></li>
-                    <li><a href="#" title="">Breast Cancer</a></li>
-                    <li><a href="#" title="">General Lymphomas</a></li>
-                    <li><a href="#" title="">Esophageal Cancer</a></li>
-                    <li><a href="#" title="">Cervical Cancer</a></li>
-                    <li><a href="#" title="">Non Hodgkins Lymphoma</a></li>
-                    <li><a href="#" title="">Nutrition Tips</a></li>
-                    <li><a href="#" title="">Lung Cancer</a></li>
-                    <li><a href="#" title="">Leukemia</a></li>
-<!--                    <li><a href="#" title="">Diet</a></li>-->
-                    <li><a href="#" title="">Colerectal Cancer</a></li>
-                    <li><a href="#" title="">Retinoblastoma</a></li>
+                    <li><a href="<?php echo base_url();?>assets/docs/breast_cancer.pdf" title="">Breast Cancer</a></li>
+                    <li><a href="<?php echo base_url();?>assets/docs/general_lymphoma.pdf" title="">General Lymphomas</a></li>
+                    <li><a href="<?php echo base_url();?>assets/docs/esophageal_cancer.pdf" title="">Esophageal Cancer</a></li>
+                    <li><a href="<?php echo base_url();?>assets/docs/cervical_cancer.pdf" title="">Cervical Cancer</a></li>
+                    <li><a href="<?php echo base_url();?>assets/docs/non_hodgkins_lymphoma.pdf" title="">Non Hodgkins Lymphoma</a></li>
+                    <li><a href="<?php echo base_url();?>assets/docs/nutrition.pdf" title="">Nutrition Tips</a></li>
+                    <li><a href="<?php echo base_url();?>assets/docs/lung_cancer.pdf" title="">Lung Cancer</a></li>
+                    <li><a href="<?php echo base_url();?>assets/docs/Leukemia.pdf" title="">Leukemia</a></li>
+                    <!--                        <li><a href="#" title="">Diet</a></li>-->
+                    <li><a href="<?php echo base_url();?>assets/docs/colorectal_cancer.pdf" title="">Colerectal Cancer</a></li>
+                    <li><a href="<?php echo base_url();?>assets/docs/retinoblastoma.pdf" title="">Retinoblastoma</a></li>
                     <!--                        <li><a href="#" title="">Sun/UV</a></li>-->
                 </ul><!-- Drop Down -->
             </li>
