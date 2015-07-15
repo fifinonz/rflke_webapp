@@ -165,12 +165,12 @@ $(window).load(function(){
 			<ul id="menu-navigation">
 				<li class="active"><a href="<?php echo base_url();?>relay/home">Home</a>
 
-				<li><a>About Us</a>
-					<ul>
-						<li><a href="<?php echo base_url();?>relay/about_relay" title="">What is Relay For Life?</a></li>
-						<li><a href="<?php echo base_url();?>relay/about" title="">Meet The Team</a></li>
-						
-					</ul><!-- Drop Down -->				
+				<li><a href="<?php echo base_url();?>relay/about_relay" >About Us</a>
+<!--					<ul>-->
+<!--						<li><a href="--><?php //echo base_url();?><!--relay/about_relay" title="">What is Relay For Life?</a></li>-->
+<!--						<li><a href="--><?php //echo base_url();?><!--relay/about" title="">Meet The Team</a></li>-->
+<!--						-->
+<!--					</ul><!-- Drop Down -->
 				</li>
                 <li><a>Get Involved</a>
                     <ul>
