@@ -278,7 +278,7 @@ class Relay extends CI_Controller {
 
     public function contact_us(){
         $this->data['title'] 	= "Contact US";
-        $this->data['content'] 	= "contact.html";
+        $this->data['content'] 	= "contact.php";
 
         $this->_load_view();
     }
@@ -289,4 +289,8 @@ class Relay extends CI_Controller {
 
         $this->_load_view();
     }
+
+    /*CONTACT US */
+
+
 }

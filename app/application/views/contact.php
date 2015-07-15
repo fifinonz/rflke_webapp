@@ -42,17 +42,18 @@
                     <h3 class="sub-head">SEND US A MESSAGE</h3>
 
                     <p>Required fields <span>*</span></p>
-                    <form method="post"  action="contact.php" name="contactform" id="contactform">
+                    <form method="post"  action="#" name="contactform" id="contactform">
                         <label for="name" accesskey="U">Full name <span>*</span></label>
-                        <input name="name" class="form-control input-field" type="text" id="name" size="30" value="" />
+                        <input name="vname" class="form-control input-field" type="text" id="name" size="30" value="" placeholder="Your Name" />
                         <label for="email" accesskey="E">Email Address <span>*</span></label>
-
-                        <input name="email" class="form-control input-field" type="text" id="email" size="30" value="" />
+                        <input name="vemail" class="form-control input-field" type="text" id="email" size="30" value="" placeholder="Your Email"/>
+                        <label for="subject" accesskey="S">Subject <span>*</span></label>
+                        <input name="vname" class="form-control input-field" type="text" id="name" size="30" value="" placeholder="Subject"/>
                         <label for="comments" accesskey="C">Message <span>*</span></label>
-                        <textarea name="comments" rows="9" id="comments" rows="7" class="form-control input-field"></textarea>
-                        <input type="submit" class="form-button submit" id="submit" value="SEND MESSAGE" />
+                        <textarea name="msg" rows="9" id="comments" rows="7" class="form-control input-field" placeholder="Type your text here..."></textarea>
+                        <input type="submit" class="form-button submit" id="send" value="SEND MESSAGE" />
                     </form>
-
+                        <h3><?php include "secure_email_code.php"?></h3> 
                 </div>
             </div>	<!-- Message Form -->
         </div>
