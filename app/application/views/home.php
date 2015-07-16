@@ -43,7 +43,7 @@
         </div><!-- Slide4 -->
 
         <div class="ls-slide" data-ls="transition3d:63;timeshift:-1000;">
-            <img src="<?php echo base_url();?>assets/images/slider.png" class="ls-bg" alt="Slide background">
+            <img src="<?php echo base_url();?>assets/images/slider4.png" class="ls-bg" alt="Slide background">
             <h3 class="ls-l slide5" style="top:80px; left:670px; font-family:open sans; font-size:36px; font-weight:700; color:#FFF;background:url(<?php echo base_url();?>assets/images/slider5-bg.png) no-repeat scroll 0 0 / 100% 100% transparent;"  data-ls="offsetxin:0;offsetyin:top;durationin:750;delayin:1000;easingin:easeOutQuart;fadein:false;offsetxout:right;durationout:1000;easingout:easeInQuart;fadeout:false;">UNITED <span>AGAINST</span> CANCER</h3>
             <i class="ls-l slide5" style="top:130px; left:760px; font-family:open sans; font-size:20px; color:#FFF;"  data-ls="offsetxin:0;offsetyin:top;durationin:750;delayin:500;easingin:easeOutQuart;fadein:false;offsetxout:right;durationout:1000;easingout:easeInQuart;fadeout:false;"></i>
             <h4 class="ls-l slide5-title" style="top:160px; left:560px; font-family:open sans; font-size:70px; font-weight:700; color:#FFF; line-height:55px; padding:50px 80px 80px; background:url(<?php echo base_url();?>assets/images/slider5-bg.png) no-repeat scroll 0 0 / 100% 100% transparent;" data-ls="offsetxin:0;offsetyin:0;durationin:1000;delayin:1400;easingin:easeOutQuart;fadein:false;easingout:easeInQuart;rotatexin:-90deg;">RELAY <span>FOR</span> LIFE</h4>
@@ -90,10 +90,11 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="cause-image">
-                                <img src="<?php echo base_url();?>assets/images/cause1.jpg" alt="" />
+                                <img src="<?php echo base_url();?>assets/images/cause1.jpg" alt="" >
                                 <div class="meta">
                                     <span>Nyayo Stadium<br/></br> <i class="icon-map-marker"> Nairobi, Kenya</i></span>
                                 </div>
+
                                 <div class="cause-title">
                                     <div class="row">
                                         <div class="col-md-5">
@@ -121,6 +122,7 @@
 
         </div>
     </div>
+            </div>
 </section>
 
 <section class="block remove-top">
@@ -192,4 +194,3 @@
     </div>
 </section>
 
-</div>

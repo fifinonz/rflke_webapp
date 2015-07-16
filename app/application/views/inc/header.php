@@ -163,7 +163,7 @@ $(window).load(function(){
 		<a class="header-btn" href="<?php echo base_url();?>relay/donate" title="">DONATE</a>
 		<nav class="menu">
 			<ul id="menu-navigation">
-				<li class="active"><a href="<?php echo base_url();?>relay/home">Home</a>
+				<li class="active"><a href="<?php echo base_url();?>relay/home">Home</a></li>
 
 				<li><a href="<?php echo base_url();?>relay/about_relay" >About Us</a>
 <!--					<ul>-->
@@ -236,78 +236,72 @@ $(window).load(function(){
 </header>
     <div class="responsive-header">
         <div class="responsive-logo">
-            <img style="width: 65px;" src="<?php echo base_url();?>assets/images/logo.png" alt="Logo">
-                <h1 style="color: rgb(106, 77, 155);">Relay For Life</h1>
+            <a href="#" title=""><img style="width: 40px;" src="<?php echo base_url();?>assets/images/logo.png" alt="Logo" /><h1>Relay For Life Kenya</h1></a>
         </div>
         <span><i class="icon-align-justify"></i></span>
-        <nav class="menu">
-            <ul id="menu-navigation">
-                <li class="active"><a href="<?php echo base_url();?>relay/home">Home</a>
+        <ul>
+            <li class="active"><a href="<?php echo base_url();?>relay/home">Home</a></li>
 
-                <li><a href="<?php echo base_url();?>relay/about_relay" >About Us</a>
-                    <!--					<ul>-->
-                    <!--						<li><a href="--><?php //echo base_url();?><!--relay/about_relay" title="">What is Relay For Life?</a></li>-->
-                    <!--						<li><a href="--><?php //echo base_url();?><!--relay/about" title="">Meet The Team</a></li>-->
-                    <!--						-->
-                    <!--					</ul><!-- Drop Down -->
-                </li>
-                <li><a>Get Involved</a>
-                    <ul>
-                        <li><a href="#">Participate in Relay 2015</a></li>
-                        <!--                        <li><a href="--><?php //echo base_url();?><!--relay/teams_2015">Participate in Relay 2015</a></li>-->
-                        <li><a href="#">Sign Up As a Volunteer</a>
-                        <li><a href="<?php echo base_url();?>relay/donate">Make A Donation</a></li>
-                    </ul><!-- Drop Down -->
-                </li>
-                <!--				<li><a>Products</a>-->
+            <li><a href="<?php echo base_url();?>relay/about_relay" >About Us</a>
                 <!--					<ul>-->
-                <!--						<li><a href="--><?php //echo base_url();?><!--relay/buy_product">Shop for Products</a>-->
-                <!--							</li>-->
-                <!--						<li><a href="--><?php //echo base_url();?><!--relay/view_cart">View My Cart</a>-->
-                <!--							</li>-->
-                <!---->
-                <!--						<li><a href="--><?php //echo base_url();?><!--relay/checkout">Checkout</a>-->
-                <!--						</li>-->
-                <!---->
-                <!--					</ul>-->
-                <!--				</li>-->
+                <!--						<li><a href="--><?php //echo base_url();?><!--relay/about_relay" title="">What is Relay For Life?</a></li>-->
+                <!--						<li><a href="--><?php //echo base_url();?><!--relay/about" title="">Meet The Team</a></li>-->
+                <!--						-->
+                <!--					</ul><!-- Drop Down -->
+            </li>
+            <li><a>Get Involved</a>
+                <ul>
+                    <li><a href="#">Participate in Relay 2015</a></li>
+                    <!--                        <li><a href="--><?php //echo base_url();?><!--relay/teams_2015">Participate in Relay 2015</a></li>-->
+                    <li><a href="#">Sign Up As a Volunteer</a>
+                    <li><a href="<?php echo base_url();?>relay/donate">Make A Donation</a></li>
+                </ul><!-- Drop Down -->
+            </li>
+            <!--				<li><a>Products</a>-->
+            <!--					<ul>-->
+            <!--						<li><a href="--><?php //echo base_url();?><!--relay/buy_product">Shop for Products</a>-->
+            <!--							</li>-->
+            <!--						<li><a href="--><?php //echo base_url();?><!--relay/view_cart">View My Cart</a>-->
+            <!--							</li>-->
+            <!---->
+            <!--						<li><a href="--><?php //echo base_url();?><!--relay/checkout">Checkout</a>-->
+            <!--						</li>-->
+            <!---->
+            <!--					</ul>-->
+            <!--				</li>-->
 
-<!--                <li><a>Gallery</a>-->
-<!--                    <ul>-->
-<!--                        <li><a href="--><?php //echo base_url();?><!--relay/gallery_image">Image Gallery</a>-->
-
-
-                            <!--						<li><a href="#">Video Gallery</a>-->
-
-                        </li>
-                    </ul><!-- Drop Down -->
-                </li>
+            <!--				<li><a>Gallery</a>-->
+            <!--					<ul>-->
+            <!--						<li><a href="--><?php //echo base_url();?><!--relay/gallery_image">Image Gallery</a>-->
+            <!---->
+            <!--						-->
+            <!--<!--						<li><a href="#">Video Gallery</a>-->
+            <!--							-->
+            <!--						</li>-->
+            <!--						</ul><!-- Drop Down -->
+            <!--				</li>-->
             <li><a href="#">Resource Center</a>
                 <ul class="mega-menu2">
-                    <li><a><strong>Common Cancers</strong></a></li>
-                    <li><a><strong>Cancers in General</strong></a></li>
-                    <li><a><strong>Cancers in General</strong></a></li>
+
                     <li><a href="<?php echo base_url();?>assets/docs/breast_cancer.pdf" title="">Breast Cancer</a></li>
-                    <li><a href="<?php echo base_url();?>assets/docs/general_lymphoma.pdf" title="">General Lymphomas</a></li>
-                    <li><a href="<?php echo base_url();?>assets/docs/esophageal_cancer.pdf" title="">Esophageal Cancer</a></li>
                     <li><a href="<?php echo base_url();?>assets/docs/cervical_cancer.pdf" title="">Cervical Cancer</a></li>
-                    <li><a href="<?php echo base_url();?>assets/docs/non_hodgkins_lymphoma.pdf" title="">Non Hodgkins Lymphoma</a></li>
-                    <li><a href="<?php echo base_url();?>assets/docs/nutrition.pdf" title="">Nutrition Tips</a></li>
-                    <li><a href="<?php echo base_url();?>assets/docs/lung_cancer.pdf" title="">Lung Cancer</a></li>
-                    <li><a href="<?php echo base_url();?>assets/docs/Leukemia.pdf" title="">Leukemia</a></li>
-                    <!--                        <li><a href="#" title="">Diet</a></li>-->
                     <li><a href="<?php echo base_url();?>assets/docs/colorectal_cancer.pdf" title="">Colerectal Cancer</a></li>
+                    <li><a href="<?php echo base_url();?>assets/docs/esophageal_cancer.pdf" title="">Esophageal Cancer</a></li>
+                    <li><a href="<?php echo base_url();?>assets/docs/Leukemia.pdf" title="">Leukemia</a></li>
+                    <li><a href="<?php echo base_url();?>assets/docs/lung_cancer.pdf" title="">Lung Cancer</a></li>
+                    <li><a href="<?php echo base_url();?>assets/docs/general_lymphoma.pdf" title="">General Lymphomas</a></li>
+                    <li><a href="<?php echo base_url();?>assets/docs/non_hodgkins_lymphoma.pdf" title="">Non Hodgkins Lymphoma</a></li>
                     <li><a href="<?php echo base_url();?>assets/docs/retinoblastoma.pdf" title="">Retinoblastoma</a></li>
+                    <!--                        <li><a href="#" title="">Diet</a></li>-->
+                    <li><a href="<?php echo base_url();?>assets/docs/nutrition.pdf" title="">Nutrition Tips</a></li>
                     <!--                        <li><a href="#" title="">Sun/UV</a></li>-->
                 </ul><!-- Drop Down -->
             </li>
 
-                </li>
-                <li><a href="<?php echo base_url();?>relay/faqs">FAQs</a></li>
-                <li><a href="<?php echo base_url();?>relay/contact_us">Contact Us</a></li>
+            </li>
+            <li><a href="<?php echo base_url();?>relay/faqs">FAQs</a></li>
+            <li><a href="<?php echo base_url();?>relay/contact_us">Contact Us</a></li>
 
 
-            </ul>
-
-        </nav><!-- Menu -->
+        </ul>
     </div><!--Responsive header-->
