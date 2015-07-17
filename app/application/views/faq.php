@@ -95,7 +95,7 @@
                     <p><strong><a id="q8"></a>2. Is Relay For Life a sponsored event?</strong></p>
                     <p>Relay For Life itself is a celebration of the fundraising that has happened in the months leading up to the event. <span style="white-space: pre;">	</span>Team members do not get sponsored to take part in the Relay itself. They raise money before the event through their own fundraising activities, seeking donations to beat cancer and then top up their fundraising with additional fundraising activities during the Relay For Life event.</p>
                     <p><strong><a id="q9"></a>3. Is there an entry fee?</strong></p>
-                    <p>No. Each particpant is only requored to pay Ksh. 1000 in order to join a participating team.</p>
+                    <p>No. Each particpant is only requored to pay Ksh. 1200 in order to join a participating team.</p>
                     <p>Please note, entry fees are non-refundable.</p>
 
                     <p><strong><a id="q10"></a>4. How can my team raise money?</strong></p>
