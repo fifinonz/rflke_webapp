@@ -166,7 +166,7 @@ class Relay extends CI_Controller {
 
     public function about_relay(){
         $this->data['title'] 	= "About Relay";
-        $this->data['content'] 	= "what-is-relay.php";
+        $this->data['content'] 	= "what-is-relay";
 
         $this->_load_view();
     }
@@ -187,7 +187,7 @@ class Relay extends CI_Controller {
 
     public function donate(){
         $this->data['title'] 	= "Make a Donation";
-        $this->data['content'] 	= "donate.html";
+        $this->data['content'] 	= "donate";
 
         $this->_load_view();
     }
@@ -196,7 +196,7 @@ class Relay extends CI_Controller {
     public function buy_product(){
         $this->data['products'] = $this->app_model->retrieve_products(); // retrieve an array with all products
         $this->data['title'] 	= "Buy Products";
-        $this->data['content'] 	= "products.php";
+        $this->data['content'] 	= "products";
 
         $this->_load_view();
     }

@@ -64,7 +64,7 @@
                 <div class="col-md-2">
                     <div class="box">
                         <i class="icon-user"></i>
-                        <h4><a href="about">Meet The Team</a></h4>
+                        <h4><a href="#">Meet The Team</a></h4>
                     </div>
                 </div>
                 <div class="col-md-2">
@@ -76,19 +76,19 @@
                 <div class="col-md-2">
                     <div class="box">
                         <i class="icon-microphone"></i>
-                        <h4><a href="shujaa">Meet The Shujaa's</a></h4>
+                        <h4><a href="#">Meet The Shujaa's</a></h4>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="box">
                         <i class="icon-shopping-cart"></i>
-                        <h4><a href="buy_product">Buy our Merchandise</a></h4>
+                        <h4><a href="#">Buy our Merchandise</a></h4>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="box">
                         <i class="icon-group"></i>
-                        <h4><a href="<?php echo base_url();?>relay/teams_2015">Join a Team</a></h4>
+                        <h4><a href="#">Join a Team</a></h4>
                     </div>
                 </div>
                 <div class="col-md-2">
