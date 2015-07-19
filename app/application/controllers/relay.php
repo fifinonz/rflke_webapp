@@ -173,7 +173,7 @@ class Relay extends CI_Controller {
 
     public function teams_2015(){
         $this->data['title'] 	= "Participate in Relay 2015";
-        $this->data['content'] 	= "teams_2015.html";
+        $this->data['content'] 	= "teams_2015.php";
 
         $this->_load_view();
     }
