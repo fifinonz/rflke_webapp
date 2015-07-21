@@ -186,37 +186,7 @@ $(window).load(function(){
 
 					</ul><!-- Drop Down -->
 				</li>
-<!--                <li><a>Get Involved</a>-->
-<!--                    <ul>-->
-<!--                        <li><a href="#">Participate in Relay 2015</a></li>-->
-<!--<!--                        <li><a href="--><?php ////echo base_url();?><!--<!--relay/teams_2015">Participate in Relay 2015</a></li>-->
-<!--                        <li><a href="#">Sign Up As a Volunteer</a>-->
-<!--                        <li><a href="--><?php //echo base_url();?><!--relay/donate">Make A Donation</a></li>-->
-<!--                    </ul><!-- Drop Down -->
-<!--                </li>-->
-<!--				<li><a>Products</a>-->
-<!--					<ul>-->
-<!--						<li><a href="--><?php //echo base_url();?><!--relay/buy_product">Shop for Products</a>-->
-<!--							</li>-->
-<!--						<li><a href="--><?php //echo base_url();?><!--relay/view_cart">View My Cart</a>-->
-<!--							</li>-->
-<!---->
-<!--						<li><a href="--><?php //echo base_url();?><!--relay/checkout">Checkout</a>-->
-<!--						</li>-->
-<!---->
-<!--					</ul>-->
-<!--				</li>-->
 
-<!--				<li><a>Gallery</a>-->
-<!--					<ul>-->
-<!--						<li><a href="--><?php //echo base_url();?><!--relay/gallery_image">Image Gallery</a>-->
-<!---->
-<!--						-->
-<!--<!--						<li><a href="#">Video Gallery</a>-->
-<!--							-->
-<!--						</li>-->
-<!--						</ul><!-- Drop Down -->
-<!--				</li>-->
 				<li><a href="#">Resource Center</a>
                     <ul class="mega-menu2">
                         <li><a><strong>Common Cancers</strong></a></li>
@@ -266,37 +236,7 @@ $(window).load(function(){
 
                 </ul><!-- Drop Down -->
             </li>
-<!--            <li><a>Get Involved</a>-->
-<!--                <ul>-->
-<!--                    <li><a href="#">Participate in Relay 2015</a></li>-->
-<!--                                            <li><a href="--><?php //echo base_url();?><!--relay/teams_2015">Participate in Relay 2015</a></li>-->
-<!--                    <li><a href="#">Sign Up As a Volunteer</a>-->
-<!--                    <li><a href="--><?php //echo base_url();?><!--relay/donate">Make A Donation</a></li>-->
-<!--                </ul><!-- Drop Down -->
-<!--            </li>-->
-            <!--				<li><a>Products</a>-->
-            <!--					<ul>-->
-            <!--						<li><a href="--><?php //echo base_url();?><!--relay/buy_product">Shop for Products</a>-->
-            <!--							</li>-->
-            <!--						<li><a href="--><?php //echo base_url();?><!--relay/view_cart">View My Cart</a>-->
-            <!--							</li>-->
-            <!---->
-            <!--						<li><a href="--><?php //echo base_url();?><!--relay/checkout">Checkout</a>-->
-            <!--						</li>-->
-            <!---->
-            <!--					</ul>-->
-            <!--				</li>-->
 
-            <!--				<li><a>Gallery</a>-->
-            <!--					<ul>-->
-            <!--						<li><a href="--><?php //echo base_url();?><!--relay/gallery_image">Image Gallery</a>-->
-            <!---->
-            <!--						-->
-            <!--<!--						<li><a href="#">Video Gallery</a>-->
-            <!--							-->
-            <!--						</li>-->
-            <!--						</ul><!-- Drop Down -->
-            <!--				</li>-->
             <li><a href="#">Resource Center</a>
                 <ul class="mega-menu2">
 
