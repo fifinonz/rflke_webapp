@@ -180,8 +180,6 @@
                         </div>
                         <div class="col-md-6">
                             <div class="">
-<!--                                <img src="--><?php //echo base_url();?><!--assets/images/video-bg.png" alt="" />-->
-<!--                                <a title="A call to Relay" href="https://www.youtube.com/watch?v=mL-z5h_mJBE" class="html5lightbox">-->
                                 <iframe width="261" height="207" src="https://www.youtube.com/embed/h_9mtpibVfo" frameborder="0" allowfullscreen></iframe>
                                     <span><i class="icon-play"></i></span>
                                 </a>
