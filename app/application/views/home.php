@@ -92,10 +92,10 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="cause-image">
-                                <iframe name="inlineframe" src="https://www.youtube.com/embed/h_9mtpibVfo?feature=player_detailpage?wmode=transparent" width="100%" height="760" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>                                <div class="meta">
+                                <img src="<?php echo base_url();?>assets/images/cause1.jpg" alt="" >
+                                <div class="meta">
                                     <span>Nyayo Stadium<br/></br> <i class="icon-map-marker"> Nairobi, Kenya</i></span>
                                 </div>
-
                                 <div class="cause-title">
                                     <div class="row">
                                         <div class="col-md-5">
