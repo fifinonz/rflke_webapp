@@ -1,6 +1,6 @@
 
 <div class="top-image">
-    <img src="<?php echo base_url();?>assets/images/single-page-top2.jpg" alt="" />
+    <img src="<?php echo base_url();?>assets/images/faq-top.jpg" alt="" />
 </div><!--Page Top Image-->
 
 <section class="inner-page">
@@ -18,9 +18,9 @@
                         </div>
                         <div class="col-md-7">
                             <h3>Get involved</h3>
-                            <li><a href="#q1">When is Relay?</a></li>
-                            <li><a href="#q2">What if it rains?</a></li>
-                            <li><a href="#q3">Do I have to stay for the whole event?</a></li>
+                            <li><a style="color: #800080;" href="#q1">When is Relay?</a></li>
+                            <li><a style="color: #800080;" href="#q2">What if it rains?</a></li>
+                            <li><a style="color: #800080;" href="#q3">Do I have to stay for the whole event?</a></li>
                         </div>
                     </div>
                 </div>
@@ -33,10 +33,10 @@
                         </div>
                         <div class="col-md-7">
                             <h3>Cancer survivors</h3>
-                            <li><a href="#q14">What is a cancer?</a></li>
-                            <li><a href="#q4">Who is a cancer survivor?</a></li>
-                            <li><a href="#q5">Who is a caregiver?</a></li>
-                            <li><a href="#q6">What am I expected to do as a cancer survivor? </a><
+                            <li><a style="color: #800080;" href="#q14">What is a cancer?</a></li>
+                            <li><a style="color: #800080;" href="#q4">Who is a cancer survivor?</a></li>
+                            <li><a style="color: #800080;" href="#q5">Who is a caregiver?</a></li>
+                            <li><a style="color: #800080;" href="#q6">What am I expected to do as a cancer survivor? </a><
                         </div>
                     </div>
                 </div>
@@ -49,12 +49,12 @@
                         </div>
                         <div class="col-md-7">
                             <h3>Teams</h3>
-                            <li><a href="#q7">How long do we need to run or walk for?</a></li>
-                            <li><a href="#q8">Is Relay For Life a sponsored event?</a></li>
-                            <li><a href="#q9">Is there an entry fee? </a></li>
-                            <li><a href="#q10">How can my team raise money?</a></li>
-                            <li><a href="#q11">How much money do we need to raise?</a></li>
-                            <li><a href="#q12">What should we bring to the event?</a></li>
+                            <li><a style="color: #800080;" href="#q7">How long do we need to run or walk for?</a></li>
+                            <li><a style="color: #800080;" href="#q8">Is Relay For Life a sponsored event?</a></li>
+                            <li><a style="color: #800080;" href="#q9">Is there an entry fee? </a></li>
+                            <li><a style="color: #800080;" href="#q10">How can my team raise money?</a></li>
+                            <li><a style="color: #800080;" href="#q11">How much money do we need to raise?</a></li>
+                            <li><a style="color: #800080;" href="#q12">What should we bring to the event?</a></li>
 
                         </div>
                     </div>
@@ -68,7 +68,7 @@
                         </div>
                         <div class="col-md-7">
                             <h3>Volunteering</h3>
-                            <li><a href="#q13">What types of things will I do if I volunteer?</a></li>
+                            <li><a style="color: #800080;" href="#q13">What types of things will I do if I volunteer?</a></li>
                         </div>
                     </div>
                 </div>
@@ -121,7 +121,7 @@
                     <h3 style="background:#6a4d9b ">Volunteering</h3>
                     <p><strong><a id="q13"></a>4. What types of things will I do if I volunteer? </strong></p>
                     <p>Every Relay For Life event is organised by a volunteer committee who need lots of help before and after the event and on the day. Jobs vary from event to event, you could help organise the Candle of Hope ceremony, contact businesses for support, help teams with their tents, run cancer awareness activities or provide some music or entertainment to help enthuse and motivate the teams.&nbsp;</p>
-                    <p><a href="register.html">Sign up Now </a> and take part as a volunteer.</p>
+                    <p><a style="color: #800080;" href="#">Sign up Now </a> and take part as a volunteer.</p>
                     <p><a title=""   class="news-img"><img alt="" src="<?php echo base_url();?>assets/images/event_night2.jpg"></a></p>
 
                 </div>

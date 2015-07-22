@@ -1,5 +1,5 @@
 <div class="top-image">
-    <img src="<?php echo base_url();?>assets/images/single-page-top2.jpg" alt="" />
+    <img src="<?php echo base_url();?>assets/images/faq-top.jpg" alt="" />
 </div><!-- Page Top Image -->
 
 <section class="inner-page">
