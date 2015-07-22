@@ -155,7 +155,7 @@ class Relay extends CI_Controller {
     }
 
 /* VIEW CONTROLLERS*/
-    public function about()
+    public function what_is_relay()
     {
         $this->data['title'] 	= "About Us";
         $this->data['content'] 	= "about";
@@ -164,7 +164,7 @@ class Relay extends CI_Controller {
 
     }
 
-    public function about_relay(){
+    public function about(){
         $this->data['title'] 	= "About Relay";
         $this->data['content'] 	= "what-is-relay";
 

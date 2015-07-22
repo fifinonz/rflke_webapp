@@ -4051,10 +4051,10 @@ footer .container {
     float:left;
 }
 h3.sub-head {
-    color:#2D2D2D;
+    color:#2b0171;
     font-family:roboto;
-    font-size:20px;
-    font-weight:400;
+    font-size:30px;
+    font-weight:600;
     line-height:17px;
 }
 h3.sub-head span{
@@ -4670,6 +4670,7 @@ textarea.input-field:focus{
 }
 .theme-tabs .nav li{
 	margin:0;
+    font-weight:400;
 }
 .theme-tabs .nav li a,
 .theme-tabs .nav li a:hover {

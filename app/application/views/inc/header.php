@@ -176,23 +176,24 @@ $(window).load(function(){
 		<a class="header-btn" href="<?php echo base_url();?>relay/donate" title="">DONATE</a>
 		<nav class="menu">
 			<ul id="menu-navigation">
-				<li class="active"><a href="<?php echo base_url();?>relay/home">Home</a></li>
+				<li class="active"><a href="<?php echo base_url();?>relay/home">Relay For Life Home</a></li>
 
-				<li><a href="<?php echo base_url();?>relay/about_relay" >About Us</a>
-<!--					<ul>-->
-<!--						<li><a href="--><?php //echo base_url();?><!--relay/about_relay" title="">What is Relay For Life?</a></li>-->
-<!--						<li><a href="--><?php //echo base_url();?><!--relay/about" title="">Meet The Team</a></li>-->
-<!--						-->
-<!--					</ul><!-- Drop Down -->
+				<li><a href="<?php echo base_url();?>relay/about_relay" >Learn About Relay</a>
+					<ul>
+                        <li><a href="<?php echo base_url();?>relay/about" title="">Brief Overview</a></li>
+
+                        <li><a href="<?php echo base_url();?>relay/what_is_relay" title="">What Happens at Relay?</a></li>
+
+					</ul><!-- Drop Down -->
 				</li>
-                <li><a>Get Involved</a>
-                    <ul>
-                        <li><a href="#">Participate in Relay 2015</a></li>
-<!--                        <li><a href="--><?php //echo base_url();?><!--relay/teams_2015">Participate in Relay 2015</a></li>-->
-                        <li><a href="#">Sign Up As a Volunteer</a>
-                        <li><a href="<?php echo base_url();?>relay/donate">Make A Donation</a></li>
-                    </ul><!-- Drop Down -->
-                </li>
+<!--                <li><a>Get Involved</a>-->
+<!--                    <ul>-->
+<!--                        <li><a href="#">Participate in Relay 2015</a></li>-->
+<!--<!--                        <li><a href="--><?php ////echo base_url();?><!--<!--relay/teams_2015">Participate in Relay 2015</a></li>-->
+<!--                        <li><a href="#">Sign Up As a Volunteer</a>-->
+<!--                        <li><a href="--><?php //echo base_url();?><!--relay/donate">Make A Donation</a></li>-->
+<!--                    </ul><!-- Drop Down -->
+<!--                </li>-->
 <!--				<li><a>Products</a>-->
 <!--					<ul>-->
 <!--						<li><a href="--><?php //echo base_url();?><!--relay/buy_product">Shop for Products</a>-->
@@ -257,21 +258,22 @@ $(window).load(function(){
         <ul>
             <li class="active"><a href="<?php echo base_url();?>relay/home">Home</a></li>
 
-            <li><a href="<?php echo base_url();?>relay/about_relay" >About Us</a>
-                <!--					<ul>-->
-                <!--						<li><a href="--><?php //echo base_url();?><!--relay/about_relay" title="">What is Relay For Life?</a></li>-->
-                <!--						<li><a href="--><?php //echo base_url();?><!--relay/about" title="">Meet The Team</a></li>-->
-                <!--						-->
-                <!--					</ul><!-- Drop Down -->
-            </li>
-            <li><a>Get Involved</a>
+            <li><a href="<?php echo base_url();?>relay/about_relay" >Learn About Relay</a>
                 <ul>
-                    <li><a href="#">Participate in Relay 2015</a></li>
-                    <!--                        <li><a href="--><?php //echo base_url();?><!--relay/teams_2015">Participate in Relay 2015</a></li>-->
-                    <li><a href="#">Sign Up As a Volunteer</a>
-                    <li><a href="<?php echo base_url();?>relay/donate">Make A Donation</a></li>
+                    <li><a href="<?php echo base_url();?>relay/about" title="">Brief Overview</a></li>
+
+                    <li><a href="<?php echo base_url();?>relay/what_is_relay" title="">What Happens at Relay?</a></li>
+
                 </ul><!-- Drop Down -->
             </li>
+<!--            <li><a>Get Involved</a>-->
+<!--                <ul>-->
+<!--                    <li><a href="#">Participate in Relay 2015</a></li>-->
+<!--                                            <li><a href="--><?php //echo base_url();?><!--relay/teams_2015">Participate in Relay 2015</a></li>-->
+<!--                    <li><a href="#">Sign Up As a Volunteer</a>-->
+<!--                    <li><a href="--><?php //echo base_url();?><!--relay/donate">Make A Donation</a></li>-->
+<!--                </ul><!-- Drop Down -->
+<!--            </li>-->
             <!--				<li><a>Products</a>-->
             <!--					<ul>-->
             <!--						<li><a href="--><?php //echo base_url();?><!--relay/buy_product">Shop for Products</a>-->
