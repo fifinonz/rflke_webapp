@@ -109,14 +109,19 @@ $(window).load(function(){
 </script>
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 <div class="theme-layout">
 
 <div id="top-bar">
-    <div class="row">
-        <div class="col-md-offset-2">
-
-
-		<ul>
+    <div class="container">
+        <ul>
 			<li>
 				<i class="icon-home"></i>
 				KENCASA Offices, KNH Nairobi.
@@ -130,27 +135,35 @@ $(window).load(function(){
 				info@relayforlifekenya.org
 			</li>
 		</ul>
-        </div>
-        <div class="col-md-offset-2">
-            <div class="registration-box">
-            <?php  if(isset($this->session->userdata['logged_in'])){
-//                $logout='<a class="btn" href="http://localhost/relayforlifekenya.org/app/relay/logout" title="">Log Out</a>';
-//                echo $logout;
-                echo 'Log Out';
-            }else{
-//                $login='<a class="btn" href="http://localhost/relayforlifekenya.org/app/relay/log_in" title="">Log In</a>';
-//                $signup='<a class="btn" href="http://localhost/relayforlifekenya.org/app/relay/user_registration_show" title="">Sign Up</a>';
-//                echo $login;
-//                echo $signup;
-                echo '<li><a>Log In</a></li>';
-                echo '<li><a>Sign Up</a></li>';
-            }
-            ?>
-		</div>
-	</div>
-        </div>
-    </div>
+<!--            <div class="registration-box">-->
+<!--            --><?php // if(isset($this->session->userdata['logged_in'])){
+////                $logout='<a class="btn" href="http://localhost/relayforlifekenya.org/app/relay/logout" title="">Log Out</a>';
+////                echo $logout;
+//                echo 'Log Out';
+//            }else{
+////                $login='<a class="btn" href="http://localhost/relayforlifekenya.org/app/relay/log_in" title="">Log In</a>';
+////                $signup='<a class="btn" href="http://localhost/relayforlifekenya.org/app/relay/user_registration_show" title="">Sign Up</a>';
+////                echo $login;
+////                echo $signup;
+//                echo '<li><a>Log In</a></li>';
+//                echo '<li><a>Sign Up</a></li>';
+//            }
+//            ?>
+<!--		</div>-->
+        <div class="header-social">
 
+                <div class="fb-share-button" data-href="https://www.facebook.com/Relay4LifeKenya" data-layout="button_count">
+                </div>
+                <div class="fb-like" data-href="https://www.facebook.com/Relay4LifeKenya" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" >
+                </div>
+            <a class="twitter-follow-button" href="https://twitter.com/Relay4LifeKE">
+                Follow @Relay4LifeKE</a>
+
+
+        </div>
+
+    </div>
+    </div>
 
 <header class="header2 sticky">
 	<div class="container">
@@ -226,13 +239,15 @@ $(window).load(function(){
 				</li>
 				<li><a href="<?php echo base_url();?>relay/faqs">FAQs</a></li>
 				<li><a href="<?php echo base_url();?>relay/contact_us">Contact Us</a></li>
-					
-				
-			</ul> 
+
+
+            </ul>
+
+
 
 		</nav><!-- Menu -->
 
-	</div>		
+	</div>
 </header>
     <div class="responsive-header">
         <div class="responsive-logo">
