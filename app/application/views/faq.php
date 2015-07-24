@@ -36,7 +36,7 @@
                             <li><a style="color: #800080;" href="#q14">What is a cancer?</a></li>
                             <li><a style="color: #800080;" href="#q4">Who is a cancer survivor?</a></li>
                             <li><a style="color: #800080;" href="#q5">Who is a caregiver?</a></li>
-                            <li><a style="color: #800080;" href="#q6">What am I expected to do as a cancer survivor? </a><
+                            <li><a style="color: #800080;" href="#q6">What am I expected to do as a cancer survivor? </a>
                         </div>
                     </div>
                 </div>

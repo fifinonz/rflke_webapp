@@ -1,7 +1,7 @@
 <div id="layerslider-container-fw">
 
     <div id="layerslider" style="width: 100%; height: 530px; margin: 0px auto; ">        <div class="ls-slide" data-ls="transition3d:53; timeshift:-1000;">
-            <img src="<?php echo base_url();?>assets/images/slider5.png" class="ls-bg" alt="Slide background">
+            <img src="<?php echo base_url();?>assets/images/7.jpg" class="ls-bg" alt="Slide background">
             <p class="ls-l slide1"	style="top: 330px; left:248px; font-family:roboto; font-size:13px; color:#fefefe;" data-ls="delayin:1000; scalein:4; durationin : 1000;"><br/></p>
         </div><!-- Slide1 -->
 

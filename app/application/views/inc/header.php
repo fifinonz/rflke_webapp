@@ -178,7 +178,7 @@ $(window).load(function(){
 			<ul id="menu-navigation">
 				<li class="active"><a href="<?php echo base_url();?>relay/home">Relay For Life Home</a></li>
 
-				<li><a href="<?php echo base_url();?>relay/about_relay" >Learn About Relay</a>
+				<li><a href="" >Learn About Relay</a>
 					<ul>
                         <li><a href="<?php echo base_url();?>relay/about" title="">Brief Overview</a></li>
 
@@ -230,7 +230,7 @@ $(window).load(function(){
                         <li><a href="<?php echo base_url();?>assets/docs/nutrition.pdf" title="">Nutrition Tips</a></li>
                         <li><a href="<?php echo base_url();?>assets/docs/lung_cancer.pdf" title="">Lung Cancer</a></li>
                         <li><a href="<?php echo base_url();?>assets/docs/Leukemia.pdf" title="">Leukemia</a></li>
-<!--                        <li><a href="#" title="">Diet</a></li>-->
+                        <li><a href="http://www.yackenya.org/cancer-statistics/" title="">Cancer Statistics</a></li>
                         <li><a href="<?php echo base_url();?>assets/docs/colorectal_cancer.pdf" title="">Colerectal Cancer</a></li>
                         <li><a href="<?php echo base_url();?>assets/docs/retinoblastoma.pdf" title="">Retinoblastoma</a></li>
 <!--                        <li><a href="#" title="">Sun/UV</a></li>-->
@@ -258,7 +258,7 @@ $(window).load(function(){
         <ul>
             <li class="active"><a href="<?php echo base_url();?>relay/home">Home</a></li>
 
-            <li><a href="<?php echo base_url();?>relay/about_relay" >Learn About Relay</a>
+            <li><a href="" >Learn About Relay</a>
                 <ul>
                     <li><a href="<?php echo base_url();?>relay/about" title="">Brief Overview</a></li>
 
