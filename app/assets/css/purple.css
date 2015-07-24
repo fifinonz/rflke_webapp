@@ -108,7 +108,6 @@ header.header3 #menu-navigation li ul li:hover,
 .sec-title h2 span,
 .meta span i,
 .needed-amount > h5 i,
-.footer-widget-title h4 span,
 .our-causes-hover span i,
 .our-causes-hover span.needed-amount,
 .story > h6 i,
@@ -188,7 +187,9 @@ h5.slide3 span,
 .wide-project-detail > h2 a:hover{
 	color:#2b0171;
 }
-
+.footer-widget-title h4 span{
+    color: #800080;
+}
 .causes-pagi:hover,
 .counter,
 .flickr-images > a:before,
