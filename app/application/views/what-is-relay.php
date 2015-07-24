@@ -96,7 +96,8 @@
                     <div class="col-md-12">
                         <h2>Who will you Relay For?</h2>
                         <p style="font-size: 16px;">While the Kenya Cancer Association is making progress toward a world without cancer, only with your dedication and fundraising efforts can we finish the fight against the disease.</p>
-                        <a href="#" title="">Get Involved Now</a>
+                       <br/>
+                        <a style="font-family: Rockwell-Italic;font-size: 28px;margin-top: 36px;padding:10px 15px;color: #FFF;background:#2b0171;" target="_blank" href="<?php echo base_url();?>relay/teams_2015">Sign Up For Relay 2015</a>
                     </div>
                 </div>
             </div>

@@ -65,14 +65,16 @@
                             <p style="font-size: 18px">He decided to raise funds for his local American Cancer Society and ran around a track for an amazing 24 hours – a grueling feat, but symbolising what somebody fighting cancer has to endure. He asked people he knew to support him and raised $27 000USD.</p>
                             <p style="text-align: justify;font-size: 18px">While he was running around the track, he thought about how other people could get involved. He imagined a 24 hour team relay event that would raise money for the fight against cancer. Dr Gordy’s determination was contagious and the following year he tapped into networks of friends, family and associates to help raise funds and… Relay For Life was born.</p>
                             <br/>
+                            <p style="text-align: center;font-size: 18px">Relay For Life began in Kenya in 2014. Teams from all over Kenya spent 24hrs at the Nyayo Statdium and raised Ksh.6 million for the Kenya Cancer Association. 2015 will be Kenya's second time to host a Relay for Life event.</p>
+                            <br/>
                             <p style="text-align: center">
                                 <!-- Code Embed v2.1 -->
-                                <object width="420" height="315"><param name="movie" value="//www.youtube.com/v/-ZN1_033Hbc?version=3&amp;hl=en_US&amp;rel=0"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="//www.youtube.com/v/-ZN1_033Hbc?version=3&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" width="420" height="315" allowscriptaccess="always" allowfullscreen="true"></object>
-                                <!-- End of Code Embed code -->
+                                <iframe width="640" height="360" src="https://www.youtube.com/embed/b_LygIqNU5k?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>                                <!-- End of Code Embed code -->
                             </p>
-                            <p style="text-align: center;font-size: 18px">Today, Relay For Life is an internationally recognisable brand, involving entire communities with one mutual goal – Eradicating cancer!</p>
-                            <p style="text-align: center;font-size: 18px">There are 20 countries around the world celebrating the lives saved from cancer; remembering those lives lost to cancer and those fighting back everyday…</p>
-                            <p style="text-align: center;font-size: 16px"><strong><span style="color: #800080"><em>Relay For Life is the largest cancer engagement and fundraising activity in the world!</em></span></strong></p>                    </div>
+                            <br/>
+                            <p style="text-align: center;font-size: 16px"><strong><span style="color: #800080"><em>Relay For Life is the largest cancer engagement and fundraising activity in the world!</em></span></strong></p>
+
+                        </div>
                         </div>
 
                 </div>
@@ -103,6 +105,8 @@
                             </ul>
 
                             </p>
+                            <a class="main-container fixer-container signup-btn" href="<?php echo base_url();?>relay/teams_2015" target="_blank">Sign Up For Relay 2015</a>
+
                         </div>
                     </div>
 <!--                    <div id="tab7" class="tab-pane fade">-->
