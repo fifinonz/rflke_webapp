@@ -30,7 +30,7 @@
 
 
         </div>
-    </div>
+
 
 </section>
 <section class="block">
@@ -102,5 +102,5 @@
     </div>
 </section>
 
-</div>
+
 
