@@ -1,3 +1,13 @@
+<div id="layerslider-container-fw">
+    <div id="layerslider" style="width: 100%; height: 450px; margin: 0px auto; ">
+        <div class="ls-slide" data-ls="transition3d:53; timeshift:-1000;">
+            <img src="http://images.webinane.com/ll/slider1.jpg" class="ls-bg" alt="Slide background">
+        </div><!-- Slide1 -->
+        <div class="ls-slide" data-ls="transition3d:53; timeshift:-1000;">
+            <img src="http://images.webinane.com/ll/slider1.jpg" class="ls-bg" alt="Slide background">
+        </div><!-- Slide1 -->
+    </div>
+</div><!-- Layer Slider -->
 
 <div class="top-image">
     <img src="<?php echo base_url();?>assets/images/single-page-top2.jpg" alt="" />
