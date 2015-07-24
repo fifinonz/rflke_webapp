@@ -108,7 +108,7 @@ $(window).load(function(){
 });
 </script>
 </head>
-<body>
+<body class="bg-body3">
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -169,7 +169,7 @@ $(window).load(function(){
 	<div class="container">
 		<div class="logo">
             <br/><br/>
-			<img src="<?php echo base_url();?>assets/images/logo.png"alt="Logo">
+			<img src="<?php echo base_url();?>assets/images/logo.png"alt="">
 
             <h1>Relay For Life Kenya</h1>
 		</div><!-- Logo -->

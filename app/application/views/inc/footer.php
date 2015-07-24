@@ -75,6 +75,13 @@
 			<li><a href="#" title="">RESOURCE CENTER</a></li>
 			<li><a href="#" title="">GALLERY</a></li>
 			<li><a href="<?php echo base_url();?>relay/contact-us" title="">CONTACT</a></li>
+            <li>
+                <a href="#" target="_top">
+                    <i class="icon-arrow-up"></i>
+
+                    Top
+                </a>
+            </li>
 		</ul>
 
 	</div>
