@@ -17,7 +17,7 @@ class Relay extends CI_Controller {
         $this->load->helper('form');
         $this->load->library('form_validation');
         $this->load->library('session');
-		$this->load->model('app_model');
+//		$this->load->model('app_model');
         $this->load->model('login_database');
 	}
 
@@ -31,7 +31,7 @@ class Relay extends CI_Controller {
 		$this->home();
 	}
     public function home(){
-        $this->data['products'] = $this->app_model->retrieve_products(); // retrieve an array with all products
+//        $this->data['products'] = $this->app_model->retrieve_products(); // retrieve an array with all products
         $this->data['title'] 	= "Home Relay";
         $this->data['content'] 	= "home";
 
@@ -193,64 +193,64 @@ class Relay extends CI_Controller {
     }
         /*      SHOPPING CART    */
 
-    public function buy_product(){
-        $this->data['products'] = $this->app_model->retrieve_products(); // retrieve an array with all products
-        $this->data['title'] 	= "Buy Products";
-        $this->data['content'] 	= "products";
-
-        $this->_load_view();
-    }
-
-    function add_cart_item(){
-
-        if($this->app_model->validate_add_cart_item() == TRUE){
-
-            // Check if user has javascript enabled
-            if($this->input->post('ajax') != '1'){
-                redirect('relay/buy_product'); // If javascript is not enabled, reload the page with new data
-            }else{
-                echo 'true'; // If javascript is enabled, return true, so the cart gets updated
-            }
-        }
-
-    }
-
-    function add_cart_item_home(){
-
-        if($this->app_model->validate_add_cart_item() == TRUE){
-
-            // Check if user has javascript enabled
-            if($this->input->post('ajax') != '1'){
-                redirect('relay/view_cart','refresh'); // If javascript is not enabled, reload the page with new data
-            }else{
-                echo 'true'; // If javascript is enabled, return true, so the cart gets updated
-            }
-        }
-
-    }
-
-    function update_cart(){
-        $this->app_model->validate_update_cart();
-        redirect('relay/view_cart/#');
-    }
-
-    public function view_cart(){
-        $this->data['title'] 	= "Buy Products";
-        $this->data['content'] 	= "cart.php";
-
-        $this->_load_view();
-    }
-
-    function empty_cart(){
-        $this->cart->destroy(); // Destroy all cart data
-        redirect('relay/view_cart'); // Refresh the page
-    }
-    public function checkout(){
-        $this->data['title'] 	= "Buy Products";
-        $this->data['content'] 	= "checkout.html";
-
-        $this->_load_view();
-    }
+//    public function buy_product(){
+//        $this->data['products'] = $this->app_model->retrieve_products(); // retrieve an array with all products
+//        $this->data['title'] 	= "Buy Products";
+//        $this->data['content'] 	= "products";
+//
+//        $this->_load_view();
+//    }
+//
+//    function add_cart_item(){
+//
+//        if($this->app_model->validate_add_cart_item() == TRUE){
+//
+//            // Check if user has javascript enabled
+//            if($this->input->post('ajax') != '1'){
+//                redirect('relay/buy_product'); // If javascript is not enabled, reload the page with new data
+//            }else{
+//                echo 'true'; // If javascript is enabled, return true, so the cart gets updated
+//            }
+//        }
+//
+//    }
+//
+//    function add_cart_item_home(){
+//
+//        if($this->app_model->validate_add_cart_item() == TRUE){
+//
+//            // Check if user has javascript enabled
+//            if($this->input->post('ajax') != '1'){
+//                redirect('relay/view_cart','refresh'); // If javascript is not enabled, reload the page with new data
+//            }else{
+//                echo 'true'; // If javascript is enabled, return true, so the cart gets updated
+//            }
+//        }
+//
+//    }
+//
+//    function update_cart(){
+//        $this->app_model->validate_update_cart();
+//        redirect('relay/view_cart/#');
+//    }
+//
+//    public function view_cart(){
+//        $this->data['title'] 	= "Buy Products";
+//        $this->data['content'] 	= "cart.php";
+//
+//        $this->_load_view();
+//    }
+//
+//    function empty_cart(){
+//        $this->cart->destroy(); // Destroy all cart data
+//        redirect('relay/view_cart'); // Refresh the page
+//    }
+//    public function checkout(){
+//        $this->data['title'] 	= "Buy Products";
+//        $this->data['content'] 	= "checkout.html";
+//
+//        $this->_load_view();
+//    }
 ///////////////////             END SHOPPING CART               ////////////////////////////////////////////////////////////////////////////////
 
  /*    IMAGE GALLERY*/
@@ -282,6 +282,7 @@ class Relay extends CI_Controller {
 
         $this->_load_view();
     }
+
 
     public function shujaa(){
         $this->data['title'] 	= "Mashujaa | Cancer Warriors";
