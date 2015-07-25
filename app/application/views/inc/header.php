@@ -135,27 +135,26 @@ $(window).load(function(){
 				info@relayforlifekenya.org
 			</li>
 		</ul>
-<!--            <div class="registration-box">-->
-<!--            --><?php // if(isset($this->session->userdata['logged_in'])){
-////                $logout='<a class="btn" href="http://localhost/relayforlifekenya.org/app/relay/logout" title="">Log Out</a>';
-////                echo $logout;
-//                echo 'Log Out';
-//            }else{
-////                $login='<a class="btn" href="http://localhost/relayforlifekenya.org/app/relay/log_in" title="">Log In</a>';
-////                $signup='<a class="btn" href="http://localhost/relayforlifekenya.org/app/relay/user_registration_show" title="">Sign Up</a>';
-////                echo $login;
-////                echo $signup;
-//                echo '<li><a>Log In</a></li>';
-//                echo '<li><a>Sign Up</a></li>';
-//            }
-//            ?>
-<!--		</div>-->
+            <div class="registration-box">
+                <a class="header-btn" href="<?php echo base_url();?>relay/donate" title="">Donate <span class="arrow"></span></a>
+                <?php  if(isset($this->session->userdata['logged_in'])){
+                    $logout='<a class="header-btn" href="http://localhost/relayforlifekenya.org/app/relay/logout" title="">Log Out <span class="arrow"></span></a>';
+                    echo $logout;
+
+                }else{
+                    $login='<a class="header-btn" href="http://localhost/relayforlifekenya.org/app/relay/log_in" title="">Log In <span class="arrow"></span></a>';
+
+                    echo $login;
+
+                }
+                ?>
+		</div>
         <div class="header-social">
 
-                <div class="fb-share-button" data-href="https://www.facebook.com/Relay4LifeKenya" data-layout="button_count">
-                </div>
-                <div class="fb-like" data-href="https://www.facebook.com/Relay4LifeKenya" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" >
-                </div>
+            <div class="fb-share-button" data-href="https://www.facebook.com/Relay4LifeKenya" data-layout="button_count">
+            </div>
+            <div class="fb-like" data-href="https://www.facebook.com/Relay4LifeKenya" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" >
+            </div>
             <a class="twitter-follow-button" href="https://twitter.com/Relay4LifeKE">
                 Follow @Relay4LifeKE</a>
 
@@ -173,18 +172,7 @@ $(window).load(function(){
 
             <h1>Relay For Life Kenya</h1>
 		</div><!-- Logo -->
-		<a class="header-btn" href="<?php echo base_url();?>relay/donate" title="">Donate</a>
-        <?php  if(isset($this->session->userdata['logged_in'])){
-            $logout='<a class="header-btn" href="http://localhost/relayforlifekenya.org/app/relay/logout" title="">Log Out</a>';
-            echo $logout;
 
-        }else{
-            $login='<a class="header-btn" href="http://localhost/relayforlifekenya.org/app/relay/log_in" title="">Log In</a>';
-
-            echo $login;
-
-        }
-        ?>
         <nav class="menu">
 			<ul id="menu-navigation">
 				<li class="active"><a href="<?php echo base_url();?>relay/home">Relay For Life Home</a></li>

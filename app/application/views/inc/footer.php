@@ -69,12 +69,12 @@
 	<div class="container">
 
 		<ul>
-			<li><a href="<?php echo base_url();?>relay/home" title="">HOME</a></li>
-			<li><a href="<?php echo base_url();?>relay/about_relay" title="">ABOUT</a></li>
-			<li><a href="#" title="">SHOP</a></li>
-			<li><a href="#" title="">RESOURCE CENTER</a></li>
-			<li><a href="#" title="">GALLERY</a></li>
-			<li><a href="<?php echo base_url();?>relay/contact-us" title="">CONTACT</a></li>
+			<li><a href="<?php echo base_url();?>relay/home" title=""><strong>HOME</strong></a></li>
+			<li><a href="<?php echo base_url();?>relay/about" title=""><strong>ABOUT</strong></a></li>
+<!--			<li><a href="#" title=""><strong>SHOP</strong></a></li>-->
+			<li><a href="#" title=""><strong>RESOURCE CENTER</strong></a></li>
+<!--			<li><a href="#" title=""><strong>GALLERY</strong></a></li>-->
+			<li><a href="<?php echo base_url();?>relay/contact-us" title=""><strong>CONTACT</strong></a></li>
             <li>
                 <a href="#" target="_top">
                     <i class="icon-arrow-up"></i>
