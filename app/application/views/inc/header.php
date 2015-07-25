@@ -173,7 +173,8 @@ $(window).load(function(){
 
             <h1>Relay For Life Kenya</h1>
 		</div><!-- Logo -->
-		<a class="header-btn" href="<?php echo base_url();?>relay/donate" title="">DONATE</a>
+		<a class="header-btn" href="<?php echo base_url();?>relay/donate" title="">Donate</a>
+        <a class="header-btn" href="http://localhost/relayforlifekenya.org/app/relay/log_in" title="">Log In</a>
 		<nav class="menu">
 			<ul id="menu-navigation">
 				<li class="active"><a href="<?php echo base_url();?>relay/home">Relay For Life Home</a></li>
@@ -219,9 +220,9 @@ $(window).load(function(){
 <!--				</li>-->
 				<li><a href="#">Resource Center</a>
                     <ul class="mega-menu2">
-                        <li><a><strong>Common Cancers</strong></a></li>
-                        <li><a><strong>Cancers in General</strong></a></li>
-                        <li><a><strong>Cancers in General</strong></a></li>
+                        <li><a style="color: #800080"><strong>Common Cancers</strong></a></li>
+                        <li><a style="color: #800080"><strong>Cancers in General</strong></a></li>
+                        <li><a style="color: #800080"><strong>Cancers in General</strong></a></li>
                         <li><a href="<?php echo base_url();?>assets/docs/breast_cancer.pdf" title="">Breast Cancer</a></li>
                         <li><a href="<?php echo base_url();?>assets/docs/general_lymphoma.pdf" title="">General Lymphomas</a></li>
                         <li><a href="<?php echo base_url();?>assets/docs/esophageal_cancer.pdf" title="">Esophageal Cancer</a></li>

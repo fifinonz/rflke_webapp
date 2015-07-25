@@ -66,7 +66,6 @@ button.favorite-btn:hover,
 .option-combo > ul li a.selected,
 .service > a,
 .menu #menu-navigation li ul li ul li:hover,
-.header-btn,
 header.header3 #menu-navigation > li:hover,
 header.header3 #menu-navigation li ul li:hover,
 #menu-navigation li ul li a span,
@@ -86,6 +85,7 @@ header.header3 #menu-navigation li ul li:hover,
 .charity-event-img > a{
 	background-color:#6a4d9b;
 }
+.header-btn{background: #2b0171}
 .message-box-title > span,
 .countSeconds,
 .welcome-box span{
