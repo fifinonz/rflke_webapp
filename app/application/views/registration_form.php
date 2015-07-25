@@ -11,8 +11,8 @@ if (isset($this->session->userdata['logged_in'])) {
 </head>
 <body>
 <div id="main">
-    <div id="login">
-        <h2>Registration Form</h2>
+    <div class="main-container fixer-container login_form" id="login">
+        <h2 style="color: #2b0171;text-align: center">User Registration</h2>
         <hr/>
         <?php
         echo "<div class='error_msg'>";
@@ -46,7 +46,7 @@ if (isset($this->session->userdata['logged_in'])) {
         echo form_submit('submit', 'Sign Up');
         echo form_close();
         ?>
-        <a href="<?php echo base_url() ?>relay/log_in">For Login Click Here</a>
+        <a style="color: #800080" href="<?php echo base_url() ?>relay/log_in">For Login Click Here</a>
     </div>
 </div>
 </body>

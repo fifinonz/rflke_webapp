@@ -6,7 +6,7 @@ if (isset($this->session->userdata['logged_in'])) {
 }
 ?>
 <head>
-    <title>Login Form</title>
+    <title>User Login</title>
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style.css">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Open+Sans+Condensed:300|Raleway' rel='stylesheet' type='text/css'>
 </head>
@@ -26,8 +26,8 @@ if (isset($message_display)) {
 }
 ?>
 <div id="main">
-    <div class="login_form" id="login">
-        <h2>Login Form</h2>
+    <div class="main-container fixer-container login_form" id="login">
+        <h2 style="color: #2b0171;text-align: center">USER LOGIN</h2>
         <hr/>
         <?php echo form_open('relay/user_login_process'); ?>
         <?php
@@ -38,12 +38,12 @@ if (isset($message_display)) {
         echo validation_errors();
         echo "</div>";
         ?>
-        <label>UserName <span>*</span></label>
+        <label>Username <span>*</span></label>
         <input type="text" name="username" id="name" placeholder="username"/><br /><br />
         <label>Password  <span>*</span></label>
         <input type="password" name="password" id="password" placeholder="**********"/><br/><br />
         <input type="submit" value=" Login " name="submit"/><br />
-        <a href="<?php echo base_url() ?>relay/user_registration_show">To SignUp Click Here</a>
+        <a style="color: #800080" href="<?php echo base_url() ?>relay/user_registration_show"><strong>To Sign Up Click Here</strong> </a>
         <?php echo form_close(); ?>
     </div>
 </div>

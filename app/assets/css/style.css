@@ -11681,12 +11681,13 @@ h5.slide3 span,
 #login{
 
     width:500px;
-    float: left;
     border-radius: 10px;
     font-family:raleway;
     border: 2px solid #ccc;
     padding: 10px 40px 25px;
-    margin-top: 70px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: #EDEDEE;
 }
 
 .login_form form input[type=text],input[type=password], input[type=email]{
@@ -11701,7 +11702,7 @@ h5.slide3 span,
 
 .login_form form input[type=submit]{
     width: 30%;
-    background-color:#6a4d9b;
+    background-color:#2b0171;
     color: white;
 
     padding: 10px;
@@ -11711,6 +11712,7 @@ h5.slide3 span,
     margin-bottom: 15px;
 }
 
+.login_form a:hover{text-decoration: underline; }
 #profile{
     padding:50px;
     border:1px dashed grey;
