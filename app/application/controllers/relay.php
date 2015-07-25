@@ -79,12 +79,12 @@ class Relay extends CI_Controller {
             );
             $result = $this->login_database->registration_insert($data);
             if ($result == TRUE) {
-                $data['message_display'] = 'Registration Successfully !';
+                $data['message_display'] = 'Registration Successful !';
                 $this->load->view('inc/header');
                 $this->load->view('login_form', $data);
                 $this->load->view('inc/footer');
             } else {
-                $data['message_display'] = 'Username already exist!';
+                $data['message_display'] = 'That username already exists!';
                 $this->load->view('inc/header');
                 $this->load->view('login_form', $data);
                 $this->load->view('inc/footer');
@@ -148,7 +148,7 @@ class Relay extends CI_Controller {
             'username' => ''
         );
         $this->session->unset_userdata('logged_in', $sess_array);
-        $data['message_display'] = 'Successfully Logout';
+        $data['message_display'] = 'Logout Successful. Log back in?';
         $this->load->view('inc/header');
         $this->load->view('login_form', $data);
         $this->load->view('inc/footer');

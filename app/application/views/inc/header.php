@@ -174,8 +174,18 @@ $(window).load(function(){
             <h1>Relay For Life Kenya</h1>
 		</div><!-- Logo -->
 		<a class="header-btn" href="<?php echo base_url();?>relay/donate" title="">Donate</a>
-        <a class="header-btn" href="http://localhost/relayforlifekenya.org/app/relay/log_in" title="">Log In</a>
-		<nav class="menu">
+        <?php  if(isset($this->session->userdata['logged_in'])){
+            $logout='<a class="header-btn" href="http://localhost/relayforlifekenya.org/app/relay/logout" title="">Log Out</a>';
+            echo $logout;
+
+        }else{
+            $login='<a class="header-btn" href="http://localhost/relayforlifekenya.org/app/relay/log_in" title="">Log In</a>';
+
+            echo $login;
+
+        }
+        ?>
+        <nav class="menu">
 			<ul id="menu-navigation">
 				<li class="active"><a href="<?php echo base_url();?>relay/home">Relay For Life Home</a></li>
 

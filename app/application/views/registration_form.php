@@ -25,9 +25,11 @@ if (isset($this->session->userdata['logged_in'])) {
         echo form_input('username');
         echo "<div class='error_msg'>";
         if (isset($message_display)) {
+            echo "<div class='message'>";
             echo $message_display;
+            echo "</div>";
         }
-        echo "</div>";
+        echo "</div><br/>";
         echo"<br/>";
         echo form_label('Email  *');
         echo"<br/>";

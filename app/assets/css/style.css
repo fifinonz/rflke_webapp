@@ -11743,12 +11743,12 @@ i{
 }
 
 .message{
-    position: absolute;
+    /*position:absolute;*/
     font-weight: bold;
-    font-size: 28px;
-    color: #6495ED;
-    left: 262px;
-    width: 500px;
+    font-size: 16px;
+    color: #800080;
+    left: 200px;
+    width: 400px;
     text-align: center;
 }
 .lastevent-stats-container {
