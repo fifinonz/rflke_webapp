@@ -38,7 +38,7 @@
 |
 */
 
-$route['default_controller'] = "relay";
+$route['default_controller'] = "auth/login_form";
 $route['404_override'] = '';
 
 

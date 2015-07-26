@@ -10,7 +10,10 @@
                 <div class="single-service">
                     <span><i class="icon-cogs"></i></span>
                     <h1> How Does The Money Raised Through Relay For Life® Make A Difference?</h1>
-                    <p style="font-size: 18px;">Donations raised through Relay For Life KE support the Kenya Cancer Association efforts in rolling out cancer  education programmes in the rural areas to provide up-to-date cancer prevention and early detection information to educate people about the disease, establishing a toll free line for cancer information and cancer activities as well as offering free free programs and services to improve the quality of life for people facing cancer and their families. Visit our webpage <a href="http://www.kenyacancer.org/">Kenya Cancer Association</a> to learn more about how we are making a difference and our role in the fight against cancer.</p>
+                    <p style="font-size: 18px;">Donations raised through Relay For Life KE support the Kenya Cancer Association efforts in rolling out cancer  education programmes in the rural areas to provide up-to-date cancer prevention and early detection information to educate people about the disease, establishing a toll free line for cancer information and cancer activities as well as offering free free programs and services to improve the quality of life for people facing cancer and their families. Visit our webpage
+                        <a href="http://www.kenyacancer.org/">Kenya Cancer Association</a>
+                        to learn more about how we are making a difference and our role in the fight against cancer.
+                    </p>
 
                     <div class="benifits">
                         <h2><strong>How to Make A Donation</strong></h2><br/>
@@ -64,31 +67,31 @@
                 <div class="col-md-2">
                     <div class="box">
                         <i class="icon-user"></i>
-                        <h4><a href="#">Meet The Team</a></h4>
+                        <h4><a style="color:#FFF; font-size: 14px" href="#">Meet The Team</a></h4>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="box">
                         <i class="icon-question-sign"></i>
-                        <h4><a href="about_relay">What is Relay for Life?</a></h4>
+                        <h4><a style="color:#FFF; font-size: 14px" href="about_relay">What is Relay for Life?</a></h4>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="box">
                         <i class="icon-microphone"></i>
-                        <h4><a href="#">Meet The Shujaa's</a></h4>
+                        <h4><a style="color:#FFF; font-size: 14px" href="#">Meet The Shujaa's</a></h4>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="box">
                         <i class="icon-shopping-cart"></i>
-                        <h4><a href="#">Buy our Merchandise</a></h4>
+                        <h4><a style="color:#FFF; font-size: 14px" href="#">Buy our Merchandise</a></h4>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="box">
                         <i class="icon-group"></i>
-                        <h4><a href="#">Join a Team</a></h4>
+                        <h4><a style="color:#FFF; font-size: 14px" href="#">Join a Team</a></h4>
                     </div>
                 </div>
                 <div class="col-md-2">
