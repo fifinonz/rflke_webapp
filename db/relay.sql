@@ -83,7 +83,7 @@ CREATE TABLE IF NOT EXISTS `staff` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Table structure for table `auth`
 --
 
 CREATE TABLE IF NOT EXISTS `users` (

@@ -68,7 +68,7 @@ class PesaPi {
 		 It is expected that this method will be the primary metod used 
 		 for e-commerce shops
 		 For extra security you might consider confirming that the phonenumber
-		 of the returned transaction match the users phonenumber.
+		 of the returned transaction match the auth phonenumber.
 	*/
 	public function locateByReceipt($receipt, $identifier = "") {
 		$transactions = array();
@@ -104,7 +104,7 @@ class PesaPi {
 	/* this method locates all the payments by a specific client name
 		 within a given time-period. The name is the name that Mpesa
 		 has in its database.
-		 Be alert that mobile users might have there records changed i.e. 
+		 Be alert that mobile auth might have there records changed i.e.
 		 if Safaricom mistyped there name.
 	*/
 	public function locateByName($name, $identifier="", $from=0, $until=0) {
@@ -123,7 +123,7 @@ class PesaPi {
 	/* When using the paybill metod of a commercial account, the mobile user
 		 enters an account-number. This method locates all payments in which 
 		 a particular account name have been entered within a given timeframe.
-		 Be alert that it is higly likely that users mistype the account 
+		 Be alert that it is higly likely that auth mistype the account
      number: ie. "bb 123" vs. "bb123"
 	*/
 	public function locateByAccount($account, $identifier="", $from=0, $until=0) {
