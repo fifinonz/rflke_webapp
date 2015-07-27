@@ -40,7 +40,8 @@ class Auth extends MX_Controller {
 				$data['auth'][$k]->groups = $this->ion_auth->get_users_groups($user->id)->result();
 			}
 
-			$this->_render_page('auth/index', $data);
+            $data['main_content'] = 'auth/index';
+            $this->load->view('include/tmp', $data);
 		}
 	}
 
@@ -64,7 +65,7 @@ class Auth extends MX_Controller {
 				//if the login is successful
 				//redirect them back to the home page
 				$this->session->set_flashdata('message', $this->ion_auth->messages());
-				redirect('/', 'refresh');
+				redirect('site/relay/home', 'refresh');
 			}
 			else
 			{
@@ -90,7 +91,8 @@ class Auth extends MX_Controller {
 				'type' => 'password',
 			);
 
-			$this->_render_page('auth/login', $data);
+            $data['main_content'] = 'auth/login';
+            $this->load->view('include/tmp', $data);
 		}
 	}
 
@@ -153,7 +155,8 @@ class Auth extends MX_Controller {
 			);
 
 			// render
-			$this->_render_page('auth/change_password', $data);
+            $data['main_content'] = 'auth/change_password';
+            $this->load->view('include/tmp', $data);
 		}
 		else
 		{
@@ -206,7 +209,8 @@ class Auth extends MX_Controller {
 
 			// set any errors and display the form
 			$data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
-			$this->_render_page('auth/forgot_password', $data);
+            $data['main_content'] = 'auth/forgot_password';
+            $this->load->view('include/tmp', $data);
 		}
 		else
 		{
@@ -297,7 +301,8 @@ class Auth extends MX_Controller {
 				$data['code'] = $code;
 
 				// render
-				$this->_render_page('auth/reset_password', $data);
+                $data['main_content'] = 'auth/reset_password';
+                $this->load->view('include/tmp', $data);
 			}
 			else
 			{
@@ -388,7 +393,8 @@ class Auth extends MX_Controller {
 			$data['csrf'] = $this->_get_csrf_nonce();
 			$data['user'] = $this->ion_auth->user($id)->row();
 
-			$this->_render_page('auth/deactivate_user', $data);
+            $data['main_content'] = 'auth/deactivate_user';
+            $this->load->view('include/tmp', $data);
 		}
 		else
 		{
@@ -428,7 +434,7 @@ class Auth extends MX_Controller {
 		// validate form input
 		$this->form_validation->set_rules('first_name', $this->lang->line('create_user_validation_fname_label'), 'required');
 		$this->form_validation->set_rules('last_name', $this->lang->line('create_user_validation_lname_label'), 'required');
-		$this->form_validation->set_rules('email', $this->lang->line('create_user_validation_email_label'), 'required|valid_email|is_unique['.$tables['auth'].'.email]');
+		$this->form_validation->set_rules('email', $this->lang->line('create_user_validation_email_label'), 'required|valid_email|is_unique['.$tables['users'].'.email]');
 		$this->form_validation->set_rules('phone', $this->lang->line('create_user_validation_phone_label'), 'required');
 		$this->form_validation->set_rules('company', $this->lang->line('create_user_validation_company_label'), 'required');
 		$this->form_validation->set_rules('password', $this->lang->line('create_user_validation_password_label'), 'required|min_length[' . $this->config->item('min_password_length', 'ion_auth') . ']|max_length[' . $this->config->item('max_password_length', 'ion_auth') . ']|matches[password_confirm]');
@@ -503,7 +509,8 @@ class Auth extends MX_Controller {
 				'value' => $this->form_validation->set_value('password_confirm'),
 			);
 
-			$this->_render_page('auth/create_user', $data);
+            $data['main_content'] = 'auth/create_user';
+            $this->load->view('include/tmp', $data);
 		}
 	}
 
@@ -655,7 +662,8 @@ class Auth extends MX_Controller {
 			'type' => 'password'
 		);
 
-		$this->_render_page('auth/edit_user', $data);
+        $data['main_content'] = 'auth/edit_user';
+        $this->load->view('include/tmp', $data);
 	}
 
 	// create a new group
@@ -701,7 +709,8 @@ class Auth extends MX_Controller {
 				'value' => $this->form_validation->set_value('description'),
 			);
 
-			$this->_render_page('auth/create_group', $data);
+            $data['main_content'] = 'auth/create_group';
+            $this->load->view('include/tmp', $data);
 		}
 	}
 
@@ -766,7 +775,8 @@ class Auth extends MX_Controller {
 			'value' => $this->form_validation->set_value('group_description', $group->description),
 		);
 
-		$this->_render_page('auth/edit_group', $data);
+        $data['main_content'] = 'auth/edit_group';
+        $this->load->view('include/tmp', $data);
 	}
 
 
