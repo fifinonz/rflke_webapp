@@ -107,6 +107,7 @@ $(window).load(function(){
 
 });
 </script>
+
 </head>
 <body class="bg-body3">
 <div id="fb-root"></div>
@@ -182,14 +183,12 @@ $(window).load(function(){
 
 					</ul><!-- Drop Down -->
 				</li>
-<!--                <li><a>Get Involved</a>-->
-<!--                    <ul>-->
-<!--                        <li><a href="#">Participate in Relay 2015</a></li>-->
-<!--<!--                        <li><a href="--><?php ////echo base_url();?><!--<!--relay/teams_2015">Participate in Relay 2015</a></li>-->
-<!--                        <li><a href="#">Sign Up As a Volunteer</a>-->
-<!--                        <li><a href="--><?php //echo base_url();?><!--relay/donate">Make A Donation</a></li>-->
-<!--                    </ul><!-- Drop Down -->
-<!--                </li>-->
+                <li><a href="#">Sign Up For Relay 2015</a>
+                <ul>
+                        <li><a href="<?php echo base_url();?>site/relay/teams_2015">Create A Team</a></li>
+                        <li><a href="<?php echo base_url();?>site/relay/donate">Join A Team</a></li>
+                    </ul><!-- Drop Down -->
+                </li>
 <!--				<li><a>Products</a>-->
 <!--					<ul>-->
 <!--						<li><a href="--><?php //echo base_url();?><!--relay/buy_product">Shop for Products</a>-->
