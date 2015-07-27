@@ -98,7 +98,7 @@ $lang['create_group_heading']                = 'Create Group';
 $lang['create_group_subheading']             = 'Please enter the group information below.';
 $lang['create_group_name_label']             = 'Group Name:';
 $lang['create_group_desc_label']             = 'Description:';
-$lang['create_group_submit_btn']             = 'Create Group';
+$lang['create_group_submit_btn']             = 'Create';
 $lang['create_group_validation_name_label']  = 'Group Name';
 $lang['create_group_validation_desc_label']  = 'Description';
 

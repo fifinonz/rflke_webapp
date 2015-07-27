@@ -1,7 +1,13 @@
-<h1><?php echo lang('create_user_heading');?></h1>
-<p><?php echo lang('create_user_subheading');?></p>
+<div id="main">
 
-<div id="infoMessage"><?php echo $message;?></div>
+
+    <div class="main-container fixer-container login_form" id="login">
+
+        <h2 style="color: #2b0171;text-align: center">USER LOGIN</h2>
+        <hr/>
+<p style="color: #800080"><?php echo lang('create_user_subheading');?></p>
+
+<div style="color: #800080" id="infoMessage"><?php echo $message;?></div>
 
 <?php echo form_open("auth/create_user");?>
 
@@ -44,3 +50,4 @@
       <p><?php echo form_submit('submit', lang('create_user_submit_btn'));?></p>
 
 <?php echo form_close();?>
+</div>
