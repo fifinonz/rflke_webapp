@@ -2,8 +2,8 @@
 
 session_start(); //we need to start session in order to access it through CI
 
-class Relay extends MX_Controller {
-	private $data;
+class Relay extends MY_Controller {
+
 
 /*    Required Libraries    */
 
@@ -21,9 +21,6 @@ class Relay extends MX_Controller {
         $this->load->model('login_database');
 	}
 
-	public function _load_view(){
-		$this->load->view('inc/tmp',$this->data);
-	}
 
     /*  Page Controllers    */
 
@@ -33,7 +30,7 @@ class Relay extends MX_Controller {
     public function home(){
 //        $this->data['products'] = $this->app_model->retrieve_products(); // retrieve an array with all products
         $this->data['title'] 	= "Home Relay";
-        $this->data['content'] 	= "home";
+        $this->data['main_content'] 	= "home";
 
         $this->_load_view();
     }
@@ -42,20 +39,20 @@ class Relay extends MX_Controller {
 
     public function log_in (){
         $this->data['title'] 	= "Log In";
-        $this->data['content'] 	= "login_form";
+        $this->data['main_content'] 	= "login_form";
 
         $this->_load_view();
     }
 
     public function user_registration_show(){
         $this->data['title'] 	= "Sign Up";
-        $this->data['content'] 	= "registration_form";
+        $this->data['main_content'] 	= "registration_form";
 
         $this->_load_view();
     }
     public function admin_page(){
         $this->data['title'] 	= "Admin Panel";
-        $this->data['content'] 	= "admin_page";
+        $this->data['main_content'] 	= "admin_page";
 
         $this->_load_view();
     }
@@ -158,7 +155,7 @@ class Relay extends MX_Controller {
     public function what_is_relay()
     {
         $this->data['title'] 	= "About Us";
-        $this->data['content'] 	= "about";
+        $this->data['main_content'] 	= "about";
 
         $this->_load_view();
 
@@ -166,28 +163,28 @@ class Relay extends MX_Controller {
 
     public function about(){
         $this->data['title'] 	= "About Relay";
-        $this->data['content'] 	= "what-is-relay";
+        $this->data['main_content'] 	= "what-is-relay";
 
         $this->_load_view();
     }
 
     public function teams_2015(){
         $this->data['title'] 	= "Participate in Relay 2015";
-        $this->data['content'] 	= "teams_2015";
+        $this->data['main_content'] 	= "teams_2015";
 
         $this->_load_view();
     }
 
     public function join_team(){
         $this->data['title'] 	= "Participate in Relay 2015";
-        $this->data['content'] 	= "join_team";
+        $this->data['main_content'] 	= "join_team";
 
         $this->_load_view();
     }
 
     public function donate(){
         $this->data['title'] 	= "Make a Donation";
-        $this->data['content'] 	= "donate";
+        $this->data['main_content'] 	= "donate";
 
         $this->_load_view();
     }
@@ -196,7 +193,7 @@ class Relay extends MX_Controller {
 //    public function buy_product(){
 //        $this->data['products'] = $this->app_model->retrieve_products(); // retrieve an array with all products
 //        $this->data['title'] 	= "Buy Products";
-//        $this->data['content'] 	= "products";
+//        $this->data['main_content'] 	= "products";
 //
 //        $this->_load_view();
 //    }
@@ -236,7 +233,7 @@ class Relay extends MX_Controller {
 //
 //    public function view_cart(){
 //        $this->data['title'] 	= "Buy Products";
-//        $this->data['content'] 	= "cart.php";
+//        $this->data['main_content'] 	= "cart.php";
 //
 //        $this->_load_view();
 //    }
@@ -247,7 +244,7 @@ class Relay extends MX_Controller {
 //    }
 //    public function checkout(){
 //        $this->data['title'] 	= "Buy Products";
-//        $this->data['content'] 	= "checkout.html";
+//        $this->data['main_content'] 	= "checkout.html";
 //
 //        $this->_load_view();
 //    }
@@ -257,28 +254,28 @@ class Relay extends MX_Controller {
 
     public function gallery_image(){
         $this->data['title'] 	= "Gallery";
-        $this->data['content'] 	= "image-gallery.html";
+        $this->data['main_content'] 	= "image-gallery.html";
 
         $this->_load_view();
     }
 
     public function resource_center(){
         $this->data['title'] 	= "Resource Center";
-        $this->data['content'] 	= "resource-center.html";
+        $this->data['main_content'] 	= "resource-center.html";
 
         $this->_load_view();
     }
 
     public function faqs(){
         $this->data['title'] 	= "Frequently Asked Questions";
-        $this->data['content'] 	= "faq.php";
+        $this->data['main_content'] 	= "faq.php";
 
         $this->_load_view();
     }
 
     public function contact_us(){
         $this->data['title'] 	= "Contact US";
-        $this->data['content'] 	= "contact.php";
+        $this->data['main_content'] 	= "contact.php";
 
         $this->_load_view();
     }
@@ -286,7 +283,7 @@ class Relay extends MX_Controller {
 
     public function shujaa(){
         $this->data['title'] 	= "Mashujaa | Cancer Warriors";
-        $this->data['content'] 	= "shujaa.html";
+        $this->data['main_content'] 	= "shujaa.html";
 
         $this->_load_view();
     }

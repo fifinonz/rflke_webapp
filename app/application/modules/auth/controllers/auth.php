@@ -1,6 +1,6 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Auth extends MX_Controller {
+class Auth extends MY_Controller {
 
 	function __construct()
 	{
@@ -31,24 +31,24 @@ class Auth extends MX_Controller {
 		else
 		{
 			// set the flash data error message if there is one
-			$data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
+			$this->data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
 
 			//list the auth
-			$data['auth'] = $this->ion_auth->users()->result();
-			foreach ($data['auth'] as $k => $user)
+			$this->data['auth'] = $this->ion_auth->users()->result();
+			foreach ($this->data['auth'] as $k => $user)
 			{
-				$data['auth'][$k]->groups = $this->ion_auth->get_users_groups($user->id)->result();
+				$this->data['auth'][$k]->groups = $this->ion_auth->get_users_groups($user->id)->result();
 			}
 
-            $data['main_content'] = 'auth/index';
-            $this->load->view('include/tmp', $data);
+            $this->data['main_content'] = 'auth/index';
+             $this->_load_view();
 		}
 	}
 
 	// log the user in
 	function login()
 	{
-		$data['title'] = "Login";
+		$this->data['title'] = "Login";
 
 		//validate form input
 		$this->form_validation->set_rules('identity', 'Identity', 'required');
@@ -79,27 +79,27 @@ class Auth extends MX_Controller {
 		{
 			// the user is not logging in so display the login page
 			// set the flash data error message if there is one
-			$data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
+			$this->data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
 
-			$data['identity'] = array('name' => 'identity',
+			$this->data['identity'] = array('name' => 'identity',
 				'id' => 'identity',
 				'type' => 'text',
 				'value' => $this->form_validation->set_value('identity'),
 			);
-			$data['password'] = array('name' => 'password',
+			$this->data['password'] = array('name' => 'password',
 				'id' => 'password',
 				'type' => 'password',
 			);
 
-            $data['main_content'] = 'auth/login';
-            $this->load->view('include/tmp', $data);
+            $this->data['main_content'] = 'auth/login';
+             $this->_load_view();
 		}
 	}
 
 	// log the user out
 	function logout()
 	{
-		$data['title'] = "Logout";
+		$this->data['title'] = "Logout";
 
 		// log the user out
 		$logout = $this->ion_auth->logout();
@@ -127,27 +127,27 @@ class Auth extends MX_Controller {
 		{
 			// display the form
 			// set the flash data error message if there is one
-			$data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
+			$this->data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
 
-			$data['min_password_length'] = $this->config->item('min_password_length', 'ion_auth');
-			$data['old_password'] = array(
+			$this->data['min_password_length'] = $this->config->item('min_password_length', 'ion_auth');
+			$this->data['old_password'] = array(
 				'name' => 'old',
 				'id'   => 'old',
 				'type' => 'password',
 			);
-			$data['new_password'] = array(
+			$this->data['new_password'] = array(
 				'name' => 'new',
 				'id'   => 'new',
 				'type' => 'password',
-				'pattern' => '^.{'.$data['min_password_length'].'}.*$',
+				'pattern' => '^.{'.$this->data['min_password_length'].'}.*$',
 			);
-			$data['new_password_confirm'] = array(
+			$this->data['new_password_confirm'] = array(
 				'name' => 'new_confirm',
 				'id'   => 'new_confirm',
 				'type' => 'password',
-				'pattern' => '^.{'.$data['min_password_length'].'}.*$',
+				'pattern' => '^.{'.$this->data['min_password_length'].'}.*$',
 			);
-			$data['user_id'] = array(
+			$this->data['user_id'] = array(
 				'name'  => 'user_id',
 				'id'    => 'user_id',
 				'type'  => 'hidden',
@@ -155,8 +155,8 @@ class Auth extends MX_Controller {
 			);
 
 			// render
-            $data['main_content'] = 'auth/change_password';
-            $this->load->view('include/tmp', $data);
+            $this->data['main_content'] = 'auth/change_password';
+             $this->_load_view();
 		}
 		else
 		{
@@ -195,22 +195,22 @@ class Auth extends MX_Controller {
 		if ($this->form_validation->run() == false)
 		{
 			// setup the input
-			$data['email'] = array('name' => 'email',
+			$this->data['email'] = array('name' => 'email',
 				'id' => 'email',
 			);
 
 			if ( $this->config->item('identity', 'ion_auth') == 'username' ){
-				$data['identity_label'] = $this->lang->line('forgot_password_username_identity_label');
+				$this->data['identity_label'] = $this->lang->line('forgot_password_username_identity_label');
 			}
 			else
 			{
-				$data['identity_label'] = $this->lang->line('forgot_password_email_identity_label');
+				$this->data['identity_label'] = $this->lang->line('forgot_password_email_identity_label');
 			}
 
 			// set any errors and display the form
-			$data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
-            $data['main_content'] = 'auth/forgot_password';
-            $this->load->view('include/tmp', $data);
+			$this->data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
+            $this->data['main_content'] = 'auth/forgot_password';
+             $this->_load_view();
 		}
 		else
 		{
@@ -276,33 +276,33 @@ class Auth extends MX_Controller {
 				// display the form
 
 				// set the flash data error message if there is one
-				$data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
+				$this->data['message'] = (validation_errors()) ? validation_errors() : $this->session->flashdata('message');
 
-				$data['min_password_length'] = $this->config->item('min_password_length', 'ion_auth');
-				$data['new_password'] = array(
+				$this->data['min_password_length'] = $this->config->item('min_password_length', 'ion_auth');
+				$this->data['new_password'] = array(
 					'name' => 'new',
 					'id'   => 'new',
 				'type' => 'password',
-					'pattern' => '^.{'.$data['min_password_length'].'}.*$',
+					'pattern' => '^.{'.$this->data['min_password_length'].'}.*$',
 				);
-				$data['new_password_confirm'] = array(
+				$this->data['new_password_confirm'] = array(
 					'name' => 'new_confirm',
 					'id'   => 'new_confirm',
 					'type' => 'password',
-					'pattern' => '^.{'.$data['min_password_length'].'}.*$',
+					'pattern' => '^.{'.$this->data['min_password_length'].'}.*$',
 				);
-				$data['user_id'] = array(
+				$this->data['user_id'] = array(
 					'name'  => 'user_id',
 					'id'    => 'user_id',
 					'type'  => 'hidden',
 					'value' => $user->id,
 				);
-				$data['csrf'] = $this->_get_csrf_nonce();
-				$data['code'] = $code;
+				$this->data['csrf'] = $this->_get_csrf_nonce();
+				$this->data['code'] = $code;
 
 				// render
-                $data['main_content'] = 'auth/reset_password';
-                $this->load->view('include/tmp', $data);
+                $this->data['main_content'] = 'auth/reset_password';
+                 $this->_load_view();
 			}
 			else
 			{
@@ -390,11 +390,11 @@ class Auth extends MX_Controller {
 		if ($this->form_validation->run() == FALSE)
 		{
 			// insert csrf check
-			$data['csrf'] = $this->_get_csrf_nonce();
-			$data['user'] = $this->ion_auth->user($id)->row();
+			$this->data['csrf'] = $this->_get_csrf_nonce();
+			$this->data['user'] = $this->ion_auth->user($id)->row();
 
-            $data['main_content'] = 'auth/deactivate_user';
-            $this->load->view('include/tmp', $data);
+            $this->data['main_content'] = 'auth/deactivate_user';
+             $this->_load_view();
 		}
 		else
 		{
@@ -422,7 +422,7 @@ class Auth extends MX_Controller {
 	// create a new user
 	function create_user()
 	{
-		$data['title'] = "Create User";
+		$this->data['title'] = "Create User";
 
 		if (!$this->ion_auth->logged_in() || !$this->ion_auth->is_admin())
 		{
@@ -464,60 +464,60 @@ class Auth extends MX_Controller {
 		{
 			// display the create user form
 			// set the flash data error message if there is one
-			$data['message'] = (validation_errors() ? validation_errors() : ($this->ion_auth->errors() ? $this->ion_auth->errors() : $this->session->flashdata('message')));
+			$this->data['message'] = (validation_errors() ? validation_errors() : ($this->ion_auth->errors() ? $this->ion_auth->errors() : $this->session->flashdata('message')));
 
-			$data['first_name'] = array(
+			$this->data['first_name'] = array(
 				'name'  => 'first_name',
 				'id'    => 'first_name',
 				'type'  => 'text',
 				'value' => $this->form_validation->set_value('first_name'),
 			);
-			$data['last_name'] = array(
+			$this->data['last_name'] = array(
 				'name'  => 'last_name',
 				'id'    => 'last_name',
 				'type'  => 'text',
 				'value' => $this->form_validation->set_value('last_name'),
 			);
-			$data['email'] = array(
+			$this->data['email'] = array(
 				'name'  => 'email',
 				'id'    => 'email',
 				'type'  => 'text',
 				'value' => $this->form_validation->set_value('email'),
 			);
-			$data['company'] = array(
+			$this->data['company'] = array(
 				'name'  => 'company',
 				'id'    => 'company',
 				'type'  => 'text',
 				'value' => $this->form_validation->set_value('company'),
 			);
-			$data['phone'] = array(
+			$this->data['phone'] = array(
 				'name'  => 'phone',
 				'id'    => 'phone',
 				'type'  => 'text',
 				'value' => $this->form_validation->set_value('phone'),
 			);
-			$data['password'] = array(
+			$this->data['password'] = array(
 				'name'  => 'password',
 				'id'    => 'password',
 				'type'  => 'password',
 				'value' => $this->form_validation->set_value('password'),
 			);
-			$data['password_confirm'] = array(
+			$this->data['password_confirm'] = array(
 				'name'  => 'password_confirm',
 				'id'    => 'password_confirm',
 				'type'  => 'password',
 				'value' => $this->form_validation->set_value('password_confirm'),
 			);
 
-            $data['main_content'] = 'auth/create_user';
-            $this->load->view('include/tmp', $data);
+            $this->data['main_content'] = 'auth/create_user';
+             $this->_load_view();
 		}
 	}
 
 	// edit a user
 	function edit_user($id)
 	{
-		$data['title'] = "Edit User";
+		$this->data['title'] = "Edit User";
 
 		if (!$this->ion_auth->logged_in() || (!$this->ion_auth->is_admin() && !($this->ion_auth->user()->row()->id == $id)))
 		{
@@ -551,7 +551,7 @@ class Auth extends MX_Controller {
 
 			if ($this->form_validation->run() === TRUE)
 			{
-				$data = array(
+				$this->data = array(
 					'first_name' => $this->input->post('first_name'),
 					'last_name'  => $this->input->post('last_name'),
 					'company'    => $this->input->post('company'),
@@ -561,7 +561,7 @@ class Auth extends MX_Controller {
 				// update the password if it was posted
 				if ($this->input->post('password'))
 				{
-					$data['password'] = $this->input->post('password');
+					$this->data['password'] = $this->input->post('password');
 				}
 
 
@@ -584,7 +584,7 @@ class Auth extends MX_Controller {
 				}
 
 			// check to see if we are updating the user
-			   if($this->ion_auth->update($user->id, $data))
+			   if($this->ion_auth->update($user->id, $this->data))
 			    {
 			    	// redirect them back to the admin page if admin, or to the base url if non admin
 				    $this->session->set_flashdata('message', $this->ion_auth->messages() );
@@ -617,59 +617,59 @@ class Auth extends MX_Controller {
 		}
 
 		// display the edit user form
-		$data['csrf'] = $this->_get_csrf_nonce();
+		$this->data['csrf'] = $this->_get_csrf_nonce();
 
 		// set the flash data error message if there is one
-		$data['message'] = (validation_errors() ? validation_errors() : ($this->ion_auth->errors() ? $this->ion_auth->errors() : $this->session->flashdata('message')));
+		$this->data['message'] = (validation_errors() ? validation_errors() : ($this->ion_auth->errors() ? $this->ion_auth->errors() : $this->session->flashdata('message')));
 
 		// pass the user to the view
-		$data['user'] = $user;
-		$data['groups'] = $groups;
-		$data['currentGroups'] = $currentGroups;
+		$this->data['user'] = $user;
+		$this->data['groups'] = $groups;
+		$this->data['currentGroups'] = $currentGroups;
 
-		$data['first_name'] = array(
+		$this->data['first_name'] = array(
 			'name'  => 'first_name',
 			'id'    => 'first_name',
 			'type'  => 'text',
 			'value' => $this->form_validation->set_value('first_name', $user->first_name),
 		);
-		$data['last_name'] = array(
+		$this->data['last_name'] = array(
 			'name'  => 'last_name',
 			'id'    => 'last_name',
 			'type'  => 'text',
 			'value' => $this->form_validation->set_value('last_name', $user->last_name),
 		);
-		$data['company'] = array(
+		$this->data['company'] = array(
 			'name'  => 'company',
 			'id'    => 'company',
 			'type'  => 'text',
 			'value' => $this->form_validation->set_value('company', $user->company),
 		);
-		$data['phone'] = array(
+		$this->data['phone'] = array(
 			'name'  => 'phone',
 			'id'    => 'phone',
 			'type'  => 'text',
 			'value' => $this->form_validation->set_value('phone', $user->phone),
 		);
-		$data['password'] = array(
+		$this->data['password'] = array(
 			'name' => 'password',
 			'id'   => 'password',
 			'type' => 'password'
 		);
-		$data['password_confirm'] = array(
+		$this->data['password_confirm'] = array(
 			'name' => 'password_confirm',
 			'id'   => 'password_confirm',
 			'type' => 'password'
 		);
 
-        $data['main_content'] = 'auth/edit_user';
-        $this->load->view('include/tmp', $data);
+        $this->data['main_content'] = 'auth/edit_user';
+         $this->_load_view();
 	}
 
 	// create a new group
 	function create_group()
 	{
-		$data['title'] = $this->lang->line('create_group_title');
+		$this->data['title'] = $this->lang->line('create_group_title');
 
 		if (!$this->ion_auth->logged_in() || !$this->ion_auth->is_admin())
 		{
@@ -694,23 +694,23 @@ class Auth extends MX_Controller {
 		{
 			// display the create group form
 			// set the flash data error message if there is one
-			$data['message'] = (validation_errors() ? validation_errors() : ($this->ion_auth->errors() ? $this->ion_auth->errors() : $this->session->flashdata('message')));
+			$this->data['message'] = (validation_errors() ? validation_errors() : ($this->ion_auth->errors() ? $this->ion_auth->errors() : $this->session->flashdata('message')));
 
-			$data['group_name'] = array(
+			$this->data['group_name'] = array(
 				'name'  => 'group_name',
 				'id'    => 'group_name',
 				'type'  => 'text',
 				'value' => $this->form_validation->set_value('group_name'),
 			);
-			$data['description'] = array(
+			$this->data['description'] = array(
 				'name'  => 'description',
 				'id'    => 'description',
 				'type'  => 'text',
 				'value' => $this->form_validation->set_value('description'),
 			);
 
-            $data['main_content'] = 'auth/create_group';
-            $this->load->view('include/tmp', $data);
+            $this->data['main_content'] = 'auth/create_group';
+             $this->_load_view();
 		}
 	}
 
@@ -723,7 +723,7 @@ class Auth extends MX_Controller {
 			redirect('auth', 'refresh');
 		}
 
-		$data['title'] = $this->lang->line('edit_group_title');
+		$this->data['title'] = $this->lang->line('edit_group_title');
 
 		if (!$this->ion_auth->logged_in() || !$this->ion_auth->is_admin())
 		{
@@ -754,29 +754,29 @@ class Auth extends MX_Controller {
 		}
 
 		// set the flash data error message if there is one
-		$data['message'] = (validation_errors() ? validation_errors() : ($this->ion_auth->errors() ? $this->ion_auth->errors() : $this->session->flashdata('message')));
+		$this->data['message'] = (validation_errors() ? validation_errors() : ($this->ion_auth->errors() ? $this->ion_auth->errors() : $this->session->flashdata('message')));
 
 		// pass the user to the view
-		$data['group'] = $group;
+		$this->data['group'] = $group;
 
 		$readonly = $this->config->item('admin_group', 'ion_auth') === $group->name ? 'readonly' : '';
 
-		$data['group_name'] = array(
+		$this->data['group_name'] = array(
 			'name'  => 'group_name',
 			'id'    => 'group_name',
 			'type'  => 'text',
 			'value' => $this->form_validation->set_value('group_name', $group->name),
 			$readonly => $readonly,
 		);
-		$data['group_description'] = array(
+		$this->data['group_description'] = array(
 			'name'  => 'group_description',
 			'id'    => 'group_description',
 			'type'  => 'text',
 			'value' => $this->form_validation->set_value('group_description', $group->description),
 		);
 
-        $data['main_content'] = 'auth/edit_group';
-        $this->load->view('include/tmp', $data);
+        $this->data['main_content'] = 'auth/edit_group';
+         $this->_load_view();
 	}
 
 
@@ -804,14 +804,14 @@ class Auth extends MX_Controller {
 		}
 	}
 
-	function _render_page($view, $data=null, $render=false)
-	{
-
-		$this->viewdata = (empty($data)) ? $data: $data;
-
-		$view_html = $this->load->view($view, $this->viewdata, $render);
-
-		if (!$render) return $view_html;
-	}
+//	function _render_page($view, $this->data=null, $render=false)
+//	{
+//
+//		$this->viewdata = (empty($this->data)) ? $this->data: $this->data;
+//
+//		$view_html = $this->load->view($view, $this->viewdata, $render);
+//
+//		if (!$render) return $view_html;
+//	}
 
 }
