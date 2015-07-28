@@ -118,7 +118,7 @@ $(window).load(function(){
         js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-<div class="theme-layout">
+<div class="theme-layout boxed">
 
 <div id="top-bar">
     <div class="container">
@@ -138,13 +138,13 @@ $(window).load(function(){
 		</ul>
             <div class="registration-box">
                 <a class="header-btn arrow" href="<?php echo base_url();?>site/relay/donate" title="">Donate <span class="arrow"></span></a>
-                <?php  if(isset($this->session->userdata['logged_in'])){
-                    echo anchor('site/relay/logout', 'Log Out', 'class="header-btn"');
+<!--                --><?php // if(isset($this->session->userdata['logged_in'])){
+//                    echo anchor('auth/logout', 'Log Out', 'class="header-btn"');
+//
+//
+//                }else{
+                    echo anchor('auth/login', 'Log In', 'class="header-btn"');
 
-
-                }else{
-                    echo anchor('site/relay/log_in', 'Log In', 'class="header-btn"');
-                }
                 ?>
 		</div>
         <div class="header-social">
@@ -261,14 +261,13 @@ $(window).load(function(){
 
                 </ul><!-- Drop Down -->
             </li>
-<!--            <li><a>Get Involved</a>-->
-<!--                <ul>-->
-<!--                    <li><a href="#">Participate in Relay 2015</a></li>-->
-<!--                                            <li><a href="--><?php //echo base_url();?><!--relay/teams_2015">Participate in Relay 2015</a></li>-->
-<!--                    <li><a href="#">Sign Up As a Volunteer</a>-->
-<!--                    <li><a href="--><?php //echo base_url();?><!--relay/donate">Make A Donation</a></li>-->
-<!--                </ul><!-- Drop Down -->
-<!--            </li>-->
+            <li><a href="#">Sign Up For Relay 2015</a>
+                <ul>
+                    <li><a href="<?php echo base_url();?>site/relay/teams_2015">Create A Team</a></li>
+                    <li><a href="<?php echo base_url();?>site/relay/donate">Join A Team</a></li>
+                </ul><!-- Drop Down -->
+            </li>
+
             <!--				<li><a>Products</a>-->
             <!--					<ul>-->
             <!--						<li><a href="--><?php //echo base_url();?><!--relay/buy_product">Shop for Products</a>-->
