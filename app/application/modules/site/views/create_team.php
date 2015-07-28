@@ -12,6 +12,7 @@
 
 <div class="inner-page">
     <div class="container">
+
         <div class="page-title">
             <h1>TEAMS RELAY <span>2015</span></h1>
         </div>
@@ -23,7 +24,7 @@
                   <div id="main">
                       <div class="main-container fixer-container login_form" id="login">
                <h2 style="color: #2b0171;text-align: left">
-         Create A New Team</h2>
+         Create A New Team</h2><br/>
         <?php
         echo "<div class='error_msg'>";
         echo validation_errors();
