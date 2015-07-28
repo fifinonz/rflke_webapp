@@ -1,16 +1,26 @@
-<html>
-<?php
-if (isset($this->session->userdata['logged_in'])) {
-    header("location: http://localhost/login/index.php/relay/user_login_process");
-}
-?>
-<head>
-    <title>Team Registration Form</title>
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/style.css">
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Open+Sans+Condensed:300|Raleway' rel='stylesheet' type='text/css'>
-</head>
-<body>
-<div id="main">
+<div id="layerslider-container-fw">
+    <div id="layerslider" style="width: 100%; height: 450px; margin: 0px auto; ">
+        <div class="ls-slide" data-ls="transition3d:53; timeshift:-1000;">
+            <img src="http://images.webinane.com/ll/slider1.jpg" class="ls-bg" alt="Slide background">
+        </div><!-- Slide1 -->
+        <div class="ls-slide" data-ls="transition3d:53; timeshift:-1000;">
+            <img src="http://images.webinane.com/ll/slider1.jpg" class="ls-bg" alt="Slide background">
+        </div><!-- Slide2 -->
+    </div>
+</div><!-- Layer Slider -->
+
+
+<div class="inner-page">
+    <div class="container">
+        <div class="page-title">
+            <h1>TEAMS RELAY <span>2015</span></h1>
+        </div>
+        <div class="row">
+            <div class="left-content col-md-9">
+                <div class="accordions">
+                    <section class="block">
+                        <div class="billing">
+                         <div id="main">
     <div class="main-container fixer-container login_form" id="login">
         <h2 style="color: #2b0171;text-align: center">Team Registration</h2>
         <hr/>
@@ -52,8 +62,9 @@ if (isset($this->session->userdata['logged_in'])) {
         echo form_dropdown('participant type', $options, 'surv');
         echo"<br/>";
         echo"<br/>";
-        echo "<h2>Team Registration is Ksh.1200.To make your payment:</h2>
+        echo "<h4><strong>Team Registration is Ksh.1200</strong><span> To make your payment:</span></h4>
 
+                            <br/>
                             <p>1. Go to MPESA Menu</p>
                             <p>2. Select <span>Lipa na MPESA</span> then choose PayBill</p>
                             <p>3. Enter Business number <span>288773</span></p>
@@ -73,7 +84,12 @@ if (isset($this->session->userdata['logged_in'])) {
         echo form_submit('submit', 'Join Team');
         echo form_close();
         ?>
+                    </div>
+                 </div>
+               </div>
+             </section>
+        </div>
     </div>
 </div>
-</body>
-</html>
+</div>
+</div>

@@ -65,10 +65,10 @@ body,ul,h1,h2,h3,h4,h5,h6{
 	letter-spacing:0.2px;
 }
 
-.theme-layout {
+.theme-layout.boxed {
 
     margin:0 auto;
-    width:1720px;
+    width:1230px;
     display:block;
     float: none;
     overflow:hidden;
@@ -11699,14 +11699,15 @@ h5.slide3 span,
 
 #login{
 
-    width:500px;
+    width:800px;
     border-radius: 10px;
-    font-family:raleway;
+    font-family:Rockwell-Italic;
     border: 2px solid #ccc;
     padding: 10px 40px 25px;
     margin-top: 50px;
     margin-bottom: 50px;
-    background: #EDEDEE;
+    background: #FFF
+;
 }
 
 .login_form form input[type=text],input[type=password], input[type=email]{
@@ -11716,7 +11717,7 @@ h5.slide3 span,
     border: 1px solid #ccc;
     padding-left: 5px;
     font-size: 16px;
-    font-family:raleway;
+    font-family:Rockwell-Italic;
 }
 
 .login_form form input[type=submit]{
