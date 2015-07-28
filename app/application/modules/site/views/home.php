@@ -37,7 +37,7 @@
                                 </div>
 
                                 <p style="font-size: 18px">This year our Relay for Life Event is themed Education and Awareness. Funds raised will be used to empower communities with information about the preventiton, detection and treatment of Cancer<br/>
-                                  <a class="main-container fixer-container signup-btn" href="<?php echo base_url();?>site/relay/teams_2015">Sign Up For Relay 2015</a>
+                                  <a class="main-container fixer-container signup-btn" href="<?php echo base_url();?>auth/teams_2015">Sign Up For Relay 2015</a>
                                 </p>
                             </div>
 

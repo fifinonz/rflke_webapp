@@ -183,11 +183,7 @@ $(window).load(function(){
 
 					</ul><!-- Drop Down -->
 				</li>
-                <li><a href="#">Sign Up For Relay 2015</a>
-                <ul>
-                        <li><a href="<?php echo base_url();?>site/relay/teams_2015">Create A Team</a></li>
-                        <li><a href="<?php echo base_url();?>site/relay/donate">Join A Team</a></li>
-                    </ul><!-- Drop Down -->
+                <li><a href="<?php echo base_url();?>auth/teams_2015">Sign Up For Relay 2015</a>
                 </li>
 <!--				<li><a>Products</a>-->
 <!--					<ul>-->
@@ -261,11 +257,7 @@ $(window).load(function(){
 
                 </ul><!-- Drop Down -->
             </li>
-            <li><a href="#">Sign Up For Relay 2015</a>
-                <ul>
-                    <li><a href="<?php echo base_url();?>site/relay/teams_2015">Create A Team</a></li>
-                    <li><a href="<?php echo base_url();?>site/relay/donate">Join A Team</a></li>
-                </ul><!-- Drop Down -->
+            <li><a href="<?php echo base_url();?>auth/teams_2015">Sign Up For Relay 2015</a>
             </li>
 
             <!--				<li><a>Products</a>-->

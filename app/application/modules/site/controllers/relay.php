@@ -27,12 +27,22 @@ class Relay extends MY_Controller {
 	public function index(){
 		$this->home();
 	}
+
     public function home(){
 //        $this->data['products'] = $this->app_model->retrieve_products(); // retrieve an array with all products
         $this->data['title'] 	= "Home Relay";
         $this->data['main_content'] 	= "home";
 
         $this->_load_view();
+    }
+
+    /* Secured Home Page */
+    public function my_home(){
+
+        $this->data['title'] 	= "Home Relay";
+        $this->data['secure_content'] 	= "relay/home";
+
+        $this->_secured_load_view();
     }
 
     /* USER REGISTRATION*/
@@ -50,9 +60,17 @@ class Relay extends MY_Controller {
 
         $this->_load_view();
     }
-    public function admin_page(){
+
+    public function new_team_registration(){
         $this->data['title'] 	= "Admin Panel";
-        $this->data['main_content'] 	= "admin_page";
+        $this->data['main_content'] 	= "join_team";
+
+        $this->_load_view();
+    }
+
+    public function create_new_team(){
+        $this->data['title'] 	= "Admin Panel";
+        $this->data['main_content'] 	= "create_team";
 
         $this->_load_view();
     }

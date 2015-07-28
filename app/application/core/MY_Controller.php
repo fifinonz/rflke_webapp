@@ -18,5 +18,8 @@ class MY_Controller extends MX_Controller
         $this->load->view('inc/tmp',$this->data);
     }
 
+    public function _secured_load_view(){
+        $this->load->view('inc/tmp',$this->data);
 
+    }
 }
