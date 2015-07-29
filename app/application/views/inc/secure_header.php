@@ -173,7 +173,7 @@
 
             <nav class="menu">
                 <ul id="menu-navigation">
-                    <li class="active"><a href="<?php echo base_url();?>site/relay/_My_Home">Relay For Life Home</a></li>
+                    <li class="active"><a href="<?php echo base_url();?>site/relay/my_home">Relay For Life Home</a></li>
 
                     <li><a href="#" >Learn About Relay</a>
                         <ul>
@@ -247,7 +247,7 @@
         </div>
         <span><i class="icon-align-justify"></i></span>
         <ul>
-            <li class="active"><a href="<?php echo base_url();?>site/relay/_My_Home">Home</a></li>
+            <li class="active"><a href="<?php echo base_url();?>site/relay/my_home">Home</a></li>
 
             <li><a href="" >Learn About Relay</a>
                 <ul>

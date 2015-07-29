@@ -183,7 +183,7 @@ $(window).load(function(){
 
 					</ul><!-- Drop Down -->
 				</li>
-                <li><a href="<?php echo base_url();?>auth/teams_2015">Sign Up For Relay 2015</a>
+                <li><a href="<?php echo base_url();?>auth/view_teams">Sign Up For Relay 2015</a>
                 </li>
 <!--				<li><a>Products</a>-->
 <!--					<ul>-->
@@ -257,7 +257,7 @@ $(window).load(function(){
 
                 </ul><!-- Drop Down -->
             </li>
-            <li><a href="<?php echo base_url();?>auth/teams_2015">Sign Up For Relay 2015</a>
+            <li><a href="<?php echo base_url();?>auth/view_teams">Sign Up For Relay 2015</a>
             </li>
 
             <!--				<li><a>Products</a>-->
