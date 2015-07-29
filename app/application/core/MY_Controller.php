@@ -12,6 +12,8 @@ class MY_Controller extends MX_Controller
        function __construct()
     {
         parent::__construct();
+        $this->load->library('auth/ion_auth');
+
     }
 
     public function _load_view(){
