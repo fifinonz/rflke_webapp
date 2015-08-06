@@ -104,6 +104,15 @@ $lang['create_group_submit_btn']             = 'Create';
 $lang['create_group_validation_name_label']  = 'Group Name';
 $lang['create_group_validation_desc_label']  = 'Description';
 
+// Create Team/Member
+$lang['create_team_captain']                 ='   I am Team Captain  *';
+$lang['create_team_submit_btn']              ='Create This Team!';
+$lang['create_team_name']                    ='Team Name:';
+$lang['create_member_validation_tname_label'] = 'Team Name is required';
+$lang['create_member_validation_sname_label'] = 'Please Select A Tshirt Size';
+$lang['create_member_validation_participant_label'] = 'Participant type is required';
+$lang['create_member_validation_mpesa_label']  = 'Please enter the confirmation code received after Mpesa payment';
+
 // Edit Group
 $lang['edit_group_title']                  = 'Edit Group';
 $lang['edit_group_saved']                  = 'Group Saved';
