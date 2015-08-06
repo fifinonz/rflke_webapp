@@ -1120,17 +1120,17 @@ class Auth extends MY_Controller {
 
 //validate form input
         $this->form_validation->set_rules('team_name', $team_name, 'required');
-        $this->form_validation->set_rules('team_captain', $check_captain, 'required');
+//        $this->form_validation->set_rules('team_captain', $check_captain, 'required');
 
-        if ($this->form_validation->run() == FALSE)
+        if ($this->form_validation->run() == TRUE)
+//        {
+//            $this->data['message'] = (validation_errors() ? validation_errors() : ($this->ion_auth->errors() ? $this->ion_auth->errors() : $this->session->flashdata('message')));
+//
+//            redirect('auth/create_team','refresh');
+//        }
+//        else
         {
-            $this->data['message'] = (validation_errors() ? validation_errors() : ($this->ion_auth->errors() ? $this->ion_auth->errors() : $this->session->flashdata('message')));
-
-            redirect('auth/create_team','refresh');
-        }
-        else
-        {
-            $this->ion_auth->registration_create_team();
+            $this->ion_auth->registration_create_team($team_name,$team_captain);
 
         }
 //

@@ -6,7 +6,7 @@ Class Create_team_model extends CI_Model
     {
         parent::__construct();
         $this->load->database();
-        $this->load->config('site_relay', TRUE);
+        $this->load->config('auth/ion_auth', TRUE);
         $this->load->helper('cookie');
         $this->load->helper('date');
         $this->lang->load('auth/ion_auth');
@@ -18,12 +18,12 @@ Class Create_team_model extends CI_Model
 //        $this->identity_column = $this->config->item('identity', 'ion_auth');
 //        $this->store_salt      = $this->config->item('store_salt', 'ion_auth');
 //        $this->salt_length     = $this->config->item('salt_length', 'ion_auth');
-        $this->join = $this->config->item('join', 'site_relay');
+        $this->join = $this->config->item('join', 'ion_auth');
 
     }
 
     // Insert team data into database
-    public function registration_create_team()
+    public function registration_create_team($team_name,$team_captain)
     {
 
 // Query to check whether name already exist or not
