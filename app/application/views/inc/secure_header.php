@@ -200,7 +200,7 @@
                     					<ul>
                     						<li><a href="<?php echo base_url();?>auth/create_team">Create A Team</a>
                     							</li>
-                    						<li><a href="<?php echo base_url();?>auth/join_team">Join A Team</a>
+                    						<li><a href="<?php echo base_url();?>auth/teams_2015">Join A Team</a>
                     							</li>
 
                     						</li>
@@ -269,7 +269,7 @@
                 <ul>
                     <li><a href="<?php echo base_url();?>auth/create_team">Create A Team</a>
                     </li>
-                    <li><a href="<?php echo base_url();?>auth/join_team">Join A Team</a>
+                    <li><a href="<?php echo base_url();?>auth/teams_2015">Join A Team</a>
                     </li>
                     </ul>
 
