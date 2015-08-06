@@ -8,8 +8,10 @@ class Auth extends MY_Controller {
 		$this->load->database();
 		$this->load->library(array('ion_auth','form_validation'));
 		$this->load->helper(array('url','language'));
+        $this->load->model('create_team_model');
 
-		$this->form_validation->set_error_delimiters($this->config->item('error_start_delimiter', 'ion_auth'), $this->config->item('error_end_delimiter', 'ion_auth'));
+
+        $this->form_validation->set_error_delimiters($this->config->item('error_start_delimiter', 'ion_auth'), $this->config->item('error_end_delimiter', 'ion_auth'));
 
 		$this->lang->load('auth');
 	}
@@ -65,7 +67,7 @@ class Auth extends MY_Controller {
 				//if the login is successful
 				//redirect them back to the home page
 				$this->session->set_flashdata('message', $this->ion_auth->messages());
-				redirect('site/relay/my_home', 'refresh');
+				redirect('auth/teams_2015', 'refresh');
 			}
 			else
 			{
@@ -86,7 +88,8 @@ class Auth extends MY_Controller {
                 'type' => 'text',
                 'value' => $this->form_validation->set_value('identity'),
             );
-            $this->data['password'] = array('name' => 'password',
+            $this->data['password'] = array(
+                'name' => 'password',
                 'id' => 'password',
                 'type' => 'password',
             );
@@ -458,7 +461,7 @@ class Auth extends MY_Controller {
 			// check to see if we are creating the user
 			// redirect them back to the admin page
 			$this->session->set_flashdata('message', $this->ion_auth->messages());
-			redirect("auth/teams", 'refresh');
+			redirect("auth/login", 'refresh');
 		}
 		else
 		{
@@ -809,6 +812,7 @@ class Auth extends MY_Controller {
     public function teams_2015(){
         $this->data['title'] 	= "Participate in Relay 2015";
 
+        $this->data['teams']=($this->ion_auth->read_team_information()); // display an array of all teams
         //validate form input
         $this->form_validation->set_rules('identity', 'Identity', 'required');
         $this->form_validation->set_rules('password', 'Password', 'required');
@@ -824,14 +828,14 @@ class Auth extends MY_Controller {
                 //if the login is successful
                 //redirect them back to the home page
                 $this->session->set_flashdata('message', $this->ion_auth->messages());
-                redirect('site/relay/home', 'refresh');
+                redirect('auth/teams_2015', 'refresh');
             }
             else
             {
                 // if the login was un-successful
                 // redirect them back to the login page
                 $this->session->set_flashdata('message', $this->ion_auth->errors());
-                redirect('auth/login', 'refresh'); // use redirects instead of loading views for compatibility with MY_Controller libraries
+                redirect('auth/view_teams#', 'refresh'); // use redirects instead of loading views for compatibility with MY_Controller libraries
             }
         }
         else
@@ -888,7 +892,7 @@ class Auth extends MY_Controller {
                 // check to see if we are creating the user
                 // redirect them back to the admin page
                 $this->session->set_flashdata('message', $this->ion_auth->messages());
-                redirect("auth", 'refresh');
+                redirect("auth/teams_2015", 'refresh');
             }
             else
             {
@@ -1087,12 +1091,70 @@ class Auth extends MY_Controller {
         $this->_load_view();
     }
 
+    public function create_team(){
+        $this->data['title'] 	= "Participate in Relay 2015";
+        $this->data['main_content'] 	= "create_new_team";
+
+
+        $this->_load_view();
+    }
 
     public function join_team(){
+
+        $this->data['teams']=$this->ion_auth->read_team_information($this->input->post('team_name')); // display an array of all teams
         $this->data['title'] 	= "Participate in Relay 2015";
         $this->data['main_content'] 	= "join_team";
 
         $this->_load_view();
+    }
+
+    function registration_create_team()
+    {
+        $this->data['title'] = "Create Team";
+
+        $team_captain = $this->ion_auth->user()->row()->id;
+
+        $team_name = strtolower($this->input->post('team_name'));
+        // user MUST check team_captain
+        $check_captain = (bool) $this->input->post('team_captain');
+
+//validate form input
+        $this->form_validation->set_rules('team_name', $team_name, 'required');
+        $this->form_validation->set_rules('team_captain', $check_captain, 'required');
+
+        if ($this->form_validation->run() == FALSE)
+        {
+            $this->data['message'] = (validation_errors() ? validation_errors() : ($this->ion_auth->errors() ? $this->ion_auth->errors() : $this->session->flashdata('message')));
+
+            redirect('auth/create_team','refresh');
+        }
+        else
+        {
+            $this->ion_auth->registration_create_team();
+
+        }
+//
+
+//            redirect('auth/teams_2015', 'refresh');
+
+            $this->data['main_content'] = 'create_new_team';
+            $this->_load_view();
+        }
+
+    function new_member(){
+
+        if ($this->input->post('submit')){
+
+            $this->ion_auth->registration_insert_member();
+
+            redirect('auth/teams_2015', 'refresh');
+        }
+        else
+        {
+            redirect('auth/join_team') ;
+        }
+
+
     }
 
 }

@@ -4,9 +4,9 @@
 
 <section class="inner-page">
     <div class="container">
-        <div class="page-title">
-            <h1>About <span>Us</span></h1>
-        </div><!--Page Title-->
+<!--        <div class="page-title">-->
+<!--            <h1>About <span>Us</span></h1>-->
+<!--        </div><!--Page Title-->
         <section id="tabs-style" class="element">
             <h3 class="sub-head">CELEBRATE</h3>
             <div class="theme-tabs">
@@ -105,7 +105,7 @@
                             </ul>
 
                             </p>
-                            <a class="main-container fixer-container signup-btn" href="<?php echo base_url();?>site/relay/teams_2015" target="_blank">Sign Up For Relay 2015</a>
+                            <a class="signup-btn" href="<?php echo base_url();?>site/relay/teams_2015" target="_blank">Sign Up For Relay 2015</a>
 
                         </div>
                     </div>
@@ -126,6 +126,15 @@
 
     </div>
 
+    <div class="container">
+        <h3>FIND US ON SOCIAL MEDIA.</h3>
+        <ul class="social-bar">
+            <li><a title="" href="#"><img alt="" src="<?php echo base_url();?>assets/images/youtube.png"></a></li>
+            <li><a title="" href="https://www.facebook.com/Relay4LifeKenya"><img alt="" src="<?php echo base_url();?>assets/images/facebook.png"></a></li>
+            <li><a title="" href="https://www.twitter.com/Relay4LifeKE"><img alt="" src="<?php echo base_url();?>assets/images/twitter.png"></a></li>
+            <li><a title="" href="https://instagram.com/relayforlifekenya/"><img alt="" src="<?php echo base_url();?>assets/images/instagram.jpg"></a></li>
+
+        </ul>
+    </div><!-- Social Media Bar -->
 
 </section>
-</div>

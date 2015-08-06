@@ -1,4 +1,14 @@
-<h1><?php echo lang('change_password_heading');?></h1>
+<section class="inner-page">
+    <div class="container">
+        <div class="row">
+            <div class="left-content col-md-6">
+                <div id="main">
+                    <div class="main-container fixer-container login_form" id="login">
+                        <h2 style="color: #2b0171;text-align:left">
+                            <img src="<?php echo base_url();?>assets/images/mini-logo.png"/>
+                            <?php echo lang('change_password_heading');?></h2>
+                        <hr/>
+
 
 <div id="infoMessage"><?php echo $message;?></div>
 
@@ -23,3 +33,10 @@
       <p><?php echo form_submit('submit', lang('change_password_submit_btn'));?></p>
 
 <?php echo form_close();?>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -16,6 +16,7 @@
 
   <p>
     <?php echo lang('login_identity_label', 'identity');?>
+
     <?php echo form_input($identity);?>
   </p>
 
@@ -27,6 +28,7 @@
   <p>
     <?php echo lang('login_remember_label', 'remember');?>
     <?php echo form_checkbox('remember', '1', FALSE, 'id="remember"');?>
+
   </p>
 
 

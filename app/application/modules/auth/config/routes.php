@@ -38,7 +38,7 @@
 |
 */
 
-$route['default_controller'] = "participate/auth";
+$route['default_controller'] = "auth/auth";
 $route['404_override'] = '';
 
 

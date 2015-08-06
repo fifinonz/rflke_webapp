@@ -93,22 +93,22 @@
         echo form_label('Tshirt size:  *');
         echo"<br/>";
         $options = array(
-            'small'         => 'Small Shirt',
-            'med'           => 'Medium Shirt',
-            'large'         => 'Large Shirt',
-            'xlarge'        => 'Extra Large Shirt',
+            'S'         => 'Small Shirt',
+            'M'           => 'Medium Shirt',
+            'L'         => 'Large Shirt',
+            'XL'        => 'Extra Large Shirt',
         );
-        echo form_dropdown('tshirts', $options, 'large');
+        echo form_dropdown('tshirts', $options, 'large','size_id');
         echo"<br/>";
         echo"<br/>";
         echo form_label('Participate As:  *');
         echo"<br/>";
         $options = array(
-            'surv'         => 'I am Survivor',
-            'cargv'           => 'I am a Caregiver',
-            'reg'         => 'I dare to care',
+            'survivor'         => 'I am Survivor',
+            'caregiver'           => 'I am a Caregiver',
+            'participant'         => 'I dare to care',
         );
-        echo form_dropdown('participant type', $options, 'surv');
+        echo form_dropdown('participant_id', $options, 'survivor','participate_id');
         echo"<br/>";
         echo"<br/>";
         echo "<h4><strong>Team Registration is Ksh.1200</strong><span> To make your payment:</span></h4>
@@ -127,7 +127,11 @@
         echo"<br/>";
         echo"<br/>";
         echo form_label('MPESA Confirmation Code:  *');
-        echo form_input('mpesa');
+        $data = array(
+            'name'        => 'mpesa_code',
+            'id'          => 'mpesa_code',
+        );
+        echo form_input($data);
         echo"<br/>";
         echo"<br/>";
         echo form_submit('submit', 'Join Team');

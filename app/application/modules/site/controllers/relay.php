@@ -19,7 +19,7 @@ class Relay extends MY_Controller {
         $this->load->library('form_validation');
         $this->load->library('session');
 //		$this->load->model('app_model');
-        $this->load->model('login_database');
+//        $this->load->model('create_team_model');
 	}
 
 

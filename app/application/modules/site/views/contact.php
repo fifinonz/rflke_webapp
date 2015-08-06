@@ -66,6 +66,7 @@
             <li><a title="" href="#"><img alt="" src="<?php echo base_url();?>assets/images/youtube.png"></a></li>
             <li><a title="" href="https://www.facebook.com/Relay4LifeKenya"><img alt="" src="<?php echo base_url();?>assets/images/facebook.png"></a></li>
             <li><a title="" href="https://www.twitter.com/Relay4LifeKE"><img alt="" src="<?php echo base_url();?>assets/images/twitter.png"></a></li>
+            <li><a title="" href="https://instagram.com/relayforlifekenya/"><img alt="" src="<?php echo base_url();?>assets/images/instagram.jpg"></a></li>
 
         </ul>
     </div><!-- Social Media Bar -->

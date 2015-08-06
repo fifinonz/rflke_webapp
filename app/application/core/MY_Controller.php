@@ -8,11 +8,12 @@ require APPPATH."third_party/MX/Controller.php";
 
 class MY_Controller extends MX_Controller
 {
-    protected $data;
+    public $data;
        function __construct()
     {
         parent::__construct();
         $this->load->library('auth/ion_auth');
+
 
     }
 

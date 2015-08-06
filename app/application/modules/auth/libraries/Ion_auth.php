@@ -68,6 +68,7 @@ class Ion_auth
 
         $this->load->model('auth/ion_auth_model');
 
+
         $this->_cache_user_in_group =& $this->ion_auth_model->_cache_user_in_group;
 
         //auto-login the user if they are remembered

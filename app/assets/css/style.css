@@ -2786,9 +2786,9 @@ footer .container {
 /*** Newsletter ***/
 .newsletter {
     float:left;
-    padding:0 20px;
+    padding:20px 20px;
 	position:relative;
-	
+
     -webkit-border-radius:0 0 3px 3px;
     -moz-border-radius:0 0 3px 3px;
     -ms-border-radius:0 0 3px 3px;
@@ -2819,14 +2819,14 @@ footer .container {
 }
 .newsletter input, 
 .newsletter input:focus {
-    height:30px;
+    height:50px;
     margin-bottom:20px;
     border:0 none;
-    color:#323131;
+    color: #2a3133;
     font-family:roboto;
-    font-size:11px;
+    font-size:18px;
     line-height:10px;
-    background:none repeat scroll 0 0 rgba(255, 255, 255, 0.66);
+    background:none repeat scroll 0 0 rgba(255, 255, 254, 0.66);
 	
     -webkit-border-radius:4px;
     -moz-border-radius:4px;
@@ -2841,13 +2841,13 @@ footer .container {
     box-shadow:1px 1px 2px #8D8D8D inset;
 }
 .newsletter:before {
-    content:"";
+
     width:100%;
     height:100%;
 
     position:absolute;
     left:0;
-    top:-99%;
+    top:-90%;
 }
 .social-bar {
     float:left;
@@ -2884,7 +2884,7 @@ footer .container {
     border:1px solid #C1E4A1;
     color:#323131;
     font-family:roboto;
-    font-size:11px;
+    font-size:18px;
     margin:0 auto;
     padding:10px;
     text-transform:uppercase;
@@ -2903,7 +2903,7 @@ footer .container {
     transition:all 0.4s ease 0s;
 }
 .newsletter-btn > input:hover {
-    font-size:13px;
+    font-size:20px;
 }
 .footer-widget-title h4 span{
 
@@ -9650,7 +9650,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 header.header2 #menu-navigation li a{
     color: #666666;
-    font-size: 13px;
+    font-size: 16px;
     text-transform: uppercase;
 }
 header.header2 #menu-navigation li a:hover{

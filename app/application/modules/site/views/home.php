@@ -13,31 +13,57 @@
                 <div id="tab1" class="tab-pane fade in active">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="cause-image">
-                                <img src="<?php echo base_url();?>assets/images/RFL_P.jpg" alt="" >
-<!--                                <div class="meta">-->
-<!--                                    <span>Nyayo Stadium<br/></br> <i class="icon-map-marker"> Nairobi, Kenya</i></span>-->
-<!--                                </div>-->
-                                <div class="cause-title">
-<!--                                    <div class="row">-->
-<!--                                        <div class="col-md-5">-->
-<!--                                           <h2> <span><i class="icon-calendar"> WHEN?</i></span></h2>-->
-<!--                                            <h2>10TH - 11TH <i>OCTOBER</i><br/><br/>NOON - NOON<i> (24hrs)</i></h2></div>-->
-<!--                                        <div class="col-md-6">-->
-<!--                                            <h2><span><i class="icon-pencil"> HOW?</i></span></h2>-->
-<!--                                            <h2>TEAM:<i> 10-15 MEMBERS</i><br/><br/>REGISTRATION: <i>KSH.1200</i></h2> </div>-->
-<!--                                    </div>-->
+                            <div id="layerslider-container-fw">
 
-                            </div>
+                                <div id="layerslider" style="width: 100%; height: 530px; margin: 0px auto; ">
+                                    <div class="ls-slide" data-ls="transition3d:53; timeshift:-1000;">
+                                        <img src="<?php echo base_url();?>assets/images/slider5.png" class="ls-bg" alt="Slide background">
+                                        <p class="ls-l slide1"	style="top: 330px; left:248px; font-family:roboto; font-size:13px; color:#fefefe;" data-ls="delayin:1000; scalein:4; durationin : 1000;"><br/></p>
+                                    </div><!-- Slide1 -->
 
-                        </div>
+                                    <div class="ls-slide" data-ls="transition3d:12;timeshift:-1000;">
+                                        <img src="<?php echo base_url();?>assets/images/slider5.png" class="ls-bg" alt="Slide background">
+                                        <h3 class="ls-l slide1" style="top:196px; left:100px; font-family: roboto; color: #FFFFFF; line-height:22px; font-size:32px; background:rgba(0,0,0,0.85); padding:18px 30px; border-radius:3px;" data-ls="offsetxin:0; scalexin:0; scaleyin:0; offsetxout:0; offsetyout:top; durationin:1500; durationout:800; showuntil:2000; fadeout:false;">
+                                            <i>CELEBRATE.</i></h3>
+
+                                        <h4 class="ls-l slide3" style="top:265px; left:100px; background:rgba(152,212,96,0.85); font-family: roboto; color: #FFFFFF; font-size:28px; line-height:26px; padding:10px 20px; border-radius:3px;" data-ls="offsetxin:0; scalexin:0; scaleyin:0; offsetxout:0; offsetyout:top; durationin:1500; durationout:800; delayin:500; showuntil:2500;fadeout:false;">
+                                            <span>REMEMBER.</span></h4>
+
+                                        <h5 class="ls-l slide3" style="top:319px; left:100px; background:rgba(255,255,255,0.85); color:#595858; font-family:roboto; font-size:24px; line-height: 20px; padding:10px 20px; border-radius:3px;" data-ls="offsetxin:0; scalexin:0; scaleyin:0; offsetxout:0; offsetyout:top; durationin:1500; durationout:800; delayin:1000; showuntil:3000;fadeout:false;">
+                                            FIGHT <span>BACK.</span></h5>
+                                    </div><!-- Slide2 -->
+
+                                    <div class="ls-slide" data-ls="transition3d:35;timeshift:-1000;">
+                                        <img src="<?php echo base_url();?>assets/images/slider6.png" class="ls-bg" alt="Slide background">
+
+
+                                    </div><!-- Slide3 -->
+
+
+                                    <div class="ls-slide" data-ls="transition3d:75;timeshift:-1000;">
+                                        <img src="<?php echo base_url();?>assets/images/slider1.jpg" class="ls-bg" alt="Slide background">
+
+                                   </div><!-- Slide4 -->
+
+<!--                                    <div class="ls-slide" data-ls="transition3d:63;timeshift:-1000;">-->
+<!--                                        <img src="--><?php //echo base_url();?><!--assets/images/RFL_P.jpg" class="ls-bg" alt="Slide background">-->
+<!---->
+<!--                                    </div><!-- Slide5 -->
+
+                                    <div class="ls-slide" data-ls="transition3d:63;timeshift:-1000;">
+                                        <img src="<?php echo base_url();?>assets/images/slider1.jpg" class="ls-bg" alt="Slide background">
+                                    </div>
+
+
+                                </div>
+                            </div><!-- Layer Slider -->
                             <div class="details">
                                 <div class="needed-amount">
                                     <h5><i>KSH.</i>40M<span>OUR TARGET</span></h5>
                                 </div>
 
-                                <p style="font-size: 18px">This year our Relay for Life Event is themed Education and Awareness. Funds raised will be used to empower communities with information about the preventiton, detection and treatment of Cancer<br/>
-                                  <a class="main-container fixer-container signup-btn" href="<?php echo base_url();?>auth/teams_2015">Sign Up For Relay 2015</a>
+                                <p style="font-size: 18px">This year our Relay for Life Event is themed Cancer Education, Awareness and Patient Support. Funds raised will be used to empower communities with information about the preventiton, detection and treatment of Cancer<br/>
+                                  <a class="main-container fixer-container signup-btn" href="<?php echo base_url();?>auth/view_teams">Sign Up For Relay 2015</a>
                                 </p>
                             </div>
 
@@ -76,66 +102,82 @@
         </div>    </div>
 </section>
 
-<section class="block remove-top">
+<section class="block">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <div class="recent-events">
+            <div class="col-md-5">
                     <div class="sec-title">
-                        <h2>Upcoming <span>Events</span></h2>
+                        <h2><span>NEWSLETTER</span></h2>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="event">
-                                <div class="event-thumb">
-                                    <img src="<?php echo base_url();?>assets/images/event1.jpg" alt="" />
-<!--                                    <div class="counter">-->
-<!--                                        <div class="count-down"></div>-->
-<!--                                    </div>-->
-                                </div>
-                                <div class="event-intro">
-                                    <h5><a href="" title="">Upcoming Outreach Event</a></h5>
-                                    <a href="#" title=""><i class="icon-calendar-empty"></i><span>August</span> 14,2015</a>
-                                    <a href="#" title=""><i class="icon-map-marker"></i>In Nairobi, Kenya</a>
-                                </div>
-                            </div><!-- Event -->
+                <!-- Begin MailChimp Signup Form -->
+                <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+                <style type="text/css">
+                    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+                    /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+                       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                </style>
+                <div id="mc_embed_signup">
+                    <form action="//relayforlifekenya.us11.list-manage.com/subscribe/post?u=2f7e5fba8add20ab340278136&amp;id=e3ce9d8083" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                            <h2>Subscribe to our mailing list</h2>
+                            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                            <div class="mc-field-group">
+                                <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+                                </label>
+                                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                            </div>
+                            <div class="mc-field-group">
+                                <label for="mce-FNAME">First Name </label>
+                                <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                            </div>
+                            <div class="mc-field-group">
+                                <label for="mce-LNAME">Last Name </label>
+                                <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+                            </div>
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;"><input type="text" name="b_2f7e5fba8add20ab340278136_e3ce9d8083" tabindex="-1" value=""></div>
+                            <div style="color:#2b0171" class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="event">
-                                <div class="event-thumb">
-                                    <img src="<?php echo base_url();?>assets/images/event2.jpg" alt="" />
-<!--                                    <div class="counter">-->
-<!--                                        <div class="count-down2"></div>-->
-<!--                                    </div>-->
-                                </div>
-                                <div class="event-intro">
-                                    <h5><a href="" title="">Upcoming Outreach Event</a></h5>
-                                    <a href="#" title=""><i class="icon-calendar-empty"></i><span>July</span> 14,2015</a>
-                                    <a href="#" title=""><i class="icon-map-marker"></i>In Nairobi, Kenya</a>
-                                </div>
-                            </div><!-- Event -->
-                        </div>
-                    </div>
-                </div><!-- Recent Events -->
-            </div>
+                    </form>
+                </div>
+
+                <!--End mc_embed_signup-->
+                <br/>
+                <div class="container">
+
+                    <ul class="social-bar">
+                        <li><a title="" href="#"><img alt="" src="<?php echo base_url();?>assets/images/youtube.png"></a></li>
+                        <li><a title="" href="https://www.facebook.com/Relay4LifeKenya"><img alt="" src="<?php echo base_url();?>assets/images/facebook.png"></a></li>
+                        <li><a title="" href="https://www.twitter.com/Relay4LifeKE"><img alt="" src="<?php echo base_url();?>assets/images/twitter.png"></a></li>
+                        <li><a title="" href="https://instagram.com/relayforlifekenya/"><img alt="" src="<?php echo base_url();?>assets/images/instagram.jpg"></a></li>
+
+                    </ul>
+                    <h3>FIND US ON SOCIAL MEDIA.</h3>
+                </div><!-- Social Media Bar -->
+
+
+                        </div>	<!-- News Letter SignUp --> <!-- Newsletter -->
+
             <div class="col-md-6 pull-right">
                 <div class="sec-title">
-                    <h2>Feauture<span>Video</span></h2>
+                    <h2><span>FEATURE VIDEO</span></h2>
                 </div>
                 <div class="charity-video">
                     <div class="row">
+                        <div class="col-md-6">
+                            <div class="">
+                                <!--                                <img src="--><?php //echo base_url();?><!--assets/images/video-bg.png" alt="" />-->
+                                <!--                                <a title="A call to Relay" href="https://www.youtube.com/watch?v=mL-z5h_mJBE" class="html5lightbox">-->
+                                <iframe width="300" height="300" src="https://www.youtube.com/embed/h_9mtpibVfo" frameborder="0" allowfullscreen></iframe>
+
+                            </div>
+                        </div>
                         <div class="col-md-6 desc">
                             <h3><span>A CALL TO RELAY</span></h3>
                             <p style="font-size: 16px">Together we will make sure cancer in the country is accorded the attention it deserves.</p>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="">
-<!--                                <img src="--><?php //echo base_url();?><!--assets/images/video-bg.png" alt="" />-->
-<!--                                <a title="A call to Relay" href="https://www.youtube.com/watch?v=mL-z5h_mJBE" class="html5lightbox">-->
-                                <iframe width="261" height="207" src="https://www.youtube.com/embed/h_9mtpibVfo" frameborder="0" allowfullscreen></iframe>
-                                    <span><i class="icon-play"></i></span>
-                                </a>
-                            </div>
                         </div>
                     </div>
 

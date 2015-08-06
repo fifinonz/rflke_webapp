@@ -94,14 +94,14 @@ selfURL();
                     <div class="our-cause">
                         <div class="our-cause-img">
                             <img alt="" src="images/causes-new1.jpg">
-                            <a title="" href="<?php echo base_url();?>site/relay/join_team"><i class="icon-link"></i></a>
+                            <a title="" href="<?php echo base_url();?>auth/join_team"><i class="icon-link"></i></a>
                         </div>
                         <div class="our-cause-detail">
                             <h3>Team 1</h3>
                             <span>Captain: <a title="" href="#"></a></span>
                             <p>This team is ....</p>
                             <i>Funds Raised: <span>KES</span> <strong>20,000</strong></i>
-                            <a title="" href="<?php echo base_url();?>site/relay/join_team">Join this Team</a>
+                            <a title="" href="<?php echo base_url();?>auth/join_team">Join this Team</a>
                         </div>
                     </div>
                 </div>
@@ -110,14 +110,14 @@ selfURL();
                     <div class="our-cause">
                         <div class="our-cause-img">
                             <img alt="" src="images/causes-new1.jpg">
-                            <a title="" href="<?php echo base_url();?>site/relay/join_team"><i class="icon-link"></i></a>
+                            <a title="" href="<?php echo base_url();?>auth/join_team"><i class="icon-link"></i></a>
                         </div>
                         <div class="our-cause-detail">
                             <h3>Team 2</h3>
                             <span>Captain: <a title="" href="#"></a></span>
                             <p>This team is ....</p>
                             <i>Funds Raised: <span>KES</span> <strong>20,000</strong></i>
-                            <a title="" href="<?php echo base_url();?>site/relay/join_team">Join this Team</a>
+                            <a title="" href="<?php echo base_url();?>auth/join_team">Join this Team</a>
                         </div>
                     </div>
                 </div>
@@ -127,14 +127,14 @@ selfURL();
                     <div class="our-cause">
                         <div class="our-cause-img">
                             <img alt="" src="images/causes-new1.jpg">
-                            <a title="" href="<?php echo base_url();?>site/relay/join_team"><i class="icon-link"></i></a>
+                            <a title="" href="<?php echo base_url();?>auth/join_team"><i class="icon-link"></i></a>
                         </div>
                         <div class="our-cause-detail">
                             <h3>Team 3</h3>
                             <span>Captain: <a title="" href="#"></a></span>
                             <p>This team is ....</p>
                             <i>Funds Raised: <span>KES</span> <strong>20,000</strong></i>
-                            <a title="" href="<?php echo base_url();?>site/relay/join_team">Join this Team</a>
+                            <a title="" href="<?php echo base_url();?>auth/join_team">Join this Team</a>
                         </div>
                     </div>
                 </div>
@@ -143,14 +143,14 @@ selfURL();
                     <div class="our-cause">
                         <div class="our-cause-img">
                             <img alt="" src="images/causes-new1.jpg">
-                            <a title="" href="<?php echo base_url();?>site/relay/join_team"><i class="icon-link"></i></a>
+                            <a title="" href="<?php echo base_url();?>auth/join_team"><i class="icon-link"></i></a>
                         </div>
                         <div class="our-cause-detail">
                             <h3>Team 4</h3>
                             <span>Captain: <a title="" href="#"></a></span>
                             <p>This team is ....</p>
                             <i>Funds Raised: <span>KES</span> <strong>20,000</strong></i>
-                            <a title="" href="<?php echo base_url();?>site/relay/join_team">Join this Team</a>
+                            <a title="" href="<?php echo base_url();?>auth/join_team">Join this Team</a>
                         </div>
                     </div>
                 </div>
@@ -160,14 +160,14 @@ selfURL();
                     <div class="our-cause">
                         <div class="our-cause-img">
                             <img alt="" src="images/causes-new1.jpg">
-                            <a title="" href="<?php echo base_url();?>site/relay/join_team"><i class="icon-link"></i></a>
+                            <a title="" href="<?php echo base_url();?>auth/join_team"><i class="icon-link"></i></a>
                         </div>
                         <div class="our-cause-detail">
                             <h3>Team 5</h3>
                             <span>Captain: <a title="" href="#"></a></span>
                             <p>This team is ....</p>
                             <i>Funds Raised: <span>KES</span> <strong>20,000</strong></i>
-                            <a title="" href="<?php echo base_url();?>site/relay/join_team">Join this Team</a>
+                            <a title="" href="<?php echo base_url();?>auth/join_team">Join this Team</a>
                         </div>
                     </div>
                 </div>
@@ -177,14 +177,14 @@ selfURL();
                     <div class="our-cause">
                         <div class="our-cause-img">
                             <img alt="" src="images/causes-new1.jpg">
-                            <a title="" href="<?php echo base_url();?>site/relay/join_team"><i class="icon-link"></i></a>
+                            <a title="" href="<?php echo base_url();?>auth/join_team"><i class="icon-link"></i></a>
                         </div>
                         <div class="our-cause-detail">
                             <h3>Team 6</h3>
                             <span>Captain: <a title="" href="#"></a></span>
                             <p>This team is ....</p>
                             <i>Funds Raised: <span>KES</span> <strong>20,000</strong></i>
-                            <a title="" href="<?php echo base_url();?>site/relay/join_team">Join this Team</a>
+                            <a title="" href="<?php echo base_url();?>auth/join_team">Join this Team</a>
                         </div>
                     </div>
                 </div>

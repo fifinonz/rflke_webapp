@@ -70,17 +70,23 @@
               <div class="billing">
                   <div id="main">
                       <div class="main-container fixer-container login_form" id="login">
-               <h2 style="color: #2b0171;text-align: left">
+               <h2 style="color: #2b0171;text-align: left"><img src="<?php echo base_url();?>assets/images/mini-logo.png">
          Create A New Team</h2><br/>
         <?php
         echo "<div class='error_msg'>";
         echo validation_errors();
         echo "</div>";
-        echo form_open('auth/create_new_team');
-
-        echo lang('create_team_name  *','team_captain');
+        echo form_open('auth/registration_create_team');
+        echo "<h3>";
+        echo lang('create_team_name');
+        echo "</h3>";
         echo"<br/>";
-        echo form_input('team_name');
+        $data = array(
+            'name'        => 'team_name',
+            'id'          => 'team_name',
+        );
+
+        echo form_input($data);
         echo "<div class='error_msg'>";
         if (isset($message_display)) {
             echo "<div class='message'>";
@@ -90,10 +96,15 @@
         echo "</div><br/>";
         echo"<br/>";
         echo "<p><strong>";
-        echo form_checkbox('team_captain','',TRUE);
-        echo lang('create_team_captain','team_captain');
+        echo "<h2>";
+        $data = array(
+            'name'        => 'team_captain',
+            'id'          => 'team_captain',
+        );
+        echo form_checkbox($data,'',TRUE);
+        echo lang('create_team_captain');
         echo "</strong></p>";
-
+        echo"</h2>";
         echo"<br/>";
         echo"<br/>";
         echo form_submit('submit', lang('create_team_submit_btn'));

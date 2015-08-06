@@ -16,7 +16,7 @@
                         <div id="outreach-pic4" class="tab-pane fade in">
                             <img src="<?php echo base_url();?>assets/images/profile3.jpg" alt="" />
                         </div>
-                            <div id="outreach-pic5" class="tab-pane fade in">
+                        <div id="outreach-pic5" class="tab-pane fade in">
                             <img src="<?php echo base_url();?>assets/images/profile9.jpg" alt="" />
                         </div>
                         <div id="outreach-pic6" class="tab-pane fade in">
