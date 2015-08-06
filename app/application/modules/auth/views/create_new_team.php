@@ -76,9 +76,9 @@
         echo "<div class='error_msg'>";
         echo validation_errors();
         echo "</div>";
-        echo form_open('site/relay/create_new_team');
+        echo form_open('auth/create_new_team');
 
-        echo form_label('Enter Team Name  *');
+        echo lang('create_team_name  *','team_captain');
         echo"<br/>";
         echo form_input('team_name');
         echo "<div class='error_msg'>";
@@ -89,10 +89,14 @@
         }
         echo "</div><br/>";
         echo"<br/>";
-       echo form_checkbox('team_captain','I am team captain',TRUE);
+        echo "<p><strong>";
+        echo form_checkbox('team_captain','',TRUE);
+        echo lang('create_team_captain','team_captain');
+        echo "</strong></p>";
+
         echo"<br/>";
         echo"<br/>";
-        echo form_submit('submit', 'Create Team');
+        echo form_submit('submit', lang('create_team_submit_btn'));
         echo form_close();
         ?>
                           </div>
