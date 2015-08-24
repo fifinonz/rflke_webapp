@@ -14,12 +14,12 @@
             <h3 class="sub-head">CELEBRATE</h3>
             <div class="theme-tabs">
                 <ul class="nav nav-tabs" id="myTab">
-                    <li class="active"><a data-toggle="tab" href="#tab1">Mashujaa - Cancer Survivors</a></li>
-                    <li class=""><a data-toggle="tab" href="#tab2">Caregivers - Unsung Heroes</a></li>
+                    <li class="active"><a data-toggle="tab" href="#survivors">Mashujaa - Cancer Survivors</a></li>
+                    <li class=""><a data-toggle="tab" href="#caregivers">Caregivers - Unsung Heroes</a></li>
 
                 </ul>
                 <div class="tab-content" id="myTabContent">
-                    <div id="tab1" class="tab-pane fade active in">
+                    <div id="survivors" class="tab-pane fade active in">
                         <div class="aligned left">
                             <img class="pull-left" src="<?php echo base_url();?>assets/images/nyeri_team_survivors.jpg" alt="">
                             <h5 style="font-size: 32px;color: #2b0171">What do Survivors do?</h5>
@@ -27,7 +27,7 @@
                                 <br/><br/>Survivors open the Relay by walking the <strong><span style="color: #800080"><em>Survivors' Lap of Honour. </em></span></strong> This starts the celebration as we acknowledge their tough journey through cancer  and celebrate their victory - every day we are taking steps towards a cure.</p>
                         </div>
                     </div>
-                    <div id="tab2" class="tab-pane fade">
+                    <div id="caregivers" class="tab-pane fade">
                         <div class="aligned left">
                         <img class="pull-left" src="<?php echo base_url();?>assets/images/caregiver.jpg" >
                         <br/>
@@ -44,12 +44,12 @@
             <h3 style="color: #0016b0" class="sub-head">REMEMBER</h3>
             <div class="theme-tabs">
                 <ul class="nav nav-tabs" id="myTab">
-                    <li class="active"><a data-toggle="tab" href="#tab4">Luminaria Ceremony</a></li>
-                    <li class=""><a data-toggle="tab" href="#tab5">History of Relay</a></li>
+                    <li class="active"><a data-toggle="tab" href="#luminaria">Luminaria Ceremony</a></li>
+                    <li class=""><a data-toggle="tab" href="#history">History of Relay</a></li>
 
                 </ul>
                 <div class="tab-content" id="myTabContent">
-                    <div id="tab4" class="tab-pane fade active in">
+                    <div id="luminaria" class="tab-pane fade active in">
                         <div class="aligned left">
                             <img class="pull-left" src="<?php echo base_url();?>assets/images/luminaria.jpg" alt="">
                             <h5 style="font-size: 32px;color: #2b0171">What is a Luminaria?</h5>
@@ -60,7 +60,7 @@
                                 a silent lap in memory of those we have lost to cancer</p>
                         </div>
                     </div>
-                    <div id="tab5" class="tab-pane fade">
+                    <div id="history" class="tab-pane fade">
                         <div class="aligned left">
                             <img class="pull-left" src="<?php echo base_url();?>assets/images/Goedy-Klatt.jpg" alt="">
                         <h5 style="font-size: 32px;color: #2b0171">How One Man Made A Difference</h5>
@@ -87,13 +87,13 @@
             <h3 style="color: #ff0000;" class="sub-head">FIGHT BACK</h3>
             <div class="theme-tabs">
                 <ul class="nav nav-tabs" id="myTab">
-                    <li class="active"><a data-toggle="tab" href="#tab6">Finish the Fight</a></li>
+                    <li class="active"><a data-toggle="tab" href="#fightback">Finish the Fight</a></li>
 <!--                    <li class=""><a data-toggle="tab" href="#tab7">Heading 2</a></li>-->
 <!--                    <li class=""><a data-toggle="tab" href="#tab8">Heading 3</a></li>-->
 
                 </ul>
                 <div class="tab-content" id="myTabContent">
-                    <div id="tab6" class="tab-pane fade active in">
+                    <div id="fightback" class="tab-pane fade active in">
                         <div class="aligned left">
                             <img class="pull-left" src="<?php echo base_url();?>assets/images/fightback.png" alt="">
                             <h5></h5>
