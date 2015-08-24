@@ -67,7 +67,7 @@ class Auth extends MY_Controller {
 				//if the login is successful
 				//redirect them back to the home page
 				$this->session->set_flashdata('message', $this->ion_auth->messages());
-				redirect('auth/teams_2015', 'refresh');
+				redirect('auth/view_teams', 'refresh');
 			}
 			else
 			{
