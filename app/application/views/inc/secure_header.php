@@ -196,16 +196,16 @@
 
                     <li><a href="<?php echo base_url();?>site/relay/what_is_relay" title="">What Is Relay For Life?</a></li>
 
-                    <li><a href="#">Sign Up For Relay 2015</a>
-                    					<ul>
-                    						<li><a href="<?php echo base_url();?>auth/create_team">Create A Team</a>
-                    							</li>
-                    						<li><a href="<?php echo base_url();?>auth/teams_2015">Join A Team</a>
-                    							</li>
-
-                    						</li>
-
-                    					</ul>
+                    <li><a href="<?php echo base_url();?>auth/teams_2015">Sign Up For Relay 2015</a>
+<!--                    					<ul>-->
+<!--                    						<li><a href="--><?php //echo base_url();?><!--auth/create_team">Create A Team</a>-->
+<!--                    							</li>-->
+<!--                    						<li><a href="--><?php //echo base_url();?><!--auth/teams_2015">Join A Team</a>-->
+<!--                    							</li>-->
+<!---->
+<!--                    						</li>-->
+<!---->
+<!--                    					</ul>-->
                     				</li>
 
                     <!--				<li><a>Gallery</a>-->
@@ -265,13 +265,13 @@
             <li class="active"><a href="<?php echo base_url();?>site/relay/my_home">Home</a></li>
             <li><a href="<?php echo base_url();?>site/relay/what_is_relay" title="">What Is Relay For Life?</a></li>
 
-            <li><a href="#">Sign Up For Relay 2015</a>
-                <ul>
-                    <li><a href="<?php echo base_url();?>auth/create_team">Create A Team</a>
-                    </li>
-                    <li><a href="<?php echo base_url();?>auth/teams_2015">Join A Team</a>
-                    </li>
-                    </ul>
+            <li><a href="<?php echo base_url();?>auth/teams_2015">Sign Up For Relay 2015</a>
+<!--                <ul>-->
+<!--                    <li><a href="--><?php //echo base_url();?><!--auth/create_team">Create A Team</a>-->
+<!--                    </li>-->
+<!--                    <li><a href="--><?php //echo base_url();?><!--auth/teams_2015">Join A Team</a>-->
+<!--                    </li>-->
+<!--                    </ul>-->
 
             </li>
 

@@ -2345,42 +2345,65 @@ class Ion_auth_model extends CI_Model
         }
     }
 
+    /** Team Member Registration Helper Functions */
+
+    public function get_teamID($team_name)
+    {
+        $this->db->select('teamID');
+        $this->db->where('team_name',$team_name);
+        $query=$this->db->get('team');
+
+        return $query->row();
+    }
+
+    public function get_sizeID($tsize)
+    {
+        $this->db->select('size_id');
+        $this->db->where('size',$tsize);
+        $query=$this->db->get('tshirt_size');
+
+        return $query->row();
+    }
+
+    public function get_participantID($participate)
+    {
+        $this->db->select('participant_id');
+        $this->db->where('category',$participate);
+        $query=$this->db->get('participant_type');
+
+        return $query->row();
+    }
 
 
 // Add New Team Member
-    public function registration_insert_member(){
+    public function registration_insert_member($id,$teamID,$tsize,$participate){
 
+        $mpesa_code=$this->input->post('mpesa_code');
+// Query to check whether user is already in a team
+        $condition = "id =" . "'" . $id . "'";
 
-        // validate form input
-        $this->form_validation->set_rules('team_name', $this->lang->line('create_member_validation_tname_label'), 'required');
-        $this->form_validation->set_rules('size_id', $this->lang->line('create_member_validation_sname_label'), 'required');
-        $this->form_validation->set_rules('participate_id', $this->lang->line('create_member_validation_participate_label'), 'required');
-        $this->form_validation->set_rules('mpesa_code', $this->lang->line('create_member_validation_mpesa_label'), 'required');
-
-        $team_name=$this->input->post('team_name');
-        $id=$this->ion_auth->user()->row()->id;
-        $teamID=$this->db->get_where('team',array('team_name',$team_name));
-        $tsize=$this->input->post('size_id');
-        $participate=$this->input->post('participate_id');
-        $mpesa=$this->input->post('mpesa_code');
+        //   $team_captain = $this->ion_auth->user()->row()->id;
+        $this->db->select('*');
+        $this->db->from('user');
+        $this->db->limit(1);
+        $this->db->where($condition);
         $query = $this->db->get();
+
+        $data= array(
+            'id'             => $id,
+            'teamID'         => $teamID,
+            'size_id'        => $tsize,
+            'participate_id' => $participate,
+            'mpesa_code'     => $mpesa_code
+        );
 
         if ($query->num_rows() == 0) {
 
 // Query to insert data in database
-
-            $data= array(
-                'id'=>$id,
-                'teamID'=>$teamID,
-                'size_id' => $tsize,
-                'participate_id' => $participate,
-                'mpesa_code'=>$mpesa,
-            );
-
             $this->db->insert('user', $data);
 
-            return ($this->db->affected_rows() != 1) ? false : true;
-
         }
+        return ($this->db->affected_rows() != 1) ? false : true;
+
     }
 }

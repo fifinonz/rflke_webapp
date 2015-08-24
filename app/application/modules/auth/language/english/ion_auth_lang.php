@@ -81,3 +81,7 @@ $lang['email_new_password_subheading']       = 'Your password has been reset to:
 
 $lang['create_team_captain_validation']      = 'You Must Be Team Captain to create a new Team';
 $lang['create_team_name_duplicate']          = 'Team Name Already Used';
+$lang['join_team_name_label']                = 'Team Name  *';
+$lang['join_team_tshirt_size']               = 'Tshirt Size  *';
+$lang['join_team_participant']               = 'Participant Type  *';
+$lang['join_team_mpesa_code']                = 'Mpesa Confirmation Code';

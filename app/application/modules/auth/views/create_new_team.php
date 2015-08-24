@@ -123,9 +123,9 @@
                         <h4>RELAY FOR LIFE<span> 2015</span></h4>
                     </div>
                     <ul class="sidebar-list">
-                        <li><a href="<?php echo base_url();?>site/relay/what_is_relay" title="" title="">Learn About Relay</a></li>
-                        <li><a href="<?php echo base_url();?>auth/create_team"" title="">Start a Team</a></li>
-                        <li><a href="<?php echo base_url();?>auth/teams_2015" title="">Join a Team</a></li>
+                        <li><a style="font-size: 18px" href="<?php echo base_url();?>site/relay/what_is_relay" title="" title="">Learn About Relay</a></li>
+                        <li><a style="font-size: 18px" href="<?php echo base_url();?>auth/create_team"" title="">Start a Team</a></li>
+                        <li><a style="font-size: 18px" href="<?php echo base_url();?>auth/teams_2015" title="">Join a Team</a></li>
                         <!--                            <li><a href="#" title="">Nature (7)</a></li>-->
                         <!--                            <li><a href="#" title="">Scenery(3)</a></li>-->
                         <!--                            <li><a href="#" title="">Uncategorized(1)</a></li>-->
@@ -136,17 +136,33 @@
                         <h4>Quick <span>Links</span></h4>
                     </div>
                     <div class="cloud-tags">
-                        <a href="<?php echo base_url();?>site/relay/what_is_relay" title="">What is Relay?</a>
-                        <a href="<?php echo base_url();?>site/relay/donate" title="">Donate</a>
-                        <a href="<?php echo base_url();?>site/relay/faqs" title="">FAQs</a>
-                        <a href="<?php echo base_url();?>assets/images/RFL_P.jpg" title="">When is Relay</a>
-                        <a href="#" title="">Find a Team</a>
-                        <a href="<?php echo base_url();?>auth/teams_2015" title="">Join a Team</a>
-                        <a href="<?php echo base_url();?>auth/login" title="">Log In</a>
+                        <a style="font-size: 16px" href="<?php echo base_url();?>site/relay/what_is_relay" title="">What is Relay?</a>
+                        <a style="font-size: 16px" href="<?php echo base_url();?>site/relay/donate" title="">Donate</a>
+                        <a style="font-size: 16px"href="<?php echo base_url();?>site/relay/faqs" title="">FAQs</a>
+                        <a style="font-size: 16px"href="<?php echo base_url();?>assets/images/RFL_P.jpg" title="">When is Relay</a>
+                        <a style="font-size: 16px"href="#" title="">Find a Team</a>
+                        <a style="font-size: 16px"href="<?php echo base_url();?>auth/teams_2015" title="">Join a Team</a>
+                        <a style="font-size: 16px"href="<?php echo base_url();?>auth/login" title="">Log In</a>
                         <!--                            <a href="#" title="">Uncategorized</a>-->
                         <!--                            <a href="#" title="">Susipit</a>-->
                     </div>
                 </div><!-- Tags Clouds -->
+                <div class="sidebar-widget">
+                    <div class="sidebar-title">
+                        <h4>Support <span>Us</span></h4>
+                    </div>
+                    <div class="donate-us">
+                        <h3 style="font-size: 20px"><strong>Support KENCASA!</strong></h3>
+                        <span style="font-size: 18px"><strong>Join the fight against Cancer</strong></span>
+                        <!--                            <div class="collected">-->
+                        <!--                                <p>Collected Donations</p>-->
+                        <!--                                <span><strong>$</strong> 7,089,7!</span>-->
+                        <!--                            </div>--><br/>
+                        <div style="margin-top:28px" class="">
+                            <a title="" class=" header-btn" href="<?php echo base_url();?>site/relay/donate">Donate Now</a>
+                        </div>
+                    </div>
+                </div><!--Donate Us -->
                 <div class="sidebar-widget">
                     <div class="sidebar-title">
                         <h4>Mailing <span>List</span></h4>
@@ -188,23 +204,6 @@
 
                     <!--End mc_embed_signup-->
                 </div><!-- Subscribe Widget -->
-                <div class="sidebar-widget">
-                    <div class="sidebar-title">
-                        <h4>Support <span>Us</span></h4>
-                    </div>
-                    <div class="donate-us">
-                        <h3>Give Your Donations</h3>
-                        <span><strong>MPESA PAYBILL: 288773</strong></span>
-                        <!--                            <div class="collected">-->
-                        <!--                                <p>Collected Donations</p>-->
-                        <!--                                <span><strong>$</strong> 7,089,7!</span>-->
-                        <!--                            </div>-->
-                        <div style="margin-top:28px" class="">
-                            <a title="" class=" header-btn" href="<?php echo base_url();?>site/relay/donate">Donate Now</a>
-                        </div>
-                    </div>
-                </div><!--Donate Us -->
-
                 <div class="container">
 
                     <ul class="social-bar">

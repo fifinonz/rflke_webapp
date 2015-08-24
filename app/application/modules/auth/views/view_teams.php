@@ -90,41 +90,26 @@ selfURL();
 <!--        <div class="remove-ext">-->
             <div class="row">
                 <div class="left-content col-md-9">
-                <div class="accordion_toggle"><a href="#">
-                        <span>
-                            <i class="icon-info-sign"></i>
-                        </span>To join a team you must be logged in.  <strong style="color:#800080;text-decoration: underline">Click here to Log in!</strong></a>
-                </div>
-                <div class="accordion_content" style="display: block;">
-                        <p style="font-size: 16px;">Please log in below.</p>
-                                <div class="login_form" style="width: 400px" id="login">
-                            <?php echo form_open("auth/login");?>
-
-                            <p>
-                                <?php echo lang('login_identity_label', 'identity');?>
-                                <?php echo form_input($identity);?>
-                            </p>
-
-                            <p>
-                                <?php echo lang('login_password_label', 'password');?>
-                                <?php echo form_input($password);?>
-                            </p>
-
-                            <p>
-                                <?php echo lang('login_remember_label', 'remember');?>
-                                <?php echo form_checkbox('remember', '1', FALSE, 'id="remember"');?>
-                            </p>
 
 
-                            <p><?php echo form_submit('submit', lang('login_submit_btn'));?></p>
+                    <h1 style="color: #800080">Start a team</h1>
+                    <p style="font-size: 20px;">Start a team with your friends family and colleagues to help beat cancer sooner.&nbsp;</p>
+                   <br/> <h2 style="color: #800080">What do Team Captains do?</h2>
+                    <p style="font-size: 20px; ">Relay For Life teams are made of around 8-15 people. As a Team Captain it’s your job to get friends and family to sign up to your team. When your team have signed up you can start fundraising together. Set a team fundraising target and motivate your team members to reach it!&nbsp;</p>
+                   <br/> <h2 style="color: #800080">How do I start a team?</h2>
+                    <ul style="font-size:20px">
+                        <li ><i style="color: #800080" class="icon-check"></i>If you do not have one, create a Relay For Life Kenya Account.</li>
+                        <li><i style="color: #800080" class="icon-check"></i>Pick a team name and register your team online.</li>
+                        <li><i style="color: #800080" class="icon-check"></i> As a Team Captain you must be over 18 but anyone can join your team once you register.</li>
+                        <li><i style="color: #800080" class="icon-check"></i> Get your friends and family members to join your team and register online.</li>
 
-                            <?php echo form_close();?>
-                                </div>
-                    </div>
+                    </ul>
+                    <br/><br/><br/><br/>
 
 
-                <div class="accordion_toggle"><a href="#">
-                        <span><i class="icon-info-sign"></i>
+
+                <div  class="accordion_toggle"><a style="font-size: 20px;" href="#">
+                        <span><i style="color: #2b0171"class="icon-info-sign"></i>
                         </span>Don't have a Relay account? <strong style="color:#800080;text-decoration: underline">Click here to Sign up!</strong></a>
                 </div>
                 <div class="accordion_content" style="display: block;">
@@ -184,110 +169,39 @@ selfURL();
                     </div>
 
                 </div>
+                    <div class="accordion_toggle"><a style="font-size: 20px;" href="#">
+                        <span>
+                            <i style="color: #2b0171"class="icon-info-sign"></i>
+                        </span>Already have an account?  <strong style="color:#800080;text-decoration: underline">Click here to Log in!</strong></a>
+                    </div>
+                    <div class="accordion_content" style="display: block;">
+                        <p style="font-size: 16px;">Please log in below.</p>
+                        <div class="login_form" style="width: 400px" id="login">
+                            <?php echo form_open("auth/login");?>
+
+                            <p>
+                                <?php echo lang('login_identity_label', 'identity');?>
+                                <?php echo form_input($identity);?>
+                            </p>
+
+                            <p>
+                                <?php echo lang('login_password_label', 'password');?>
+                                <?php echo form_input($password);?>
+                            </p>
+
+                            <p>
+                                <?php echo lang('login_remember_label', 'remember');?>
+                                <?php echo form_checkbox('remember', '1', FALSE, 'id="remember"');?>
+                            </p>
 
 
-<!--            THIS SECTION IS PART OF THE NOT LOGGED IN VIEW.....LINKS ARE NOT CLICKABLE!-->
-                <section class="block">
-                <div class="col-md-4">
-                    <div class="our-cause">
-                        <div class="our-cause-img">
-                            <img alt="" src="images/causes-new1.jpg">
-<!--                            <a title="" href="--><?php //echo base_url();?><!--site/relay/join_team"><i class="icon-link"></i></a>-->
-                        </div>
-                        <div class="our-cause-detail">
-                            <h3>Team 1</h3>
-                            <span>Captain: <a title="" href="#"></a></span>
-                            <p>This team is ....</p>
-                            <i>Funds Raised: <span>KES</span> <strong>20,000</strong></i>
-<!--                            <a title="" href="--><?php //echo base_url();?><!--site/relay/join_team">Join this Team</a>-->
+                            <p><?php echo form_submit('submit', lang('login_submit_btn'));?></p>
+
+                            <?php echo form_close();?>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-4">
-                    <div class="our-cause">
-                        <div class="our-cause-img">
-                            <img alt="" src="images/causes-new1.jpg">
-<!--                            <a title="" href="--><?php //echo base_url();?><!--site/relay/join_team"><i class="icon-link"></i></a>-->
-                        </div>
-                        <div class="our-cause-detail">
-                            <h3>Team 2</h3>
-                            <span>Captain: <a title="" href="#"></a></span>
-                            <p>This team is ....</p>
-                            <i>Funds Raised: <span>KES</span> <strong>20,000</strong></i>
-<!--                            <a title="" href="--><?php //echo base_url();?><!--site/relay/join_team">Join this Team</a>-->
-                        </div>
                     </div>
-                </div>
-
-
-                <div class="col-md-4">
-                    <div class="our-cause">
-                        <div class="our-cause-img">
-                            <img alt="" src="images/causes-new1.jpg">
-                            <a title="" href="<?php echo base_url();?>site/relay/join_team"><i class="icon-link"></i></a>
-                        </div>
-                        <div class="our-cause-detail">
-                            <h3>Team 3</h3>
-                            <span>Captain: <a title="" href="#"></a></span>
-                            <p>This team is ....</p>
-                            <i>Funds Raised: <span>KES</span> <strong>20,000</strong></i>
-<!--                            <a title="" href="--><?php //echo base_url();?><!--site/relay/join_team">Join this Team</a>-->
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="our-cause">
-                        <div class="our-cause-img">
-                            <img alt="" src="images/causes-new1.jpg">
-                            <a title="" href="<?php echo base_url();?>site/relay/join_team"><i class="icon-link"></i></a>
-                        </div>
-                        <div class="our-cause-detail">
-                            <h3>Team 4</h3>
-                            <span>Captain: <a title="" href="#"></a></span>
-                            <p>This team is ....</p>
-                            <i>Funds Raised: <span>KES</span> <strong>20,000</strong></i>
-<!--                            <a title="" href="--><?php //echo base_url();?><!--site/relay/join_team">Join this Team</a>-->
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-4">
-                    <div class="our-cause">
-                        <div class="our-cause-img">
-                            <img alt="" src="images/causes-new1.jpg">
-                            <a title="" href="<?php echo base_url();?>site/relay/join_team"><i class="icon-link"></i></a>
-                        </div>
-                        <div class="our-cause-detail">
-                            <h3>Team 5</h3>
-                            <span>Captain: <a title="" href="#"></a></span>
-                            <p>This team is ....</p>
-                            <i>Funds Raised: <span>KES</span> <strong>20,000</strong></i>
-<!--                            <a title="" href="--><?php //echo base_url();?><!--site/relay/join_team">Join this Team</a>-->
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-4">
-                    <div class="our-cause">
-                        <div class="our-cause-img">
-                            <img alt="" src="images/causes-new1.jpg">
-                            <a title="" href="<?php echo base_url();?>site/relay/join_team"><i class="icon-link"></i></a>
-                        </div>
-                        <div class="our-cause-detail">
-                            <h3>Team 6</h3>
-                            <span>Captain: <a title="" href="#"></a></span>
-                            <p>This team is ....</p>
-                            <i>Funds Raised: <span>KES</span> <strong>20,000</strong></i>
-<!--                            <a title="" href="--><?php //echo base_url();?><!--site/relay/join_team">Join this Team</a>-->
-                        </div>
-                    </div>
-                </div>
-                </section>
-                </div>
 
                 <div class="sidebar col-md-3 pull-right">
                     <div class="sidebar-widget">
@@ -295,9 +209,9 @@ selfURL();
                             <h4>RELAY FOR LIFE<span> 2015</span></h4>
                         </div>
                         <ul class="sidebar-list">
-                            <li><a href="<?php echo base_url();?>site/relay/what_is_relay" title="" title="">Learn About Relay</a></li>
-                            <li><a href="<?php echo base_url();?>auth/create_team"" title="">Start a Team</a></li>
-                            <li><a href="<?php echo base_url();?>auth/teams_2015" title="">Join a Team</a></li>
+                            <li><a style="font-size: 18px" href="<?php echo base_url();?>site/relay/what_is_relay" title="" title="">Learn About Relay</a></li>
+                            <li><a style="font-size: 18px" href="<?php echo base_url();?>auth/create_team"" title="">Start a Team</a></li>
+                            <li><a style="font-size: 18px" href="<?php echo base_url();?>auth/teams_2015" title="">Join a Team</a></li>
 <!--                            <li><a href="#" title="">Nature (7)</a></li>-->
 <!--                            <li><a href="#" title="">Scenery(3)</a></li>-->
 <!--                            <li><a href="#" title="">Uncategorized(1)</a></li>-->
@@ -308,13 +222,13 @@ selfURL();
                             <h4>Quick <span>Links</span></h4>
                         </div>
                         <div class="cloud-tags">
-                            <a href="<?php echo base_url();?>site/relay/what_is_relay" title="">What is Relay?</a>
-                            <a href="<?php echo base_url();?>site/relay/donate" title="">Donate</a>
-                            <a href="<?php echo base_url();?>site/relay/faqs" title="">FAQs</a>
-                            <a href="<?php echo base_url();?>assets/images/RFL_P.jpg" title="">When is Relay</a>
-                            <a href="#" title="">Find a Team</a>
-                            <a href="<?php echo base_url();?>auth/teams_2015" title="">Join a Team</a>
-                            <a href="<?php echo base_url();?>auth/login" title="">Log In</a>
+                            <a style="font-size: 16px" href="<?php echo base_url();?>site/relay/what_is_relay" title="">What is Relay?</a>
+                            <a style="font-size: 16px" href="<?php echo base_url();?>site/relay/donate" title="">Donate</a>
+                            <a style="font-size: 16px"href="<?php echo base_url();?>site/relay/faqs" title="">FAQs</a>
+                            <a style="font-size: 16px"href="<?php echo base_url();?>assets/images/RFL_P.jpg" title="">When is Relay</a>
+                            <a style="font-size: 16px"href="#" title="">Find a Team</a>
+                            <a style="font-size: 16px"href="<?php echo base_url();?>auth/teams_2015" title="">Join a Team</a>
+                            <a style="font-size: 16px"href="<?php echo base_url();?>auth/login" title="">Log In</a>
 <!--                            <a href="#" title="">Uncategorized</a>-->
 <!--                            <a href="#" title="">Susipit</a>-->
                         </div>
@@ -324,12 +238,12 @@ selfURL();
                             <h4>Support <span>Us</span></h4>
                         </div>
                         <div class="donate-us">
-                            <h3>Give Your Donations</h3>
-                            <span><strong>MPESA PAYBILL: 288773</strong></span>
+                            <h3 style="font-size: 20px"><strong>Support KENCASA!</strong></h3>
+                            <span style="font-size: 18px"><strong>Join the fight against Cancer</strong></span>
 <!--                            <div class="collected">-->
 <!--                                <p>Collected Donations</p>-->
 <!--                                <span><strong>$</strong> 7,089,7!</span>-->
-<!--                            </div>-->
+<!--                            </div>--><br/>
                             <div style="margin-top:28px" class="">
                                 <a title="" class=" header-btn" href="<?php echo base_url();?>site/relay/donate">Donate Now</a>
                             </div>
@@ -391,22 +305,7 @@ selfURL();
             </div>
         </div>
 
-        <div class="pagination-area">
-            <ul class="pagination">
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-            </ul>
 
-            <div class="pagination-buttons">
-                <a title="" href="#"><i class="icon-angle-left"></i></a>
-                <a title="" href="#"><i class="icon-angle-right"></i></a>
-            </div>
-
-
-        </div><!--Pagination-->
 
     </div>
 

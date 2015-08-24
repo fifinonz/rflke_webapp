@@ -8,7 +8,7 @@ class Auth extends MY_Controller {
 		$this->load->database();
 		$this->load->library(array('ion_auth','form_validation'));
 		$this->load->helper(array('url','language'));
-        $this->load->model('create_team_model');
+//        $this->load->model('create_team_model');
 
 
         $this->form_validation->set_error_delimiters($this->config->item('error_start_delimiter', 'ion_auth'), $this->config->item('error_end_delimiter', 'ion_auth'));
@@ -1114,7 +1114,7 @@ class Auth extends MY_Controller {
 
         $team_captain = $this->ion_auth->user()->row()->id;
 
-        $team_name = strtolower($this->input->post('team_name'));
+        $team_name =($this->input->post('team_name'));
         // user MUST check team_captain
         $check_captain = (bool) $this->input->post('team_captain');
 
@@ -1141,20 +1141,49 @@ class Auth extends MY_Controller {
             $this->_load_view();
         }
 
-    function new_member(){
+    function registration_insert_member()
+    {
 
-        if ($this->input->post('submit')){
 
-            $this->ion_auth->registration_insert_member();
+        $team_name=$this->input->post('team_name');
+
+        $id=$this->ion_auth->user()->row()->id;
+        $tsizeID=$this->input->post('size_id');
+        $participateID=$this->input->post('participate_id');
+
+
+        // validate form input
+        $this->form_validation->set_rules('team_name', $this->lang->line('create_member_validation_tname_label'), 'required');
+//        $this->form_validation->set_rules('size_id', $this->lang->line('create_member_validation_sname_label'), 'required');
+//        $this->form_validation->set_rules('participate_id', $this->lang->line('create_member_validation_participate_label'), 'required');
+        $this->form_validation->set_rules('mpesa_code', $this->lang->line('create_member_validation_mpesa_label'), 'required');
+
+
+
+        if ($this->form_validation->run() == TRUE)
+//        {
+//            $this->data['message'] = (validation_errors() ? validation_errors() : ($this->ion_auth->errors() ? $this->ion_auth->errors() : $this->session->flashdata('message')));
+//
+//            redirect('auth/create_team','refresh');
+//        }
+//        else
+        {
+            $teamID=$this->ion_auth->get_teamID($team_name);
+            $tsize=$this->ion_auth->get_sizeID($tsizeID);
+            $participate=$this->ion_auth->get_participantID($participateID);
+            $this->ion_auth->registration_insert_member($id,$teamID,$tsize,$participate);
 
             redirect('auth/teams_2015', 'refresh');
         }
-        else
-        {
-            redirect('auth/join_team') ;
-        }
+        $this->data['main_content'] = 'join_team';
+        $this->_load_view();
 
+    }
+    public function team_admin(){
+        $this->data['title'] 	= "Team Admin Page";
+        $this->data['main_content'] 	= "team_admin.php";
 
+        $this->_load_view();
     }
 
 }
