@@ -28,7 +28,7 @@ echo "Invalid Sender's Email";
  $message = wordwrap($message, 70);
 
  // Send mail by PHP Mail Function
- mail("recievers_mail_id@xyz.com", $subject, $message, $headers);
+ mail("info@relayforlifekenya.org", $subject, $message, $headers);
  echo "Your mail has been sent successfuly ! Thank you for your feedback";
  }
 }
