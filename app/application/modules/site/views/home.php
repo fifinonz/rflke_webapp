@@ -219,7 +219,8 @@
                     <!-- end RFL_NATL_2015_reus_footer_stats -->
                     <div class="clearme"></div>
                 </div>
-            </div>    </div>
+            </div>
+        </div>
     </section>
 
 </section>
