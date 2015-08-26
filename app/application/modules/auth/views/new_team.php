@@ -1,7 +1,1 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: dhis
- * Date: 25/08/15
- * Time: 16:47
- */
+<a class="main-container fixer-container signup-btn" href="<?php echo base_url();?>auth/create_team">Start My Team!</a>
