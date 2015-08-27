@@ -100,7 +100,7 @@
             'name'        => 'team_captain',
             'id'          => 'team_captain',
         );
-        echo form_checkbox($data,'',TRUE);
+        echo form_checkbox($data,'');
         echo lang('create_team_captain');
         echo "</strong></p>";
         echo"</h2>";

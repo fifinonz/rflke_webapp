@@ -207,7 +207,7 @@ $(window).load(function(){
 
                 <li><a href="<?php echo base_url();?>site/relay/what_is_relay" title="">What Is Relay For Life?</a></li>
 
-                <li><a href="<?php echo base_url();?>auth/view_teams">Sign Up For Relay 2015</a>
+                <li><a href="<?php echo base_url();?>auth/sign_up">Sign Up For Relay 2015</a>
                 </li>
 <!--				<li><a>Products</a>-->
 <!--					<ul>-->
@@ -280,7 +280,7 @@ $(window).load(function(){
 
             <li><a href="<?php echo base_url();?>site/relay/what_is_relay" title="">What Is Relay For Life?</a></li>
 
-            <li><a href="<?php echo base_url();?>auth/view_teams">Sign Up For Relay 2015</a>
+            <li><a href="<?php echo base_url();?>auth/sign_up">Sign Up For Relay 2015</a>
             </li>
 
             <!--				<li><a>Products</a>-->

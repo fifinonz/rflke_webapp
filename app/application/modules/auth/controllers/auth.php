@@ -67,7 +67,7 @@ class Auth extends MY_Controller {
 				//if the login is successful
 				//redirect them back to the home page
 				$this->session->set_flashdata('message', $this->ion_auth->messages());
-				redirect('auth/view_teams', 'refresh');
+				redirect('auth/sign_up', 'refresh');
 			}
 			else
 			{
@@ -835,7 +835,7 @@ class Auth extends MY_Controller {
                 // if the login was un-successful
                 // redirect them back to the login page
                 $this->session->set_flashdata('message', $this->ion_auth->errors());
-                redirect('auth/view_teams#', 'refresh'); // use redirects instead of loading views for compatibility with MY_Controller libraries
+                redirect('auth/sign_up#', 'refresh'); // use redirects instead of loading views for compatibility with MY_Controller libraries
             }
         }
         else
@@ -950,7 +950,7 @@ class Auth extends MY_Controller {
 
         $this->_load_view();
     }
-    public function view_teams(){
+    public function sign_up(){
         $this->data['title'] 	= "Participate in Relay 2015";
 
         //validate form input
@@ -1086,7 +1086,7 @@ class Auth extends MY_Controller {
         }
 
 
-        $this->data['main_content'] 	= "view_teams";
+        $this->data['main_content'] 	= "sign_up";
 
         $this->_load_view();
     }
@@ -1120,7 +1120,7 @@ class Auth extends MY_Controller {
 
 //validate form input
         $this->form_validation->set_rules('team_name', $team_name, 'required');
-//        $this->form_validation->set_rules('team_captain', $check_captain, 'required');
+        $this->form_validation->set_rules('team_captain', $check_captain, 'required');
 
         if ($this->form_validation->run() == TRUE)
 //        {
