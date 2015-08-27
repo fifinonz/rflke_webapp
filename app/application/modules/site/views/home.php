@@ -68,7 +68,7 @@
 
 
                                 <br/><p style="font-size: 22px;margin-top: 26px">This year our Relay for Life Event is themed Cancer Education, Awareness and Patient Support. Funds raised will be used to empower communities with information about the preventiton, detection and treatment of Cancer<br/>
-                                  <a class="main-container fixer-container signup-btn" href="<?php echo base_url();?>auth/view_teams">Sign Up For Relay 2015</a>
+                                  <a class="main-container fixer-container signup-btn" href="<?php echo base_url();?>auth/sign_up">Sign Up For Relay 2015</a>
                                 </p>
                                 <div class="needed-amount">
                                     <h5><i>KSH.</i>40M<span>OUR TARGET</span></h5>
